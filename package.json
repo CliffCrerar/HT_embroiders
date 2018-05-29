@@ -1,0 +1,14 @@
+{
+  "name": "htembroiders",
+  "version": "1.0.0",
+  "description": "Site is a web presence and company profile for this client",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "what"
+  ],
+  "author": "Cliff Crerar",
+  "license": "ISC"
+}
