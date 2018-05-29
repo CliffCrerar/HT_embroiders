@@ -1,0 +1,24 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic);
+
+#menu-0 .navbar-toggler {
+  color: #000;
+}
+#content1-5 P {
+  font-size: 32px;
+}
+#testimonials1-k .mbr-section-title {
+  color: #f2f2f2;
+}
+#social-buttons2-g .mbr-section-title {
+  text-align: right;
+}
+#msg-box3-i .mbr-header .mbr-header__text {
+  text-align: center;
+}
+#msg-box3-i .mbr-header .mbr-header__subtext {
+  text-align: center;
+}
+#msg-box1-h H2 {
+  text-align: left;
+  font-family: 'Playfair Display', sans-serif;
+}

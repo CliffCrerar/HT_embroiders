@@ -4,5 +4,10 @@
 			"path": "."
 		}
 	],
-	"settings": {}
+	"settings": {
+		"liveServer.settings.port": 5110,
+		"liveServer.settings.host": "127.0.0.1",
+		"liveServer.settings.fullReload": true,
+		"liveServer.settings.root": "/dist"
+	}
 }
