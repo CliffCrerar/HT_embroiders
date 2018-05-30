@@ -4,7 +4,7 @@
   "description": "Site is a web presence and company profile for this client",
   "main": "index.js",
   "scripts": {
-    "start": "webpack --watch --config webpack.config.dev.js --display-modules --mode development",
+    "start": "webpack --watch --config webpack.config.dev.js --mode development",
     "build": "webpack --config webpack.config.dev.js --display-modules --mode development"
   },
   "keywords": [
@@ -24,11 +24,11 @@
     "webpack-cli": "^2.1.4"
   },
   "dependencies": {
-    "bootstrap": "^4.1.1",
+    "bootstrap": "^4.0.0",
     "bootstrap-carousel-swipe": "0.0.6",
     "imagesloaded": "^4.1.4",
     "jarallax": "^1.10.3",
-    "jquery": "^3.3.1",
+    "jquery": "^2.2.4",
     "masonry-layout": "^4.2.1",
     "popper.js": "^1.14.3",
     "socicon": "^3.0.5",
