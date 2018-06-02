@@ -20,7 +20,8 @@
     "sitemapSwitcher": "on",
     "versionFirst": "4.7.1",
     "uniqCompNum": 23,
-    "versionPublish": "4.7.1"
+    "versionPublish": "4.7.1",
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
@@ -38,7 +39,7 @@
             "logo": true,
             "showBrand": true,
             "showButtons": true,
-            "sticky": false,
+            "sticky": true,
             "collapsed": true,
             "transparent": true,
             "color": "#fff",

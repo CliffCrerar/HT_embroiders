@@ -9,5 +9,6 @@
 		"liveServer.settings.host": "127.0.0.1",
 		"liveServer.settings.fullReload": true,
 		"liveServer.settings.root": "/dist"
+		//"liveServer.settings.root": "/"
 	}
 }

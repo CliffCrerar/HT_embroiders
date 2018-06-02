@@ -33,12 +33,31 @@ module.exports = {
                 use: [
                     'file-loader'
                 ]
+            },
+            {
+                test: /\.(html)$/,
+                use: {
+                    loader: 'html-loader',
+                    options: {
+                        attrs: [':data-src']
+                    }
+                }
+            },
+            {
+                test: /\.js$/,
+                exclude: /(node_modules|bower_components)/,
+                use: {
+                    loader: 'babel-loader'
+                }
             }
+
         ]
     },
     plugins: [
         new HTMLwebpackPlugin({
-            template: './index.html'
+            title: 'HT Embroiders',
+            template: './index.html',
+            meta: require('./meta.json')
         })
     ]
 };

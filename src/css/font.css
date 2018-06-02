@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-29 21:57:38 
- * Last modified  : 2018-05-29 21:58:57
+ * Last modified  : 2018-05-30 22:40:22
  */
 
 /*
@@ -13,5 +13,11 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
 */
 
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext);
-@import url(https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic)
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Domine');
+@import url('https://fonts.googleapis.com/css?family=Pridi');
+@import url('https://fonts.googleapis.com/css?family=Quando');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Rosario');
+@import url('https://fonts.googleapis.com/css?family=Syncopate');

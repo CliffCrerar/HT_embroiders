@@ -1,0 +1,38 @@
+/**
+ * long description for the file
+ *
+ * @summary CSS added after template was created
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-05-30 21:33:32 
+ * Last modified  : 2018-06-01 19:32:53
+ */
+
+.container-fluid{
+    padding: 0 !important;
+}
+
+.rowB4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.home-page-title-box{
+    margin: 0 !important;
+    height: 100%;
+    width: 100%;
+}
+
+.home-page-title{
+    font-family: Algeria !important;
+    font-size: 50vh;
+}
+
+.logohp{
+    width: 30%;
+}
