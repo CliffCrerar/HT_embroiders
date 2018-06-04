@@ -4,8 +4,8 @@
  * @summary CSS added after template was created
  * @author Cliff Crerar
  *
- * Created at     : 2018-05-30 21:33:32 
- * Last modified  : 2018-06-01 19:32:53
+ * Created at     : 2018-05-30 21:33:32
+ * Last modified  : 2018-06-04 18:06:39
  */
 
 .container-fluid{
@@ -35,4 +35,10 @@
 
 .logohp{
     width: 30%;
+}
+
+/* ABOUT SECTION */
+.mbr-overlay-additional{
+    opacity: 0.7;
+    background-color: rgb(255, 255, 255);
 }

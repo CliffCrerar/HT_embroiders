@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-29 21:49:50
- * Last modified  : 2018-06-01 22:15:06
+ * Last modified  : 2018-06-04 17:22:26
  */
 
 // JQUERY
@@ -31,7 +31,7 @@ import './mobirise/css/mbr-additional.css';
 
 // THETHER
 // C:\GitHub\HT_embroiders\assets\tether\tether.min.js
-import 'script-loader!./tether/tether.min';
+import './tether/tether.min';
 // BOOTSTRAP
 //import 'popper.js';
 //import 'bootstrap';
