@@ -5,11 +5,11 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-29 23:07:35
- * Last modified  : 2018-06-01 19:29:39
+ * Last modified  : 2018-06-02 13:35:13
  */
 
 import logo from './images/logo.png';
-import landingBg from './images/photo-2.jpg';
+//
 import logoHp from '../images/Logo/logoOrig_1.png';
 import serviceSummary from './images/photo-3.jpg';
 import card_img_top1 from './images/feature-bootstrap.png';
@@ -42,7 +42,7 @@ import testimonials from './images/photo-3.jpg';
 
 $('#logo').attr('src', logo);
 $('#logohp').attr('src', logoHp);
-$('#header4-1').css('background-image', `url(${landingBg})`);
+//$('#header4-1').css('background-image', `url(${landingBg})`);
 $('#content4-2').css('background-image', `url(${serviceSummary})`);
 $('#card-img-top1').attr('src', card_img_top1);
 $('#card-img-top2').attr('src', card_img_top2);

@@ -3,7 +3,7 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10 
- * Last modified  : 2018-06-01 23:00:56
+ * Last modified  : 2018-06-02 13:28:01
  */
 
 import React from 'react'; // import react
@@ -33,44 +33,38 @@ const Navbar = () => {
     });
 
     return (
-        <nav
-            className="navbar navbar-light mbr-navbar navbar-transparent"
-            id="menu-0"
-            data-rv-view="1653">
+        <div className="container">
 
-            <div className="container">
+            {/* Mobile view button */}
+            <button
+                className="navbar-toggler pull-right hidden-md-up"
+                type="button" data-toggle="collapse"
+                data-target="#exCollapsingNavbar2">
+                <div className="hamburger-icon"></div>
+            </button>
 
-                {/* Mobile view button */}
-                <button
-                    className="navbar-toggler pull-right hidden-md-up"
-                    type="button" data-toggle="collapse"
-                    data-target="#exCollapsingNavbar2">
-                    <div className="hamburger-icon"></div>
-                </button>
+            <div className="clearfix"></div>
 
-                <div className="clearfix"></div>
+            {/* Desktop view navbar */}
+            <div className="collapse navbar-toggleable-sm"
+                id="exCollapsingNavbar2">
 
-                {/* Desktop view navbar */}
-                <div className="collapse navbar-toggleable-sm"
-                    id="exCollapsingNavbar2">
+                {/* Navbar brand */}
+                <span className="navbar-logo">
+                    <a href="#">
+                        <img id="logo" src={logoImg} alt="Mobirise" />
+                    </a>
+                </span>
+                <span>
+                    <a className="navbar-brand" href="#">{brandName}</a>
+                </span>
 
-                    {/* Navbar brand */}
-                    <span className="navbar-logo">
-                        <a href="#">
-                            <img id="logo" src={logoImg} alt="Mobirise" />
-                        </a>
-                    </span>
-                    <span>
-                        <a className="navbar-brand" href="#">{brandName}</a>
-                    </span>
-
-                    {/* Navbar links */}
-                    <ul className="nav navbar-nav pull-xs-right">
-                        {NavLinkElement}
-                    </ul>
-                </div>
+                {/* Navbar links */}
+                <ul className="nav navbar-nav pull-xs-right">
+                    {NavLinkElement}
+                </ul>
             </div>
-        </nav>
+        </div>
     );
 };
 

@@ -1,20 +1,26 @@
+/**
+ * HOME PAGE COMPONENT
+ * @summary 
+ * @author Cliff Crerar
+ * Created at     : 2018-06-02 13:38:18 
+ * Last modified  : 2018-06-02 13:38:53
+ */
+
 import React from 'react';
 
+import logo from '../images/Logo/logoOrig_1.png'; // Import logo
+
 const Homepage = () => {
-    return render(
-        <section className="mbr-section mbr-section-full mbr-parallax-background mbr-after-navbar" id="header4-1" data-rv-view="1655">
-            <div className="mbr-table-cell">
+    return (
 
-                <div className="container">
-                    <div className="row home-page-title-box">
-                        <img id="logohp" className="logohp" />
-
-                    </div>
-
-
+        <div className="mbr-table-cell">
+            <div className="container">
+                <div className="row home-page-title-box">
+                    <img id="logohp" className="logohp" src={logo} />
                 </div>
             </div>
-        </section>
+        </div>
+
     );
 };
 
