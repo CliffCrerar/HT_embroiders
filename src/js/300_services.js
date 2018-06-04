@@ -3,12 +3,12 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-06-04 17:23:46
+ * Last modified  : 2018-06-05 01:15:00
  */
 
 import React from 'react';
-import Thumbnail from './301_thumbnail';
-import CarouselItem from './302_carouselItem';
+import Thumbnail from './301_thumbnail.js';
+import CarouselItem from './302_carouselItem.js';
 // IMPORT IMAGES FOR THUMBNAILS
 import th1 from '../images/temp/feature-bootstrap.png';
 import th2 from '../images/temp/feature-responsive.png';

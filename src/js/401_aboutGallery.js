@@ -3,15 +3,15 @@
  * @summary Contains the methods on populating the gallery
  * @author Cliff Crerar
  * Created at     : 2018-06-04 18:37:48
- * Last modified  : 2018-06-04 19:23:24
+ * Last modified  : 2018-06-04 22:06:34
  */
 
 import React from 'react';
 
-const RowItem = ({ itm, i }) => {
+const GallerySmallItem = ({ itm, i }) => {
     return (
         <div className="mbr-gallery-item">
-            <a data-toggle="modal" href="#lb-gallery1-6" data-slide-to={i}>
+            <a data-toggle="modal" href="#lb-gallery1-6" data-slide-to={itm.img}>
                 <img id="gallery-img1" alt={itm.title} title={itm.title} src={itm.image} />
                 <span className="icon fa fa-search-plus"></span>
             </a>
@@ -21,43 +21,82 @@ const RowItem = ({ itm, i }) => {
 
 const GallerySmallItems = (galleryImageData, row) => {
     const thisRow = galleryImageData[row];
-    console.log(thisRow);
-    thisRow.map((itm, i) => {
+    const rows = thisRow.map((itm) => {
         return (
-            <RowItem
+            <GallerySmallItem
                 key={itm.title}
                 itm={itm}
-                i={i}
             />
         );
     });
+    return rows;
 };
-/*
-const GalleryZoomIndicators = (galleryImageData) => {
-    for (let row in galleryImageData) {
-        let itemRow = galleryImageData[row]
-        for (let itm in itemRow) {
-            //console.log(itemRow[itm]);
-            let activeClass;
-            if (itemRow[itm].img === 0) {
-                activeClass = 'active';
-            } else {
-                activeClass = '';
-            }
-            /*return (
-                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" className={activeClass} data-slide-to={itemRow[itm].img}></li>
-            );
-        }
+
+const rowItemsOnly = (object) => {
+    var NewArray = [];
+    for (let key in object) {
+        //console.log(object[key]);
+        object[key].map(subObject => {
+            //console.log(subObject);
+            NewArray.push(subObject);
+        });
     }
+    return NewArray;
+};
+
+const GalleryZoomIndicator = ({ rowItem, activeClass }) => {
+    return <li data-app-prevent-settings="" data-target="#lb-gallery1-6" className={activeClass} data-slide-to={rowItem.img}></li>;
+};
+
+const GalleryZoomIndicators = (galleryImageData) => {
+    let imageDataCollection = rowItemsOnly(galleryImageData);
+    const zoomInd = imageDataCollection.map((imageDataItem, i) => {
+        let activeClass;
+        if (i === 0) {
+            activeClass = 'active';
+        } else {
+            activeClass = '';
+        }
+        return (
+            <GalleryZoomIndicator
+                key={imageDataItem.img}
+                rowItem={imageDataItem}
+                activeClass={activeClass}
+            />
+        );
+    });
+    return zoomInd;
+};
+
+const GalleryZoomImage = ({ imageDataItem, imgId, activeClass }) => {
+    return (
+        <div className={activeClass}>
+            <img id={imgId} alt={imageDataItem.tite} title={imageDataItem.title} src={imageDataItem.image} />
+        </div>
+    );
+
 };
 
 const GalleryZoomImages = (galleryImageData) => {
-    for (let row in galleryImageData) {
-        let itemRow = galleryImageData[row]
-        for (let itm in itemRow) {
-            //console.log(itemRow[itm]);
+    let imageDataCollection = rowItemsOnly(galleryImageData);
+    const zoomImg = imageDataCollection.map((imageDataItem, i) => {
+        let activeClass;
+        if (i === 0) {
+            activeClass = 'carousel-item active';
+        } else {
+            activeClass = 'carousel-item';
         }
-    }
-};*/
+        let imgId = `gallery-zoom-img${imageDataItem.img}`;
+        return (
+            <GalleryZoomImage
+                key={imageDataItem.img}
+                imageDataItem={imageDataItem}
+                imgId={imgId}
+                activeClass={activeClass}
+            />
+        );
+    });
+    return zoomImg;
+};
 
-module.exports = { GallerySmallItems };
+module.exports = { GallerySmallItems, GalleryZoomIndicators, GalleryZoomImages };

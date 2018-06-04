@@ -5,8 +5,9 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-29 21:49:50
- * Last modified  : 2018-06-04 17:22:26
+ * Last modified  : 2018-06-05 00:17:04
  */
+
 
 // JQUERY
 import $ from 'script-loader!jquery';
@@ -24,17 +25,9 @@ import './puritym/css/style.css';
 // MOBIRISE ADDITIONAL CSS
 import './mobirise/css/mbr-additional.css';
 
-// JQUERY
-//import $ from 'script-loader!jquery';
-//import jQuery from 'script-loader!jquery';
-//import $ from 'script-loader!./web/assets/jquery/jquery.min';
-
 // THETHER
-// C:\GitHub\HT_embroiders\assets\tether\tether.min.js
-import './tether/tether.min';
+import 'script-loader!./tether/tether.min';
 // BOOTSTRAP
-//import 'popper.js';
-//import 'bootstrap';
 import 'script-loader!./bootstrap/js/bootstrap.min';
 // SMOOTH SCROLLING
 import 'script-loader!./smooth-scroll/smooth-scroll';
@@ -50,5 +43,3 @@ import 'script-loader!./imagesloaded/imagesloaded.pkgd.min';
 import 'script-loader!./puritym/js/script';
 // MOBIRISE GALLERY
 import 'script-loader!./mobirise-gallery/script';
-// Load images
-// import './tempImgLoad';

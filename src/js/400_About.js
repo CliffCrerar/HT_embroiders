@@ -3,11 +3,20 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-04 19:22:10
+ * Last modified  : 2018-06-04 22:07:31
  */
 
 import React from 'react';
-import { GallerySmallItems } from './401_aboutGallery';
+import { GallerySmallItems, GalleryZoomIndicators, GalleryZoomImages } from './401_aboutGallery';
+// Import Images
+import img0 from '../images/temp/photo-3-small.jpg';
+import img1 from '../images/temp/photo-4-small.jpg';
+import img2 from '../images/temp/photo-5-small.jpg';
+import img3 from '../images/temp/photo-7-small.jpg';
+import img4 from '../images/temp/photo-8-small.jpg';
+import img5 from '../images/temp/photo-11-small.jpg';
+import img6 from '../images/temp/photo-12-small.jpg';
+import img7 from '../images/temp/photo-13-small.jpg';
 // About us configuration
 const Header = {
     heading: 'About Us',
@@ -19,44 +28,44 @@ const galleryImageData = {
         {
             img: 0,
             title: 'ImageTitle0',
-            image: require('../images/temp/photo-3-small.jpg')
+            image: img0
         },
         {
             img: 1,
             title: 'ImageTitle1',
-            image: require('../images/temp/photo-4-small.jpg')
+            image: img1
         },
         {
             img: 2,
             title: 'ImageTitle2',
-            image: require('../images/temp/photo-5-small.jpg')
+            image: img2
         },
         {
             img: 3,
             title: 'ImageTitle3',
-            image: require('../images/temp/photo-7-small.jpg')
+            image: img3
         }
     ],
     row2: [
         {
             img: 4,
             title: 'ImageTitle4',
-            image: require('../images/temp/photo-8-small.jpg')
+            image: img4
         },
         {
             img: 5,
             title: 'ImageTitle5',
-            image: require('../images/temp/photo-11-small.jpg')
+            image: img5
         },
         {
             img: 6,
             title: 'ImageTitle6',
-            image: require('../images/temp/photo-12-small.jpg')
+            image: img6
         },
         {
             img: 7,
             title: 'ImageTitle7',
-            image: require('../images/temp/photo-13-small.jpg')
+            image: img7
         }
     ]
 };
@@ -70,7 +79,7 @@ const Footer = {
 const AboutHeading = () => {
     return (
         <div>
-            <div className="mbr-overlay mbr-overlay-additional"></div>
+            <div className="mbr-overlay mbr-overlay-additional-1"></div>
             <div className="container">
                 <h3 className="mbr-section-title display-2">{Header.heading}</h3>
                 <div className="lead">
@@ -94,30 +103,7 @@ const AboutGallery = () => {
 
                 {/*<!-- ROW 2 -->*/}
                 <div className="rowB4">
-                    <div className="mbr-gallery-item">
-                        <a data-toggle="modal" href="#lb-gallery1-6" data-slide-to="4">
-                            <img id="gallery-img5" alt="" title="" />
-                            <span className="icon fa fa-search-plus"></span>
-                        </a>
-                    </div>
-                    <div className="mbr-gallery-item">
-                        <a data-toggle="modal" href="#lb-gallery1-6" data-slide-to="5">
-                            <img id="gallery-img6" alt="" title="" />
-                            <span className="icon fa fa-search-plus"></span>
-                        </a>
-                    </div>
-                    <div className="mbr-gallery-item">
-                        <a data-toggle="modal" href="#lb-gallery1-6" data-slide-to="6">
-                            <img id="gallery-img7" alt="" title="" />
-                            <span className="icon fa fa-search-plus"></span>
-                        </a>
-                    </div>
-                    <div className="mbr-gallery-item">
-                        <a data-toggle="modal" href="#lb-gallery1-6" data-slide-to="7">
-                            <img id="gallery-img8" alt="" title="" />
-                            <span className="icon fa fa-search-plus"></span>
-                        </a>
-                    </div>
+                    {GallerySmallItems(galleryImageData, 'row2')}
                 </div>
                 {/*<!-- /ROW 2 -->*/}
                 <div className="clearfix"></div>
@@ -130,18 +116,13 @@ const AboutGallery = () => {
                     <div className="modal-content">
                         <div className="modal-body">
                             <ol className="carousel-indicators">
-
-                                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" className=" active" data-slide-to="0"></li>
-                                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" data-slide-to="1"></li>
-                                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" data-slide-to="2"></li>
-                                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" data-slide-to="3"></li>
-                                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" data-slide-to="4"></li>
-                                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" data-slide-to="5"></li>
-                                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" data-slide-to="6"></li>
-                                <li data-app-prevent-settings="" data-target="#lb-gallery1-6" data-slide-to="7"></li>
+                                {GalleryZoomIndicators(galleryImageData)}
                             </ol>
                             <div className="carousel-inner">
 
+                                {GalleryZoomImages(galleryImageData)}
+
+                                {/*
                                 <div className="carousel-item active">
                                     <img id="gallery-zoom-img1" alt="" title="" />
                                 </div>
@@ -166,6 +147,7 @@ const AboutGallery = () => {
                                 <div className="carousel-item">
                                     <img id="gallery-zoom-img8" alt="" title="" />
                                 </div>
+                                */}
                             </div>
                             <a className="left carousel-control" role="button" data-slide="prev" href="#lb-gallery1-6">
                                 <span className="icon-prev" aria-hidden="true"></span>

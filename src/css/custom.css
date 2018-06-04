@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-04 18:06:39
+ * Last modified  : 2018-06-04 23:02:34
  */
 
 .container-fluid{
@@ -38,7 +38,23 @@
 }
 
 /* ABOUT SECTION */
-.mbr-overlay-additional{
+.mbr-overlay-additional-1{
     opacity: 0.7;
     background-color: rgb(255, 255, 255);
+}
+
+/* OUR CLIENTS */
+.mbr-overlay-additional-2{
+    background-color: rgb(34, 34, 34); 
+    opacity: 0.5;
+}
+
+/* OUR TEAM */
+.mbr-overlay-additional-3{
+    opacity: 0.5; background-color: rgb(255, 255, 255);
+}
+
+/* LOCATION */
+.mapsIframe {
+    border:0
 }
