@@ -31,11 +31,13 @@
     "webpack-cli": "^2.1.4"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.2",
+    "bootstrap": "^4.1.1",
+    "build": "^0.1.4",
     "bundle-loader": "^0.5.6",
     "clean-webpack-plugin": "^0.1.19",
     "jquery": "^2.2.4",
     "popper.js": "^1.14.3",
+    "run": "^1.4.0",
     "tether": "^1.4.4"
   },
   "repository": {

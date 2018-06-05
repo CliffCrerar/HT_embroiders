@@ -65,7 +65,7 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
         new HTMLwebpackPlugin({
             title: 'HT Embroiders',
-            template: './index.html',
+            template: './src/html/index.html',
             meta: require('./meta.json')
         })
     ],
