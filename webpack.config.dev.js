@@ -9,19 +9,7 @@ module.exports = {
     context: __dirname,
     mode: 'development',
     entry: {
-        libs: './src/lib/lib.js',
-        app: './src/index.jsx'
-        /*
-        jquery: './lib/web/assets/jquery/jquery.min.js',
-        Tether: './lib/tether/tether.min.js',
-        bootstrap: './lib/bootstrap/js/bootstrap.min.js',
-        smooth_scrol: './lib/smooth-scroll/smooth-scroll.js',
-        jarallax: './lib/jarallax/jarallax.js',
-        bsc: './lib/bootstrap-carousel-swipe/bootstrap-carousel-swipe.js',
-        masonry: './lib/masonry/masonry.pkgd.min.js',
-        imageload: './lib/imagesloaded/imagesloaded.pkgd.min.js',
-        purity: './lib/puritym/js/script.js',
-        mobirise_gallery: './lib/mobirise-gallery/script.js'*/
+        app: './src/index.js',
     },
     devtool: 'inline-source-map',
     module: {

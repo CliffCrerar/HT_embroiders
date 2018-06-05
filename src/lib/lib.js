@@ -5,15 +5,13 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-29 21:49:50
- * Last modified  : 2018-06-05 02:43:55
+ * Last modified  : 2018-06-05 03:13:14
  */
 
 
 // JQUERY
 import $ from 'script-loader!jquery';
 import jQuery from 'script-loader!jquery';
-// import fonts
-//import './css/font.css';
 // THETHER
 import './tether/tether.min.css';
 // BOOTSTRAP
@@ -43,3 +41,14 @@ import 'script-loader!./imagesloaded/imagesloaded.pkgd.min';
 import 'script-loader!./puritym/js/script';
 // MOBIRISE GALLERY
 import 'script-loader!./mobirise-gallery/script';
+
+// THETHER
+import '../lib/tether/tether.min.css';
+// BOOTSTRAP
+import '../lib/bootstrap/css/bootstrap.min.css';
+// SOCICONS
+import '../lib/socicon/css/socicon.min.css';
+// PURITY THEME
+import '../lib/puritym/css/style.css';
+// MOBIRISE ADDITIONAL CSS
+import '../lib/mobirise/css/mbr-additional.css';

@@ -3,12 +3,12 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-06-05 01:15:00
+ * Last modified  : 2018-06-05 03:59:41
  */
 
 import React from 'react';
 import Thumbnail from './301_thumbnail.jsx';
-import CarouselItem from './302_carouselItem.jsx';
+//import CarouselItem from './302_carouselItem.jsx';
 // IMPORT IMAGES FOR THUMBNAILS
 import th1 from '../images/temp/feature-bootstrap.png';
 import th2 from '../images/temp/feature-responsive.png';
@@ -19,6 +19,8 @@ import carImg1 from '../images/temp/photo-6.jpg';
 import carImg2 from '../images/temp/photo-9.jpg';
 import carImg3 from '../images/temp/photo-10.jpg';
 import carImg4 from '../images/temp/photo-13.jpg';
+// IMPORT CAROUSEL JSX
+import { carouselImages, carouselButtons } from './302_carouselItem.jsx';
 
 
 /* COMPONENT CONTENT CONFIGURATION */
@@ -89,30 +91,15 @@ const ServiceThumbnails = () => {
     );
 };
 
-const carouselItems = svcThumbnailList.map((listItem, i) => {
-    return (
-        <CarouselItem
-            key={listItem.svcName}
-            svcName={listItem.svcName}
-            svcImage={listItem.svcImage}
-            svcDesc={listItem.svcDesc}
-            correctClass={function (activeClass, nonActiveClass) { if (i === 0) { return activeClass; } else { return nonActiveClass; } }}
-        />
-    );
-});
-
 // CREATES THE CAROUSEL HTML
 const ServiceCarousel = () => {
     return (
         <div>
             <ol className="carousel-indicators">
-                <li data-app-prevent-settings="" data-target="#slider-j" data-slide-to="0" className="active"></li>
-                <li data-app-prevent-settings="" data-target="#slider-j" data-slide-to="1"></li>
-                <li data-app-prevent-settings="" data-target="#slider-j" data-slide-to="2"></li>
-                <li data-app-prevent-settings="" data-target="#slider-j" data-slide-to="3"></li>
+                {carouselButtons(svcThumbnailList)}
             </ol>
             <div className="carousel-inner" role="listbox">
-                {carouselItems}
+                {carouselImages(svcThumbnailList)}
             </div>
             <a data-app-prevent-settings="" className="left carousel-control" role="button" data-slide="prev" href="#slider-j">
                 <span className="icon-prev" aria-hidden="true"></span>
