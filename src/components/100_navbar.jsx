@@ -2,8 +2,8 @@
  * NAVIGATION BAR COMPONENT
  * @summary short description for the file
  * @author Cliff Crerar
- * Created at     : 2018-06-01 19:55:10 
- * Last modified  : 2018-06-02 13:28:01
+ * Created at     : 2018-06-01 19:55:10
+ * Last modified  : 2018-06-05 07:26:29
  */
 
 import React from 'react'; // import react
@@ -23,7 +23,7 @@ const Navbar = () => {
         { heading: 'Contact', link: '#contacts3-e' },
     ];
 
-    // navbar link 
+    // navbar link
     const NavLinkElement = navLinksData.map(linkData => {
         return (
             <li key={linkData.link} className="nav-item">
@@ -33,7 +33,7 @@ const Navbar = () => {
     });
 
     return (
-        <div className="container">
+        <div className="container-fluid">
 
             {/* Mobile view button */}
             <button

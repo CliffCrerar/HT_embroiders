@@ -3,7 +3,7 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-05 02:40:01
+ * Last modified  : 2018-06-05 07:28:32
  */
 
 import React from 'react';
@@ -119,35 +119,7 @@ const AboutGallery = () => {
                                 {GalleryZoomIndicators(galleryImageData)}
                             </ol>
                             <div className="carousel-inner">
-
                                 {GalleryZoomImages(galleryImageData)}
-
-                                {/*
-                                <div className="carousel-item active">
-                                    <img id="gallery-zoom-img1" alt="" title="" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="gallery-zoom-img2" alt="" title="" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="gallery-zoom-img3" alt="" title="" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="gallery-zoom-img4" alt="" title="" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="gallery-zoom-img5" alt="" title="" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="gallery-zoom-img6" alt="" title="" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="gallery-zoom-img7" alt="" title="" />
-                                </div>
-                                <div className="carousel-item">
-                                    <img id="gallery-zoom-img8" alt="" title="" />
-                                </div>
-                                */}
                             </div>
                             <a className="left carousel-control" role="button" data-slide="prev" href="#lb-gallery1-6">
                                 <span className="icon-prev" aria-hidden="true"></span>

@@ -5,12 +5,21 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-04 23:02:34
+ * Last modified  : 2018-06-05 07:25:45
  */
 
-.container-fluid{
+/* BOOSTRAP MODIFIED CSS */
+.container-fluid-1 {
     padding: 0 !important;
-}
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-fluid-1::after {
+    display: table;
+    clear: both;
+    content: "";
+  }
 
 .rowB4 {
     display: -webkit-box;
@@ -21,6 +30,9 @@
     margin-right: -15px;
     margin-left: -15px;
 }
+
+
+ /* GENERAL CSS */
 
 .home-page-title-box{
     margin: 0 !important;
@@ -37,6 +49,11 @@
     width: 30%;
 }
 
+/* NAVBAR */
+.nav-stick-top {
+    position: fixed;
+}
+
 /* ABOUT SECTION */
 .mbr-overlay-additional-1{
     opacity: 0.7;
@@ -45,7 +62,7 @@
 
 /* OUR CLIENTS */
 .mbr-overlay-additional-2{
-    background-color: rgb(34, 34, 34); 
+    background-color: rgb(34, 34, 34);
     opacity: 0.5;
 }
 

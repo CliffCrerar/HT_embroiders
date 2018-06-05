@@ -3,7 +3,7 @@
  * @summary this is the file entry point, loads libraries and renders elements
  * @author Cliff Crerar
  * Created at     : 2018-05-29 21:48:50
- * Last modified  : 2018-06-05 04:04:47
+ * Last modified  : 2018-06-05 07:13:23
  */
 
 // REACT
@@ -11,6 +11,7 @@ import React from 'react'; // React tools
 import ReactDOM from 'react-dom'; // React DOM
 
 // Components
+//import AppFramce from './000_appFrame.jsx';
 import Navbar from './100_navbar.jsx';
 import Homepage from './200_home.jsx';
 import { ServiceHeading, ServiceThumbnails, ServiceCarousel } from './300_services.jsx';
@@ -24,6 +25,7 @@ import ContactDetails from './1000_contact.jsx';
 import PageFooter from './1100_footer.jsx';
 
 // Render components
+//ReactDOM.render(<AppFramce />, document.querySelector('body')); // Application frame
 ReactDOM.render(<Navbar />, document.querySelector('#menu-0')); // Navbar
 ReactDOM.render(<Homepage />, document.querySelector('#header4-1')); // Homepage
 ReactDOM.render(<ServiceHeading />, document.querySelector('#svcHeading')); // Services Heading
