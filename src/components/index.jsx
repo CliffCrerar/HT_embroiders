@@ -3,7 +3,7 @@
  * @summary this is the file entry point, loads libraries and renders elements
  * @author Cliff Crerar
  * Created at     : 2018-05-29 21:48:50
- * Last modified  : 2018-06-05 04:00:40
+ * Last modified  : 2018-06-05 04:04:47
  */
 
 // REACT
@@ -11,17 +11,17 @@ import React from 'react'; // React tools
 import ReactDOM from 'react-dom'; // React DOM
 
 // Components
-import Navbar from './components/100_navbar.jsx';
-import Homepage from './components/200_home.jsx';
-import { ServiceHeading, ServiceThumbnails, ServiceCarousel } from './components/300_services.jsx';
-import { AboutHeading, AboutGallery, AboutFooter } from './components/400_About.jsx';
-import OurClients from './components/500_clients.jsx';
-import SocialLinks from './components/600_social.jsx';
-import OurPromise from './components/700_promise.jsx';
-import { TeamHeading, TeamMembers } from './components/800_team.jsx';
-import { LocationHeading, LocationGoogleMaps } from './components/900_location.jsx';
-import ContactDetails from './components/1000_contact.jsx';
-import PageFooter from './components/1100_footer.jsx';
+import Navbar from './100_navbar.jsx';
+import Homepage from './200_home.jsx';
+import { ServiceHeading, ServiceThumbnails, ServiceCarousel } from './300_services.jsx';
+import { AboutHeading, AboutGallery, AboutFooter } from './400_About.jsx';
+import OurClients from './500_clients.jsx';
+import SocialLinks from './600_social.jsx';
+import OurPromise from './700_promise.jsx';
+import { TeamHeading, TeamMembers } from './800_team.jsx';
+import { LocationHeading, LocationGoogleMaps } from './900_location.jsx';
+import ContactDetails from './1000_contact.jsx';
+import PageFooter from './1100_footer.jsx';
 
 // Render components
 ReactDOM.render(<Navbar />, document.querySelector('#menu-0')); // Navbar
