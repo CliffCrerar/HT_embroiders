@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-05 07:25:45
+ * Last modified  : 2018-06-05 17:48:01
  */
 
 /* BOOSTRAP MODIFIED CSS */
@@ -45,8 +45,18 @@
     font-size: 50vh;
 }
 
+/* EXPERIMENTAL CSS FOR NEW PROTO LOGO */
+.logoBand{
+    background-color: #241E20;
+    border: solid 10px #241E20;
+    width: 100%;
+    margin: 0 !important;
+}
+
 .logohp{
+    position: relative;
     width: 30%;
+    left: 20vw
 }
 
 /* NAVBAR */

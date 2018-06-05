@@ -15,12 +15,12 @@ const Navbar = () => {
     // Navbar links data object
     const navLinksData = [
         { heading: 'Home', link: '#header4-1' },
-        { heading: 'Service', link: '#msg-box1-m' },
+        { heading: 'Service', link: '#svcHeading' },
         { heading: 'About', link: '#content5-7' },
-        { heading: 'Testimonials', link: '#testimonials1-k' },
+        { heading: 'Clients', link: '#testimonials1-k' },
         { heading: 'Team', link: '#msg-box1-h' },
-        { heading: 'Address', link: '#msg-box2-b' },
-        { heading: 'Contact', link: '#contacts3-e' },
+        { heading: 'Contact Us', link: '#msg-box2-b' },
+        //{ heading: 'Contact', link: '#contacts3-e' },
     ];
 
     // navbar link

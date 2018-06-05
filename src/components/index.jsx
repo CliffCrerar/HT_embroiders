@@ -20,9 +20,8 @@ import OurClients from './500_clients.jsx';
 import SocialLinks from './600_social.jsx';
 import OurPromise from './700_promise.jsx';
 import { TeamHeading, TeamMembers } from './800_team.jsx';
-import { LocationHeading, LocationGoogleMaps } from './900_location.jsx';
-import ContactDetails from './1000_contact.jsx';
-import PageFooter from './1100_footer.jsx';
+import { ContactHeading, LocationGoogleMaps, ContactDetails } from './900_location.jsx';
+import PageFooter from './1000_footer.jsx';
 
 // Render components
 //ReactDOM.render(<AppFramce />, document.querySelector('body')); // Application frame
@@ -39,7 +38,7 @@ ReactDOM.render(<SocialLinks />, document.querySelector('#social-buttons2-g')); 
 ReactDOM.render(<OurPromise />, document.querySelector('#msg-box3-i')); // Our promise
 ReactDOM.render(<TeamHeading />, document.querySelector('#msg-box1-h')); // Team heading
 ReactDOM.render(<TeamMembers />, document.querySelector('#content4-2')); // Team Members
-ReactDOM.render(<LocationHeading />, document.querySelector('#msg-box2-b')); // Location heading msg-box2-b
+ReactDOM.render(<ContactHeading />, document.querySelector('#msg-box2-b')); // Location heading msg-box2-b
 ReactDOM.render(<LocationGoogleMaps />, document.querySelector('#map1-d')); // Location google maps map1-d
 ReactDOM.render(<ContactDetails />, document.querySelector('#contacts3-e')); // Contact details
 ReactDOM.render(<PageFooter />, document.querySelector('#footer1-f')); // Page footer

@@ -2,7 +2,7 @@
  * PAGE FOOTER
  * @summary Page footer that shows developers logo
  * @author Cliff Crerar
- * Created at     : 2018-06-04 23:04:24 
+ * Created at     : 2018-06-04 23:04:24
  * Last modified  : 2018-06-05 00:11:05
  */
 
