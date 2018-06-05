@@ -9,7 +9,7 @@
       "additionalSetColors": [
         "#222222"
       ]
-    },
+    },h
     "path": "@PROJECT_PATH@",
     "robotsText": "User-agent: *\nDisallow: /cgi-bin\n\n",
     "robotsSwitcher": "on",

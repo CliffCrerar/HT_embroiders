@@ -7,8 +7,8 @@
  */
 
 import React from 'react';
-import Thumbnail from './301_thumbnail.js';
-import CarouselItem from './302_carouselItem.js';
+import Thumbnail from './301_thumbnail.jsx';
+import CarouselItem from './302_carouselItem.jsx';
 // IMPORT IMAGES FOR THUMBNAILS
 import th1 from '../images/temp/feature-bootstrap.png';
 import th2 from '../images/temp/feature-responsive.png';

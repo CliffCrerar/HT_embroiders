@@ -3,11 +3,11 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-04 22:07:31
+ * Last modified  : 2018-06-05 02:40:01
  */
 
 import React from 'react';
-import { GallerySmallItems, GalleryZoomIndicators, GalleryZoomImages } from './401_aboutGallery';
+import { GallerySmallItems, GalleryZoomIndicators, GalleryZoomImages } from './401_aboutGallery.jsx';
 // Import Images
 import img0 from '../images/temp/photo-3-small.jpg';
 import img1 from '../images/temp/photo-4-small.jpg';
