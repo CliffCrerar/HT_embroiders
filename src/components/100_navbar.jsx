@@ -3,7 +3,7 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10
- * Last modified  : 2018-06-06 07:01:04
+ * Last modified  : 2018-06-06 07:04:13
  */
 
 import React from 'react'; // import react
@@ -46,6 +46,7 @@ const Navbar = () => {
                 <span>
                     <a className="navbar-brand nav-font" href="#">{brandName}</a>
                 </span>
+
                 {/* Navbar links */}
                 <ul className="nav navbar-nav pull-xs-right">
                     {NavLinkElement}
