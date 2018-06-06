@@ -3,7 +3,7 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-05 22:46:24
+ * Last modified  : 2018-06-06 07:00:09
  */
 
 /* IMPORT REACT INTERFACE */
@@ -24,13 +24,12 @@ import './font/Algeria/stylesheet.css';
 // NON REACT ELEMENT IMAGE LOADING
 
 /* HOME PAGE OPTIONS */
-import landingBg from './images/clem-onojeghuo-205193-unsplash.jpg'; // Home page fetch
+//import landingBg from './images/clem-onojeghuo-205193-unsplash.jpg'; // Home page fetch
 //import landingBg from './images/sewingMachineCloseUp1.png'; // Home page fetch
 //import landingBg from './images/sewingMachineCloseUp2.jpg'; // Home page fetch
 //import landingBg from './images/sewingMachineCloseUp3.png'; // Home page fetch
-//import landingBg from './images/alexander-andrews-290794-unsplash.jpg'; // Home page fetch
+import landingBg from './images/alexander-andrews-290794-unsplash.jpg'; // Home page fetch
 //import landingBg from './images/rawpixel-549498-unsplash.jpg'; // Home page fetch
-
 
 $('#header4-1').css('background-image', `url(${landingBg})`); // Home page load
 import aboutBg from './images/temp/photo-3.jpg'; // About page fetch
