@@ -13,13 +13,13 @@
     padding: 0 !important;
     margin-right: auto;
     margin-left: auto;
-  }
+}
 
-  .container-fluid-1::after {
+.container-fluid-1::after {
     display: table;
     clear: both;
     content: "";
-  }
+}
 
 .rowB4 {
     display: -webkit-box;
@@ -30,6 +30,22 @@
     margin-right: -15px;
     margin-left: -15px;
 }
+
+/* BOOTSTRAP 4 ORIGINAL
+.navbar-brand-ext {
+    display: inline-block;
+    padding-top: 0.3125rem;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+  }
+
+  .navbar-brand-ext:hover, .navbar-brand-ext:focus {
+    text-decoration: none;
+  }
+*/
 
  /* GENERAL CSS */
 
@@ -47,23 +63,44 @@ Syncopate
 */
 .nav-stick-top {
     position: fixed;
+    font-family: Pridi;
+    color: white;
 }
 
-.brand-text-box{
-height: 100%;
-width: 100%;
+.nav-inner{
+    display: flex;
+    flex-direction: row;
+
 }
 
-.navbar-brand:hover{text-decoration:none}
-
-.navbar-font{
-    color: white !important;
+.nav-left, .nav-right{
+    width: 50%;
 }
 
-.navbar-brand-ext{
-    padding: 0.5rem !important;
-    display: block !important;
+.nav-left{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15vh;
 }
+
+.nav-left>img {
+    height: 1em;
+}
+
+.nav-left>div{
+    font-size: 0.5em;
+}
+
+.nav-left>h5{
+
+}
+
+.nav-left>div>p{
+    margin:0;
+    line-height: 1.2;
+}
+
 
 /*
      HOME PAGE
