@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-06 06:59:46
+ * Last modified  : 2018-06-06 08:00:49
  */
 
 /* BOOSTRAP MODIFIED CSS */
@@ -49,8 +49,20 @@ Syncopate
     position: fixed;
 }
 
-.nav-font{
-    color: white;
+.brand-text-box{
+height: 100%;
+width: 100%;
+}
+
+.navbar-brand:hover{text-decoration:none}
+
+.navbar-font{
+    color: white !important;
+}
+
+.navbar-brand-ext{
+    padding: 0.5rem !important;
+    display: block !important;
 }
 
 /*
