@@ -1,0 +1,6 @@
+:root{
+    /* HOME PAGE LOGO TEXT SHADOW */
+    --hp-shd-p: 0.04em; /* Shadow positive */
+    --hp-shd-n: calc(var(--hp-shd-p)*-1); /* Shadow negative */
+    --hp-shd-b: calc(var(--hp-shd-p)/2); /* Shaddow blur */
+}

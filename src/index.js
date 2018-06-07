@@ -3,7 +3,7 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-06 23:27:03
+ * Last modified  : 2018-06-07 07:31:41
  */
 
 /* IMPORT REACT INTERFACE */
@@ -15,6 +15,8 @@ import './lib/lib.js';
 /* CUSTOM FILES */
 // import fonts
 import './css/font.css';
+// CUSTOM CSS VARIABLES
+import './css/var.css';
 // CUSTOM CSS
 import './css/custom.css';
 // FONT AWESOME 5

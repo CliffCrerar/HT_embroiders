@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-07 01:13:57
+ * Last modified  : 2018-06-07 07:48:29
  */
 
 /* BOOSTRAP MODIFIED CSS */
@@ -63,14 +63,13 @@ Syncopate
 */
 .nav-stick-top {
     position: fixed;
-    font-family: Pridi;
+    font-family: Domine;
     color: #fffde7;
 }
 
 .nav-inner{
     display: flex;
     flex-direction: row;
-
 }
 
 .nav-left, .nav-right{
@@ -81,10 +80,18 @@ Syncopate
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 25vh;
+    font-size: 5vh;
+}
+
+.brand-display-1{
     position: relative;
     left: 10%;
     transform: translateY(40%);
+}
+
+.brand-display-2{
+    position: absolute;
+    direction:
 }
 
 .nav-left-image>img {
@@ -100,7 +107,11 @@ Syncopate
 .nav-left-text>p{
     margin:0;
     line-height: 1.2;
-    text-shadow: 2px 0 1px #7e57c2, 0 2px 1px #7e57c2, -2px 0 1px #7e57c2, 0 -2px 1px #7e57c2
+    text-shadow:
+        var(--hp-shd-p) 0 var(--hp-shd-b) #7e57c2,
+        0 var(--hp-shd-p) var(--hp-shd-b) #7e57c2,
+        var(--hp-shd-n) 0 var(--hp-shd-b) #7e57c2,
+        0 var(--hp-shd-n) var(--hp-shd-b) #7e57c2
 }
 
 
@@ -156,21 +167,29 @@ Syncopate
     color: #ead5a3;
     font-size: 5vw;
     margin: 0;
-    text-shadow: 0 2px 1px #618366, 0 -2px 1px #618366, -2px 0 1px #618366, 2px 0 1px #618366
+    text-shadow: 0 2px 1px #618366,
+                 0 -2px 1px #618366,
+                -2px 0 1px #618366, 2px 0 1px #618366
 }
 
 /* EXPERIMENTAL CSS FOR EXISTING LOGO 2*/
-.logoBandDemo3{
+.logoBandDemo4{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
     position: absolute;
-    right: 0;
-
-
+    top:50%;
+    transform: translateY(-50%);
 }
+
+.home-bg-logo-cntr{
+    padding-right: 1vw;
+}
+
 .logohp2{
     height: 70vh;
-    position: relative;
-    left: 10%;
-    -webkit-transform-style: preserve-3d; /* Safari 3-8  */    
+    -webkit-transform-style: preserve-3d; /* Safari 3-8  */
     transform-style: preserve-3d;
     opacity: 0.3;
 }
