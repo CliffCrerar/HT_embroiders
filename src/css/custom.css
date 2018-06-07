@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-06 08:00:49
+ * Last modified  : 2018-06-07 01:13:57
  */
 
 /* BOOSTRAP MODIFIED CSS */
@@ -64,7 +64,7 @@ Syncopate
 .nav-stick-top {
     position: fixed;
     font-family: Pridi;
-    color: white;
+    color: #fffde7;
 }
 
 .nav-inner{
@@ -81,24 +81,26 @@ Syncopate
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 15vh;
+    font-size: 25vh;
+    position: relative;
+    left: 10%;
+    transform: translateY(40%);
 }
 
-.nav-left>img {
+.nav-left-image>img {
     height: 1em;
+    display: inherit;
+    padding-right: 10px;
 }
 
-.nav-left>div{
+.nav-left-text{
     font-size: 0.5em;
 }
 
-.nav-left>h5{
-
-}
-
-.nav-left>div>p{
+.nav-left-text>p{
     margin:0;
     line-height: 1.2;
+    text-shadow: 2px 0 1px #7e57c2, 0 2px 1px #7e57c2, -2px 0 1px #7e57c2, 0 -2px 1px #7e57c2
 }
 
 
@@ -158,10 +160,19 @@ Syncopate
 }
 
 /* EXPERIMENTAL CSS FOR EXISTING LOGO 2*/
+.logoBandDemo3{
+    position: absolute;
+    right: 0;
+
+
+}
 .logohp2{
-    float: right !important;
-    height: 11vw;
-    padding: 10px 0 10px 0;
+    height: 70vh;
+    position: relative;
+    left: 10%;
+    -webkit-transform-style: preserve-3d; /* Safari 3-8  */    
+    transform-style: preserve-3d;
+    opacity: 0.3;
 }
 
 /* ABOUT SECTION */

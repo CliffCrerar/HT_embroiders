@@ -3,11 +3,12 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10
- * Last modified  : 2018-06-06 07:58:01
+ * Last modified  : 2018-06-07 00:38:44
  */
 
 import React from 'react'; // import react
-import logoImg from '../images/Logo/logoOrig_1_2_Tone_white_grey.png'; // Navbar brand image
+const imgName = ''
+import logoImg from '../images/Logo/logoOrig_1_2_Tone_purple_beige.png'; // Navbar brand image
 const brandName1 = 'Borduurders'; // Navbar brand name
 const brandName2 = 'Embroiders'; // Navbar brand name
 
@@ -34,12 +35,14 @@ const Navbar = () => {
     return (
         <div className="nav-inner">
             <div className="nav-left">
-                <img src={logoImg} />
-                <div>
+                <div className="nav-left-image">
+                    <img src={logoImg} title="navbar-brand-image" alt="navbar-brand" />
+                </div>
+
+                <div className="nav-left-text">
                     <p>{brandName1}</p>
                     <p>{brandName2}</p>
                 </div>
-                <h5>testing</h5>
             </div>
 
             <div className="nav-right">
