@@ -3,7 +3,7 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10
- * Last modified  : 2018-06-07 07:44:53
+ * Last modified  : 2018-06-07 20:44:48
  */
 
 import React from 'react'; // import react
@@ -27,14 +27,14 @@ const Navbar = () => {
     // navbar link
     const NavLinkElement = navLinksData.map(linkData => {
         return (
-            <li key={linkData.link} className="nav-item">
-                <a className="nav-link navbar-font" href={linkData.link}>{linkData.heading}</a>
+            <li key={linkData.link} className="">
+                <a href={linkData.link}>{linkData.heading}</a>
             </li>
         );
     });
     return (
         <div className="nav-inner">
-            <div className="nav-left brand-display-2">
+            <div className="nav-left-2">
 
                 <div className="nav-left-image">
                     <img src={logoImg} title="navbar-brand-image" alt="navbar-brand" />
@@ -46,10 +46,12 @@ const Navbar = () => {
                 </div>
             </div>
 
-            <div className="nav-right">
-                right
+            <div className="nav-right-2">
+                <ul className="navbar-links">
+                    {NavLinkElement}
+                </ul>
             </div>
-        </div >
+        </div>
     );
 };
 
