@@ -3,4 +3,7 @@
     --hp-shd-p: 0.04em; /* Shadow positive */
     --hp-shd-n: calc(var(--hp-shd-p)*-1); /* Shadow negative */
     --hp-shd-b: calc(var(--hp-shd-p)/2); /* Shaddow blur */
+    --ht-dark: #7e57c2;
+    --ht-light: #fffde7;
+    --ht-grad-1: linear-gradient(15deg, rgba(255,253,231,0.5) 20%, rgba(126,87,194,0.5) 80%);
 }

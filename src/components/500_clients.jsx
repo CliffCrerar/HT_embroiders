@@ -3,7 +3,7 @@
  * @summary THis section is to show who the current clients are of HT embroiders
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:01:32 
- * Last modified  : 2018-06-04 22:09:27
+ * Last modified  : 2018-06-08 19:00:07
  */
 
 import React from 'react';
@@ -18,7 +18,7 @@ const OurClients = () => {
         <div>
             <div className="mbr-overlay mbr-overlay-additional-2"></div>
             <div className="container">
-                <h2 className="mbr-section-title display-3 text-xs-center">Who are our customers / clients?</h2>
+                <h2 className="mbr-section-title display-3 text-xs-center">Clients</h2>
 
                 <div className="row mbr-testimonial-cards">
                     <div className="col-xs-12 col-sm-6 col-md-4">

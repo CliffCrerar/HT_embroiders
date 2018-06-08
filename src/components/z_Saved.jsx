@@ -22,3 +22,7 @@
     data-target="#exCollapsingNavbar2">
     <div className="hamburger-icon"></div>
 </button>
+
+    <div className="nav-needle-img">
+        <img src={needle} />
+    </div>

@@ -3,7 +3,7 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-07 07:31:41
+ * Last modified  : 2018-06-08 18:39:14
  */
 
 /* IMPORT REACT INTERFACE */
@@ -11,6 +11,10 @@ import './components/index.jsx';
 
 /* IMPORT LIBRARIES */
 import './lib/lib.js';
+// FONT AWESOME 5
+import './lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css';
+// FONT ALGERIA
+import './font/Algeria/stylesheet.css';
 
 /* CUSTOM FILES */
 // import fonts
@@ -19,11 +23,11 @@ import './css/font.css';
 import './css/var.css';
 // CUSTOM CSS
 import './css/custom.css';
-// FONT AWESOME 5
-import './lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css';
-// FONT ALGERIA
-import './font/Algeria/stylesheet.css';
-// NON REACT ELEMENT IMAGE LOADING
+// NAVBAR CSS
+import './css/navbar.css';
+import './css/navbar_m.css';
+// SERVICES CSS
+import './css/service.css';
 
 /* HOME PAGE OPTIONS */
 //import landingBg from './images/clem-onojeghuo-205193-unsplash.jpg'; // Home page fetch
@@ -43,4 +47,4 @@ import teamMembersBG from './images/temp/photo-3.jpg';
 $('#content4-2').css('background-image', `url(${teamMembersBG})`);
 
 // CUSTOM JS
-import './js/001_elementfitting';
+import './js/NavChangeScroll';

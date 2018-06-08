@@ -3,12 +3,13 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10
- * Last modified  : 2018-06-07 20:44:48
+ * Last modified  : 2018-06-08 21:47:19
  */
 
 import React from 'react'; // import react
 const imgName = ''
 import logoImg from '../images/Logo/logoOrig_1_2_Tone_purple_beige.png'; // Navbar brand image
+import needle from '../images/needle-image-1.png'; // logo image
 const brandName1 = 'Borduurders'; // Navbar brand name
 const brandName2 = 'Embroiders'; // Navbar brand name
 
@@ -19,7 +20,7 @@ const navLinksData = [
     { heading: 'About', link: '#content5-7' },
     { heading: 'Clients', link: '#testimonials1-k' },
     { heading: 'Team', link: '#msg-box1-h' },
-    { heading: 'Contact Us', link: '#msg-box2-b' },
+    { heading: 'Contact', link: '#msg-box2-b' },
     //{ heading: 'Contact', link: '#contacts3-e' },
 ];
 
@@ -27,30 +28,31 @@ const Navbar = () => {
     // navbar link
     const NavLinkElement = navLinksData.map(linkData => {
         return (
-            <li key={linkData.link} className="">
-                <a href={linkData.link}>{linkData.heading}</a>
-            </li>
+            <a key={linkData.link} href={linkData.link}>{linkData.heading}</a>
         );
     });
     return (
         <div className="nav-inner">
-            <div className="nav-left-2">
 
-                <div className="nav-left-image">
-                    <img src={logoImg} title="navbar-brand-image" alt="navbar-brand" />
-                </div>
+            <div className="nav-left nav-left-1">
 
-                <div className="nav-left-text">
-                    <p>{brandName1}</p>
-                    <p>{brandName2}</p>
+                <div className="nav-left-logo">
+                    <div className="nav-left-image">
+                        <img src={logoImg} title="navbar-brand-image" alt="navbar-brand" />
+                    </div>
+
+                    <div className="nav-left-text">
+                        <p>{brandName1}</p>
+                        <p>{brandName2}</p>
+                    </div>
                 </div>
+                <img className="nav-needle-img nav-needle-img-1" src={needle} />
             </div>
 
-            <div className="nav-right-2">
-                <ul className="navbar-links">
-                    {NavLinkElement}
-                </ul>
+            <div className="nav-right">
+                {NavLinkElement}
             </div>
+
         </div>
     );
 };

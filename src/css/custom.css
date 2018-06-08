@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-07 20:45:24
+ * Last modified  : 2018-06-08 19:03:31
  */
 
 /* BOOSTRAP MODIFIED CSS */
@@ -47,7 +47,10 @@
   }
 */
 
- /* GENERAL CSS */
+/* GENERAL CSS */
+.mbr-section-title{
+    font-family: Rosario !important;
+}
 
 /* AVAILABLE FONTS
 Domine
@@ -56,80 +59,9 @@ Quando*
 Righteous
 Rosario
 Syncopate
+Krona One
+Open Sans Condensed
 */
-
-/*
-    NAVBAR
-*/
-.nav-stick-top {
-    position: fixed;
-    font-family: Domine;
-    color: #fffde7;
-}
-
-.nav-inner{
-    display: flex;
-    flex-direction: row;
-}
-
-.nav-left-2, .nav-right-2{
-    width: 50%;
-}
-
-.nav-left-2{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 5vh;   
-}
-
-.nav-left-1{
-    position: relative;
-    left: 10%;
-    transform: translateY(40%);
-    font-size: 5vh;
-}
-
-.nav-left-image>img {
-    height: 1em;
-    display: inherit;
-    padding-right: 10px;
-}
-
-.nav-left-text>p{
-    font-size: 0.5em;
-    margin:0;
-    line-height: 1.2;
-    text-shadow:
-        var(--hp-shd-p) 0 var(--hp-shd-b) #7e57c2,
-        0 var(--hp-shd-p) var(--hp-shd-b) #7e57c2,
-        var(--hp-shd-n) 0 var(--hp-shd-b) #7e57c2,
-        0 var(--hp-shd-n) var(--hp-shd-b) #7e57c2
-}
-
-.navbar-links{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    list-style-type: none;
-}
-
-.navbar-links>li{
-    text-decoration: none;
-    width: 30%;    
-    text-align: center;
-}
-
-.navbar-links>li:hover{
-    background-color: #7e57c2
-}
-
-.navbar-links>li>a{
-    color: inherit;
-    text-decoration: none;
-    text-decoration-style: none;
-    text-decoration-color: none;
-}
 
 /*
      HOME PAGE
@@ -138,37 +70,6 @@ Syncopate
     margin: 0 !important;
     height: 100%;
     width: 100%;
-}
-
-/* EXPERIMENTAL CSS FOR NEW PROTO LOGO */
-.logoBandDemo1{
-    background-color: #241E20;
-    border: solid 10px #241E20;
-    width: 100%;
-    margin: 0 !important;
-}
-
-/* EXPERIMENTAL CSS FOR NEW PROTO LOGO */
-.logoBandDemo2{
-    width: 100%;
-    background-color: rgba(36, 30, 32, 0.9);
-}
-.logo-column{
-    position: relative;
-    top:50% !important;
-}
-
-/* EXPERIMENTAL CSS FOR NEW PROTO LOGO 2*/
-.logoBandDemo3{
-    width: 80%;
-}
-
-/* EXPERIMENTAL CSS FOR NEW LOGO */
-.logohp{
-    position: relative;
-    width: 30%;
-    left: 20vw;
-    padding: 10px 0 10px 0;
 }
 
 /* EXPERIMENTAL CSS FOR EXISTING LOGO 1*/
@@ -204,10 +105,11 @@ Syncopate
 }
 
 .logohp2{
-    height: 70vh;
+    height: 80vh;
     -webkit-transform-style: preserve-3d; /* Safari 3-8  */
     transform-style: preserve-3d;
     opacity: 0.3;
+    transform: rotate(5deg)
 }
 
 /* ABOUT SECTION */

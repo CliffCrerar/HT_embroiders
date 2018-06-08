@@ -1,0 +1,24 @@
+/**
+ * SERVICES SECTION CSS
+ * @summary Ser
+ * @author Cliff Crerar
+ * Created at     : 2018-06-08 18:36:23 
+ * Last modified  : 2018-06-08 19:06:19
+ */
+
+  /* AVAILABLE FONTS
+Domine
+Pridi*
+Quando*
+Righteous
+Rosario
+Syncopate
+Krona One
+Open Sans Condensed
+Raleway
+*/
+
+.mbr-service-heading{
+    background-color: var(--ht-dark) !important;
+    color: var(--ht-light);
+}
