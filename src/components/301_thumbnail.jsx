@@ -10,7 +10,7 @@ import React from 'react';
 
 const ServiceThumbnail = ({ svcName, svcThumbnail }) => {
     return (
-        <div className="col-sm-6 col-md-3">
+        <div className="svc-thumbnail col-sm-6 col-md-3">
             <div className="card cart-block">
                 <div>
                     <img id="card-img-top1" className="card-img-top" src={svcThumbnail} />

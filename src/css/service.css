@@ -3,7 +3,7 @@
  * @summary Ser
  * @author Cliff Crerar
  * Created at     : 2018-06-08 18:36:23 
- * Last modified  : 2018-06-08 19:06:19
+ * Last modified  : 2018-06-08 22:10:37
  */
 
   /* AVAILABLE FONTS
@@ -21,4 +21,25 @@ Raleway
 .mbr-service-heading{
     background-color: var(--ht-dark) !important;
     color: var(--ht-light);
+}
+
+.mbr-service-thumbnails{
+    background: rgb(255,248,171);
+    background: 
+        linear-gradient(
+            180deg, 
+            rgba(255,248,171,1) 30%, 
+            rgba(230,255,196,1) 70%);
+}
+
+.svc-thumbnail>div{
+    background: 
+    linear-gradient(
+        360deg, 
+        rgba(255,248,171,1) 30%, 
+        rgba(230,255,196,1) 70%);
+}
+
+.svc-thumbnail>div>.card-block{
+    background-color: transparent !important;
 }

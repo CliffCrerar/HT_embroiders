@@ -3,7 +3,7 @@
  * @summary CSS for navigation bar
  * @author Cliff Crerar
  * Created at     : 2018-06-08 17:10:24 
- * Last modified  : 2018-06-08 21:53:28
+ * Last modified  : 2018-06-08 22:00:06
  */
 
  /* AVAILABLE FONTS
@@ -28,6 +28,7 @@ Raleway
     position: fixed;
     font-family: Righteous;
     color: #fffde7;
+    border-radius: 0;
 }
 
 .nav-inner{
