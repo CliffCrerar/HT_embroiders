@@ -15,8 +15,8 @@ const ServiceThumbnail = ({ svcName, svcThumbnail }) => {
                 <div>
                     <img id="card-img-top1" className="card-img-top" src={svcThumbnail} />
                 </div>
-                <div className="card-block">
-                    <h4 className="card-title text-xs-center">{svcName}</h4>
+                <div className="svc-card-block card-block">
+                    <h4 className="svc-card-title card-title text-xs-center">{svcName}</h4>
                 </div>
             </div>
         </div>

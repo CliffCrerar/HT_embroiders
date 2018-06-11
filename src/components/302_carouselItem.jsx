@@ -3,7 +3,7 @@
  * @summary This file returns a single carousel item
  * @author Cliff Crerar
  * Created at     : 2018-06-04 16:29:00
- * Last modified  : 2018-06-05 03:59:08
+ * Last modified  : 2018-06-09 16:38:02
  */
 
 import React from 'react';
@@ -19,10 +19,10 @@ const CarouselItem = ({ svcName, svcImage, svcDesc, idx }) => {
     return (
         <div id={carouselId} className={activeClass} style={{ "backgroundImage": `url(${svcImage})` }} >
             <div className="mbr-table-cell">
-                <div className=" container">
+                <div className="container">
                     <div className="row">
-                        <div className="col-md-8 col-md-offset-1">
-                            <h2 className="mbr-section-title display-1">{svcName}</h2>
+                        <div className="svc-car-title-desc col-md-10 col-md-offset-1">
+                            <h2 className="svc-car-title mbr-section-title display-1">{svcName}</h2>
                             <p className="lead text-justify">{svcDesc}</p>
                         </div>
                     </div>

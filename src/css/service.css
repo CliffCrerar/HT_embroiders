@@ -3,7 +3,7 @@
  * @summary Ser
  * @author Cliff Crerar
  * Created at     : 2018-06-08 18:36:23 
- * Last modified  : 2018-06-08 22:10:37
+ * Last modified  : 2018-06-09 20:30:10
  */
 
   /* AVAILABLE FONTS
@@ -21,25 +21,61 @@ Raleway
 .mbr-service-heading{
     background-color: var(--ht-dark) !important;
     color: var(--ht-light);
+    border-top: var(--section-border)
 }
 
 .mbr-service-thumbnails{
-    background: rgb(255,248,171);
+    background: var(--ht-light);
     background: 
         linear-gradient(
             180deg, 
-            rgba(255,248,171,1) 30%, 
-            rgba(230,255,196,1) 70%);
+            var(--ht-light) 30%, 
+            var(--ht-green) 70%);
+    border-top: var(--section-border)
 }
+
+/*rgba(230,255,196,1);*/
 
 .svc-thumbnail>div{
-    background: 
+    border: 7px solid black;
+    border-radius: 20px;
+    background:
     linear-gradient(
         360deg, 
-        rgba(255,248,171,1) 30%, 
-        rgba(230,255,196,1) 70%);
+        var(--ht-light) 30%, 
+        var(--ht-green) 70%);
 }
 
-.svc-thumbnail>div>.card-block{
-    background-color: transparent !important;
+.svc-card-block{
+    background: transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px; 
 }
+
+.svc-card-title{
+    font-family: Righteous;
+}
+
+.svc-carousel{
+    border-top: var(--section-border)
+}
+
+.svc-car-title-desc{
+    color: black;
+    border-width: 1vh;
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    background: var(--ht-green-o);
+    padding: 2vw;
+}
+
+.svc-car-title{
+    font-family: Syncopate;
+   /* text-shadow: 1px 0 1px white, 0 1px 1px white, -1px 0 1px white, 0 -1px 1px white;*/
+}
+
+/*
+background: rgb(126,87,194);
+background: linear-gradient(142deg, rgba(126,87,194,1) 15%, rgba(255,253,231,1) 85%);
+*/

@@ -3,7 +3,7 @@
  * @summary this is the file entry point, loads libraries and renders elements
  * @author Cliff Crerar
  * Created at     : 2018-05-29 21:48:50
- * Last modified  : 2018-06-05 23:14:01
+ * Last modified  : 2018-06-09 21:29:01
  */
 
 // REACT
@@ -15,8 +15,8 @@ import ReactDOM from 'react-dom'; // React DOM
 import Navbar from './100_navbar.jsx';
 import Homepage from './200_home.jsx';
 import { ServiceHeading, ServiceThumbnails, ServiceCarousel } from './300_services.jsx';
-import { AboutHeading, AboutGallery, AboutFooter } from './400_About.jsx';
-import OurClients from './500_clients.jsx';
+import { AboutHeading, AboutGallery, GalleryHeading } from './400_about.jsx';
+import { ClientsHeading, OurClients } from './500_clients.jsx';
 import SocialLinks from './600_social.jsx';
 import OurPromise from './700_promise.jsx';
 import { TeamHeading, TeamMembers } from './800_team.jsx';
@@ -31,8 +31,10 @@ ReactDOM.render(<ServiceHeading />, document.querySelector('#svcHeading')); // S
 ReactDOM.render(<ServiceThumbnails />, document.querySelector('#svcThumbnails')); // Services Heading
 ReactDOM.render(<ServiceCarousel />, document.querySelector('#slider-j')); // Services carousel
 ReactDOM.render(<AboutHeading />, document.querySelector('#content5-7')); // About heading
+ReactDOM.render(<GalleryHeading />, document.querySelector('#msg-box1-m-1')); // Gallery Heading
 ReactDOM.render(<AboutGallery />, document.querySelector('#gallery1-6')); // ABOUT US GALLERY document
-ReactDOM.render(<AboutFooter />, document.querySelector('#content1-5')); // About Footer
+//ReactDOM.render(<AboutFooter />, document.querySelector('#content1-5')); // About Footer
+ReactDOM.render(<ClientsHeading />, document.querySelector('#msg-box1-m-2')); // Clients heading
 ReactDOM.render(<OurClients />, document.querySelector('#testimonials1-k')); // Our Clients
 ReactDOM.render(<SocialLinks />, document.querySelector('#social-buttons2-g')); // Social Links
 ReactDOM.render(<OurPromise />, document.querySelector('#msg-box3-i')); // Our promise

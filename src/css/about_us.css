@@ -1,0 +1,60 @@
+/**
+ * ABOUT US CSS
+ * @summary Css for the about us section
+ * @author Cliff Crerar
+ * Created at     : 2018-06-09 17:34:02 
+ * Last modified  : 2018-06-09 22:32:03
+ */
+
+.abt-heading{
+    border-top: var(--section-border);
+}
+
+.abt-gallery{
+    border-top: var(--section-border);
+}
+
+.mbr-overlay-additional-abt{
+    background-color: var(--ht-dark);
+    opacity: 0.1;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0; 
+}
+
+.abt-text-content{
+    background: linear-gradient(180deg, var(--ht-dark-o)25%, var(--ht-light-o) 40%);
+    border: 5px solid black;
+    border-radius: 25px;
+}
+
+.abt-section-title{
+    color: var(--ht-light)
+}
+
+.abt-galley-header {
+    border-top: var(--section-border);
+    background: rgb(255,253,231);
+    background: radial-gradient(circle, var(--ht-light) 0%, var(--ht-green) 60%, var(--ht-blue) 95%);
+    
+}
+
+.abt-gallery-heading-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    font-size: 6vh;
+}
+
+.abt-gallery-heading-group>h2{
+    font-family: Alex Brush !important;
+    color: var(--ht-dark);
+    font-size: 2em;
+}
+
+.abt-gallery-heading-group>img{
+    height: 2.5em;
+}

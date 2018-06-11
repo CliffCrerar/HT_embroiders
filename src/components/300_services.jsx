@@ -3,29 +3,29 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-06-05 03:59:41
+ * Last modified  : 2018-06-09 21:11:21
  */
 
 import React from 'react';
 import Thumbnail from './301_thumbnail.jsx';
 //import CarouselItem from './302_carouselItem.jsx';
 // IMPORT IMAGES FOR THUMBNAILS
-import th1 from '../images/temp/feature-bootstrap.png';
-import th2 from '../images/temp/feature-responsive.png';
-import th3 from '../images/temp/feature-google-fonts.png';
-import th4 from '../images/temp/feature-websites.png';
+import th1 from '../images/sick_screen.png';
+import th2 from '../images/videoflex.png';
+import th3 from '../images/submlimination_mug_1.png';
+import th4 from '../images/clothing_3.png';
 // IMPORT IMAGES FOR CAROUSEL
-import carImg1 from '../images/temp/photo-6.jpg';
-import carImg2 from '../images/temp/photo-9.jpg';
-import carImg3 from '../images/temp/photo-10.jpg';
-import carImg4 from '../images/temp/photo-13.jpg';
+import carImg1 from '../images/silkscreen-printing-1.png';
+import carImg2 from '../images/videoflex-printing-3.jpg';
+import carImg3 from '../images/sublimination-printing-4.jpg';
+import carImg4 from '../images/artificial-photography-119298-unsplash.jpg';
 // IMPORT CAROUSEL JSX
 import { carouselImages, carouselButtons } from './302_carouselItem.jsx';
 
 
 /* COMPONENT CONTENT CONFIGURATION */
 // 1. Heading
-const heading = 'Our Service';
+const heading = 'OUR SERVICE';
 // 2. Thumbnails and Carousel
 const svcThumbnailList = [
     {

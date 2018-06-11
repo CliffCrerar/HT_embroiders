@@ -12,7 +12,7 @@ import React from 'react';
 
 const OurPromise = () => {
     return (
-        <div className="container">
+        <div className="container clients-promise">
             <div className="row text-xs-center">
                 <div className="col-sm-8 col-sm-offset-2">
                     <h2 className="mbr-section-title display-3">Our promise</h2>

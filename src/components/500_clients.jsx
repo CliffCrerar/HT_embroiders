@@ -3,22 +3,40 @@
  * @summary THis section is to show who the current clients are of HT embroiders
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:01:32 
- * Last modified  : 2018-06-08 19:00:07
+ * Last modified  : 2018-06-09 21:39:12
  */
 
 import React from 'react';
+
+// CLIENT HEADING
+const clientsHeading = 'CLIENTS';
 
 // Section configuration
 const clientDisplayData = [
     { clientName: 'Client1', Logo: '' }
 ];
 
+// CLIENTS HEADER
+const ClientsHeading = () => {
+    return (
+        <div className="container">
+            <div className="row">
+                <div>
+                    <div className="col-sm-8">
+                        <h2 className="mbr-section-title h1">{clientsHeading}</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 const OurClients = () => {
     return (
         <div>
             <div className="mbr-overlay mbr-overlay-additional-2"></div>
             <div className="container">
-                <h2 className="mbr-section-title display-3 text-xs-center">Clients</h2>
+                {/*<h2 className="mbr-section-title display-3 text-xs-center">Clients</h2>*/}
 
                 <div className="row mbr-testimonial-cards">
                     <div className="col-xs-12 col-sm-6 col-md-4">
@@ -68,4 +86,4 @@ const OurClients = () => {
     );
 };
 
-export default OurClients;
+module.exports = { ClientsHeading, OurClients };

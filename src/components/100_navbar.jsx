@@ -3,12 +3,12 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10
- * Last modified  : 2018-06-08 21:47:19
+ * Last modified  : 2018-06-09 19:07:39
  */
 
 import React from 'react'; // import react
 const imgName = ''
-import logoImg from '../images/Logo/logoOrig_1_2_Tone_purple_beige.png'; // Navbar brand image
+import logoImg from '../images/ht_nav_logo.png'; // Navbar brand image
 import needle from '../images/needle-image-1.png'; // logo image
 const brandName1 = 'Borduurders'; // Navbar brand name
 const brandName2 = 'Embroiders'; // Navbar brand name
@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <div className="nav-inner">
 
-            <div className="nav-left nav-left-1">
+            <div className="nav-left nav-left-2">
 
                 <div className="nav-left-logo">
                     <div className="nav-left-image">
@@ -46,7 +46,7 @@ const Navbar = () => {
                         <p>{brandName2}</p>
                     </div>
                 </div>
-                <img className="nav-needle-img nav-needle-img-1" src={needle} />
+                <img className="nav-needle-img nav-needle-img-2" src={needle} />
             </div>
 
             <div className="nav-right">

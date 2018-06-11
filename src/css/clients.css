@@ -1,0 +1,22 @@
+/**
+ * CLIENTS CSS
+ * @summary CSS for the clients sections of the page
+ * @author Cliff Crerar
+ * Created at     : 2018-06-09 21:36:16 
+ * Last modified  : 2018-06-09 22:02:43
+ */
+
+.clients-header {
+    border-top: var(--section-border);
+    background: var(--ht-blue);
+    color: var(--ht-light);
+}
+
+.clients-content{
+    border-top: var(--section-border)
+}
+
+.clients-promise{
+    border: 5px solid black;
+    background-color: rgba(255, 255, 255, 0.514)
+}

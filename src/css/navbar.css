@@ -3,7 +3,7 @@
  * @summary CSS for navigation bar
  * @author Cliff Crerar
  * Created at     : 2018-06-08 17:10:24 
- * Last modified  : 2018-06-08 22:00:06
+ * Last modified  : 2018-06-09 15:22:49
  */
 
  /* AVAILABLE FONTS
@@ -102,8 +102,9 @@ Raleway
     height: inherit;
     top:50%;
     transform: translateY(-50%);
-    right:10%;
+    right:0%;
     z-index: -1;
+    opacity: 0.5;
 }
 
 .nav-right{

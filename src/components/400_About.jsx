@@ -3,25 +3,29 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-05 07:28:32
+ * Last modified  : 2018-06-09 22:38:50
  */
 
 import React from 'react';
 import { GallerySmallItems, GalleryZoomIndicators, GalleryZoomImages } from './401_aboutGallery.jsx';
 // Import Images
-import img0 from '../images/temp/photo-3-small.jpg';
-import img1 from '../images/temp/photo-4-small.jpg';
-import img2 from '../images/temp/photo-5-small.jpg';
-import img3 from '../images/temp/photo-7-small.jpg';
-import img4 from '../images/temp/photo-8-small.jpg';
-import img5 from '../images/temp/photo-11-small.jpg';
-import img6 from '../images/temp/photo-12-small.jpg';
-import img7 from '../images/temp/photo-13-small.jpg';
+import img0 from '../images/gallery-1.jpg';
+import img1 from '../images/gallery-2.jpg';
+import img2 from '../images/gallery-3.jpg';
+import img3 from '../images/gallery-4.jpg';
+import img4 from '../images/gallery-5.jpg';
+import img5 from '../images/gallery-6.jpg';
+import img6 from '../images/gallery-7.jpg';
+import img7 from '../images/gallery-8.jpg';
 // About us configuration
 const Header = {
     heading: 'About Us',
     paragraph: 'Lorem ipsum dolor sit amet, alienum omittantur cu qui, nisl mediocrem sed an. Ne pri admodum dolores. Usu ad option fierent, dicam dicunt malorum his ne, eum in molestie facilisis maiestatis. Doming aliquando sed eu, aeque aliquip est an. Tota dicunt qui in. Sea affert partem platonem at. Modo pericula ad vis. Tamquam civibus eu vix. Te eos inani argumentum, cum eleifend perpetua ut. Decore euismod no ius. Ne vel vide assum contentiones, augue laudem periculis id eum, ad se'
 };
+
+const galleryHeader = 'Gallery';
+import gallerHeaderImg from '../images/needleThreading-1.png';
+
 
 const galleryImageData = {
     row1: [
@@ -70,27 +74,38 @@ const galleryImageData = {
     ]
 };
 
-
-const Footer = {
-    paragraph: 'Lorem ipsum dolor sit amet, falli saperet probatus ut ius, ei mel inani aperiam. Id sed mentitum deseruisse, ea vix cibo posse aliquip. Primis expetenda reprimique ad sea, at vis.'
-};
-
 // HEADING
 const AboutHeading = () => {
     return (
         <div>
-            <div className="mbr-overlay mbr-overlay-additional-1"></div>
-            <div className="container">
-                <h3 className="mbr-section-title display-2">{Header.heading}</h3>
+            <div className="mbr-overlay-additional-abt"></div>
+            <div className="container abt-text-content">
+                <h3 className="mbr-section-title abt-section-title display-2">{Header.heading}</h3>
                 <div className="lead">
                     <p className="text-justify">{Header.paragraph}</p>
                 </div>
             </div>
-        </div >
+        </div>
     );
 };
 
-// GALLERRY
+// GALLERY HEADER
+const GalleryHeading = () => {
+    return (
+        <div className="container">
+            <div className="row">
+                <div>
+                    <div className="col-sm-12 abt-gallery-heading-group">
+                        <h2 className="mbr-section-title h1">{galleryHeader}</h2>
+                        <img src={gallerHeaderImg} title="needle-tread" alt="needle-tread" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
+// GALLERY
 const AboutGallery = () => {
     return (
         <div id="gallery-Lightbox">
@@ -118,13 +133,16 @@ const AboutGallery = () => {
                             <ol className="carousel-indicators">
                                 {GalleryZoomIndicators(galleryImageData)}
                             </ol>
+
                             <div className="carousel-inner">
                                 {GalleryZoomImages(galleryImageData)}
                             </div>
+
                             <a className="left carousel-control" role="button" data-slide="prev" href="#lb-gallery1-6">
                                 <span className="icon-prev" aria-hidden="true"></span>
                                 <span className="sr-only">Previous</span>
                             </a>
+
                             <a className="right carousel-control" role="button" data-slide="next" href="#lb-gallery1-6">
                                 <span className="icon-next" aria-hidden="true"></span>
                                 <span className="sr-only">Next</span>
@@ -139,21 +157,7 @@ const AboutGallery = () => {
                 </div>
             </div>
         </div>
-
     );
 };
 
-// FOOTER
-const AboutFooter = () => {
-    return (
-        <div className="container">
-            <div className="row">
-                <div className="col-md-8 col-md-offset-2 lead">
-                    <p className="text-justify">{Footer.paragraph}</p>
-                </div>
-            </div>
-        </div>
-    );
-};
-
-module.exports = { AboutHeading, AboutGallery, AboutFooter };
+module.exports = { AboutHeading, AboutGallery, GalleryHeading };

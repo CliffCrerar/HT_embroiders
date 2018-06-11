@@ -3,7 +3,14 @@
     --hp-shd-p: 0.04em; /* Shadow positive */
     --hp-shd-n: calc(var(--hp-shd-p)*-1); /* Shadow negative */
     --hp-shd-b: calc(var(--hp-shd-p)/2); /* Shaddow blur */
-    --ht-dark: #7e57c2;
+    --ht-dark: #c00079;
+    --ht-dark-o: rgb(192,0,121,0.5);
     --ht-light: #fffde7;
+    --ht-light-o: rgb(255,253,231,0.5);
+    --ht-blue: #0085d7;
+    --ht-blue-o: rgb(0,133,215,0.5);
+    --ht-green: #87efba;
+    --ht-green-o: rgb(135,239,186,0.5);
     --ht-grad-1: linear-gradient(15deg, rgba(255,253,231,0.5) 20%, rgba(126,87,194,0.5) 80%);
+    --section-border: 1.5vh solid black;
 }
