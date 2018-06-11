@@ -8,16 +8,8 @@
 
 import React from 'react';
 
-// CLIENT LOGO
-import ascuLogo from '../images/ascu_logo.png';
-
 // CLIENT HEADING
 const clientsHeading = 'CLIENTS';
-
-// Section configuration
-const clientDisplayData = [
-    { clientName: 'Client1', Logo: '' }
-];
 
 // CLIENTS HEADER
 const ClientsHeading = () => {
@@ -34,58 +26,90 @@ const ClientsHeading = () => {
     );
 };
 
+// Client Card
+const ClientCard = (props) => {
+    return (
+        <div className="col-xs-12 col-sm-6 col-md-4">
+            <a className="client-card-anchor" href={props.clientURL} target="_blank">
+                <div className="card client-card">
+                    <div className="card-header client-card-header">
+                        <div>{props.clientName}</div>
+                    </div>
+                    <div className="card-block client-card-bottom">
+                        <div>
+                            <img src={props.clientLogo} title={props.clientAcro} alt={props.clientAcro} />
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    );
+};
+
 const OurClients = () => {
+
+    const ClientData = [
+        {
+            ClientName: 'Anti Crime Security Unit',
+            ClientURL: 'http://acsu.co.za/',
+            ClientLogo: require('../images/ascu_logo.png'),
+            ClientAcro: 'ACSU'
+        },
+        {
+            ClientName: 'Topline Centre',
+            ClientURL: 'http://www.goveza.com/ermelo/directory/topline-centre/',
+            ClientLogo: '',
+            ClientAcro: 'TLC'
+        },
+        {
+            ClientName: 'Ntabeleng Bbm',
+            ClientURL: 'https://www.facebook.com/groups/504107729715197/about/',
+            ClientLogo: '',
+            ClientAcro: 'Ntabeleng Bbm'
+        },
+        {
+            ClientName: 'Ford Ermelo',
+            ClientURL: 'http://www.24motors.co.za/WebSites/24motors/fordsite.nsf/pgIndex',
+            ClientLogo: '',
+            ClientAcro: '24-Motors'
+        },
+        {
+            ClientName: 'Aeon Tool Hire',
+            ClientURL: 'http://www.aeontoolhire.co.za/index.php',
+            ClientLogo: '',
+            ClientAcro: 'Aeon'
+        },
+        {
+            ClientName: 'Brakecore Supply co.',
+            ClientURL: 'http://brakecore.co.za/',
+            ClientLogo: '',
+            ClientAcro: 'BSC'
+        }
+    ];
+
+    // Populate Client Card
+    const populateCards = (Data) => {
+        const populate = Data.map(data => {
+            return (
+                <ClientCard
+                    key={data.ClientAcro}
+                    clientName={data.ClientName}
+                    clientLogo={data.ClientLogo}
+                    clientURL={data.ClientURL}
+                    clientAcro={data.ClientAcro}
+                />
+            );
+        });
+        return populate;
+    };
+
     return (
         <div>
             <div className="mbr-overlay mbr-overlay-additional-2"></div>
             <div className="container">
                 {/*<h2 className="mbr-section-title display-3 text-xs-center">Clients</h2>*/}
-
                 <div className="row mbr-testimonial-cards">
-                    <div className="col-xs-12 col-sm-6 col-md-4">
-                        <a className="client-card-anchor">
-                            <div className="card client-card">
-                                <div className="card-header client-card-header">
-                                    <div>Anti Crime Security Unit</div>
-                                </div>
-                                <div className="card-block client-card-bottom">
-                                    <div>
-                                        <img src={ascuLogo} title="ASCU" alt="ASCU" />
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <div className="col-xs-12 col-sm-6 col-md-4">
-                        <div className="card">
-                            <div className="card-block">
-                                <em>“First of all hands off to you guys for your effort and nice, super tool. Good work mobirise
-                                    team. We are expecting the new version soon with advance functionality with full
-                                    bootstrap design. Great effort and super UI experience with easy drag &amp; drop
-                                with no time design bootstrap builder in present web design world.”</em>
-                            </div>
-                            <div className="card-footer text-muted">
-                                <div>SUFFIAN A.</div>
-                                <small>User</small>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="col-xs-12 col-sm-6 col-md-4">
-                        <div className="card">
-                            <div className="card-block">
-                                <em>“At first view, looks like a nice innovative tool, i like the great focus and time that
-                                    was given to the responsive design, i also like the simple and clear drag and drop
-                                    features. Give me more control over the object's properties and ill be using this
-                                tool for more serious projects. Regards.”</em>
-                            </div>
-                            <div className="card-footer text-muted">
-                                <div>JHOLLMAN C.</div>
-                                <small>User</small>
-                            </div>
-                        </div>
-                    </div>
+                    {populateCards(ClientData)}
                 </div>
             </div>
         </div>

@@ -3,7 +3,7 @@
  * @summary CSS for the clients sections of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-09 21:36:16
- * Last modified  : 2018-06-11 07:21:24
+ * Last modified  : 2018-06-11 07:27:59
  */
 
 .clients-header {
@@ -22,9 +22,12 @@
 }
 
 .client-card-anchor{
+    position: relative;
     color: var(--ht-light);
     text-decoration: none;
+    z-index: 2 !important;
 }
+
 .client-card-anchor:hover{
     color: var(--ht-light);
     text-decoration: none;
@@ -38,7 +41,11 @@
 }
 
 .client-card:hover{
-    transform: scale(1.2) !important
+    transform: scale(1.2) !important;
+    transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -webkit-transition: all .2s ease-in-out;
 }
 
 .client-card-header{
@@ -49,7 +56,6 @@
 }
 
 .client-card-header>div{
-
     text-decoration-style: none;
     text-decoration-color: none;
 }
