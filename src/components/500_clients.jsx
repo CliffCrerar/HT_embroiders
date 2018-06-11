@@ -2,11 +2,14 @@
  * CLIENTS
  * @summary THis section is to show who the current clients are of HT embroiders
  * @author Cliff Crerar
- * Created at     : 2018-06-04 22:01:32 
- * Last modified  : 2018-06-09 21:39:12
+ * Created at     : 2018-06-04 22:01:32
+ * Last modified  : 2018-06-11 07:12:18
  */
 
 import React from 'react';
+
+// CLIENT LOGO
+import ascuLogo from '../images/ascu_logo.png';
 
 // CLIENT HEADING
 const clientsHeading = 'CLIENTS';
@@ -40,18 +43,20 @@ const OurClients = () => {
 
                 <div className="row mbr-testimonial-cards">
                     <div className="col-xs-12 col-sm-6 col-md-4">
-                        <div className="card">
-                            <div className="card-footer text-muted">
-                                <div>ABANOUB S.</div>
-                                <small>User</small>
+                        <a className="client-card-anchor">
+                            <div className="card client-card">
+                                <div className="card-header client-card-header">
+                                    <div>Anti Crime Security Unit</div>
+                                </div>
+                                <div className="card-block client-card-bottom">
+                                    <div>
+                                        <img src={ascuLogo} title="ASCU" alt="ASCU" />
+                                    </div>
+                                </div>
                             </div>
-                            <div className="card-block">
-                                <em>“its really very amazing app that makes me finish html page in 3 minutes ( that's usually
-                                    takes more than 1 hours at least from me if i did it from scratch). i hope to have
-                                very big library and plugins for this APP thanks again for your nice application”</em>
-                            </div>
-                        </div>
+                        </a>
                     </div>
+
                     <div className="col-xs-12 col-sm-6 col-md-4">
                         <div className="card">
                             <div className="card-block">
@@ -66,6 +71,7 @@ const OurClients = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className="col-xs-12 col-sm-6 col-md-4">
                         <div className="card">
                             <div className="card-block">
