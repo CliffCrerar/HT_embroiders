@@ -3,7 +3,7 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-09 21:57:20
+ * Last modified  : 2018-06-11 20:54:04
  */
 
 /* IMPORT REACT INTERFACE */
@@ -44,7 +44,7 @@ import landingBg from './images/alexander-andrews-290794-unsplash.jpg'; // Home 
 //import landingBg from './images/rawpixel-549498-unsplash.jpg'; // Home page fetch
 
 $('#header4-1').css('background-image', `url(${landingBg})`); // Home page load
-import aboutBg from './images/aboutus_paralax.jpg'; // About page fetch
+import aboutBg from './images/vishal-banik-535458-unsplash.jpg'; // About page fetch
 $('#content5-7').css('background-image', `url(${aboutBg})`); // About page load
 import clientsBg from './images/prince-abid-640396-unsplash.jpg';
 $('#testimonials1-k').css('background-image', `url(${clientsBg})`);

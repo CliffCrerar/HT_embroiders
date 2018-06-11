@@ -32,10 +32,10 @@ const ClientCard = (props) => {
         <div className="col-xs-12 col-sm-6 col-md-4">
             <a className="client-card-anchor" href={props.clientURL} target="_blank">
                 <div className="card client-card">
-                    <div className="card-header client-card-header">
+                    {/*<div className="card-header client-card-header">
                         <div>{props.clientName}</div>
-                    </div>
-                    <div className="card-block client-card-bottom">
+                    </div>*/}
+                    <div className={`card-block client-card-bottom ${props.specialClass1}`}>
                         <div>
                             <img src={props.clientLogo} title={props.clientAcro} alt={props.clientAcro} />
                         </div>
@@ -52,38 +52,44 @@ const OurClients = () => {
         {
             ClientName: 'Anti Crime Security Unit',
             ClientURL: 'http://acsu.co.za/',
-            ClientLogo: require('../images/ascu_logo.png'),
-            ClientAcro: 'ACSU'
+            ClientLogo: require('../images/ht_client1.png'),
+            ClientAcro: 'ACSU',
+            specialClass: 'client-1'
         },
         {
             ClientName: 'Topline Centre',
             ClientURL: 'http://www.goveza.com/ermelo/directory/topline-centre/',
-            ClientLogo: '',
-            ClientAcro: 'TLC'
+            ClientLogo: require('../images/ht_client2.png'),
+            ClientAcro: 'TLC',
+            specialClass1: 'client-2'
         },
         {
             ClientName: 'Ntabeleng Bbm',
             ClientURL: 'https://www.facebook.com/groups/504107729715197/about/',
-            ClientLogo: '',
-            ClientAcro: 'Ntabeleng Bbm'
+            ClientLogo: require('../images/ht_client3.png'),
+            ClientAcro: 'Ntabeleng Bbm',
+            specialClass1: 'client-3'
         },
         {
             ClientName: 'Ford Ermelo',
             ClientURL: 'http://www.24motors.co.za/WebSites/24motors/fordsite.nsf/pgIndex',
-            ClientLogo: '',
-            ClientAcro: '24-Motors'
+            ClientLogo: require('../images/ht_client4.png'),
+            ClientAcro: '24-Motors',
+            specialClass1: 'client-4'
         },
         {
             ClientName: 'Aeon Tool Hire',
             ClientURL: 'http://www.aeontoolhire.co.za/index.php',
-            ClientLogo: '',
-            ClientAcro: 'Aeon'
+            ClientLogo: require('../images/ht_client5.png'),
+            ClientAcro: 'Aeon',
+            specialClass1: 'client-5'
         },
         {
             ClientName: 'Brakecore Supply co.',
             ClientURL: 'http://brakecore.co.za/',
-            ClientLogo: '',
-            ClientAcro: 'BSC'
+            ClientLogo: require('../images/ht_client6.png'),
+            ClientAcro: 'BSC',
+            specialClass1: 'client-6'
         }
     ];
 
@@ -97,6 +103,7 @@ const OurClients = () => {
                     clientLogo={data.ClientLogo}
                     clientURL={data.ClientURL}
                     clientAcro={data.ClientAcro}
+                    specialClass1={data.specialClass1}
                 />
             );
         });

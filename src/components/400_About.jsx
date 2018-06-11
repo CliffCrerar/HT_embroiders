@@ -3,7 +3,7 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-09 22:38:50
+ * Last modified  : 2018-06-11 21:14:44
  */
 
 import React from 'react';
@@ -18,9 +18,9 @@ import img5 from '../images/gallery-6.jpg';
 import img6 from '../images/gallery-7.jpg';
 import img7 from '../images/gallery-8.jpg';
 // About us configuration
-const Header = {
-    heading: 'About Us',
-    paragraph: 'Lorem ipsum dolor sit amet, alienum omittantur cu qui, nisl mediocrem sed an. Ne pri admodum dolores. Usu ad option fierent, dicam dicunt malorum his ne, eum in molestie facilisis maiestatis. Doming aliquando sed eu, aeque aliquip est an. Tota dicunt qui in. Sea affert partem platonem at. Modo pericula ad vis. Tamquam civibus eu vix. Te eos inani argumentum, cum eleifend perpetua ut. Decore euismod no ius. Ne vel vide assum contentiones, augue laudem periculis id eum, ad se'
+const vm = {
+    vision: 'Lorem ipsum dolor sit amet, alienum omittantur cu qui, nisl mediocrem sed an. Ne pri admodum dolores. Usu ad option fierent, dicam dicunt malorum his ne, eum in molestie facilisis maiestatis. Doming aliquando sed eu, aeque aliquip est an. Tota dicunt qui in. Sea affert partem platonem at. Modo pericula ad vis. Tamquam civibus eu vix. Te eos inani argumentum, cum eleifend perpetua ut. Decore euismod no ius. Ne vel vide assum contentiones, augue laudem periculis id eum, ad se',
+    mission: 'Lorem ipsum dolor sit amet, alienum omittantur cu qui, nisl mediocrem sed an. Ne pri admodum dolores. Usu ad option fierent, dicam dicunt malorum his ne, eum in molestie facilisis maiestatis. Doming aliquando sed eu, aeque aliquip est an. Tota dicunt qui in. Sea affert partem platonem at. Modo pericula ad vis. Tamquam civibus eu vix. Te eos inani argumentum, cum eleifend perpetua ut. Decore euismod no ius. Ne vel vide assum contentiones, augue laudem periculis id eum, ad se'
 };
 
 const galleryHeader = 'Gallery';
@@ -80,9 +80,14 @@ const AboutHeading = () => {
         <div>
             <div className="mbr-overlay-additional-abt"></div>
             <div className="container abt-text-content">
-                <h3 className="mbr-section-title abt-section-title display-2">{Header.heading}</h3>
+                <h3 className="mbr-section-title abt-section-title display-1">ABOUT US</h3>
+                <h3 className="mbr-section-title abt-section-title display-3">Vision</h3>
                 <div className="lead">
-                    <p className="text-justify">{Header.paragraph}</p>
+                    <p className="abt-par abt-par1">{vm.vision}</p>
+                </div>
+                <h3 className="mbr-section-title abt-section-title display-3 abt-right-heading">Mission</h3>
+                <div className="lead">
+                    <p className="abt-par abt-par2">{vm.mission}</p>
                 </div>
             </div>
         </div>

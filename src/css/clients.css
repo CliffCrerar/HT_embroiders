@@ -46,6 +46,8 @@
     -o-transition: all .2s ease-in-out;
     -moz-transition: all .2s ease-in-out;
     -webkit-transition: all .2s ease-in-out;
+    border: 7px solid white;
+    z-index: 1000 !important;
 }
 
 .client-card-header{
@@ -70,4 +72,10 @@
 
 .client-card-bottom>div>img{
     width: 100%;
+}
+
+/* CLIENT CARD SPECIAL CLASSES */
+
+.client-2{
+    padding: 55px !important;
 }
