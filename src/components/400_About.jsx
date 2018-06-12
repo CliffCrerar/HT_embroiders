@@ -3,7 +3,7 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-12 07:36:15
+ * Last modified  : 2018-06-12 22:52:33
  */
 
 import React from 'react';
@@ -17,6 +17,10 @@ import img4 from '../images/gallery-5.jpg';
 import img5 from '../images/gallery-6.jpg';
 import img6 from '../images/gallery-7.jpg';
 import img7 from '../images/gallery-8.jpg';
+import img8 from '../images/gallery-10.jpg';
+import img9 from '../images/gallery-11.jpg';
+import img10 from '../images/gallery-12.jpg';
+import img11 from '../images/gallery-13.jpg';
 // About us configuration
 const vm = {
     vision: 'Lorem ipsum dolor sit amet, alienum omittantur cu qui, nisl mediocrem sed an. Ne pri admodum dolores. Usu ad option fierent, dicam dicunt malorum his ne, eum in molestie facilisis maiestatis. Doming aliquando sed eu, aeque aliquip est an. Tota dicunt qui in. Sea affert partem platonem at. Modo pericula ad vis. Tamquam civibus eu vix. Te eos inani argumentum, cum eleifend perpetua ut. Decore euismod no ius. Ne vel vide assum contentiones, augue laudem periculis id eum, ad se',
@@ -32,12 +36,12 @@ const galleryImageData = {
         {
             img: 0,
             title: 'ImageTitle0',
-            image: img0
+            image: img1
         },
         {
             img: 1,
             title: 'ImageTitle1',
-            image: img1
+            image: img0
         },
         {
             img: 2,
@@ -47,28 +51,50 @@ const galleryImageData = {
         {
             img: 3,
             title: 'ImageTitle3',
-            image: img3
+            image: img10
         }
     ],
     row2: [
         {
             img: 4,
             title: 'ImageTitle4',
-            image: img4
+            image: img8
         },
         {
             img: 5,
             title: 'ImageTitle5',
-            image: img5
+            image: img9
         },
         {
             img: 6,
             title: 'ImageTitle6',
-            image: img6
+            image: img11
         },
         {
             img: 7,
             title: 'ImageTitle7',
+            image: img5
+        }
+    ],
+    row3: [
+        {
+            img: 8,
+            title: 'ImageTitle8',
+            image: img4
+        },
+        {
+            img: 9,
+            title: 'ImageTitle9',
+            image: img6
+        },
+        {
+            img: 10,
+            title: 'ImageTitle10',
+            image: img3
+        },
+        {
+            img: 11,
+            title: 'ImageTitle11',
             image: img7
         }
     ]
@@ -80,8 +106,10 @@ const AboutHeader = () => {
         <div className="container">
             <div className="row">
                 <div>
-                    <div className="col-sm-8">
-                        <h2 className="mbr-section-title h1">ABOUT US</h2>
+                    <div className="col-sm-12">
+                        <h2 className="abt-title mbr-section-title h1 display-2">
+                            <span className="title-icon fas fa-info-circle"></span>ABOUT US
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -95,7 +123,6 @@ const AboutHeading = () => {
         <div>
             <div className="mbr-overlay-additional-abt"></div>
             <div className="abt-container container">
-                <h3 className="mbr-section-title abt-section-title display-1">ABOUT US</h3>
                 <h3 className="mbr-section-title abt-sub-section display-2">Vision</h3>
                 <div className="lead">
                     <p className="abt-par abt-par1">{vm.vision}</p>
@@ -143,6 +170,12 @@ const AboutGallery = () => {
                     {GallerySmallItems(galleryImageData, 'row2')}
                 </div>
                 {/*<!-- /ROW 2 -->*/}
+
+                {/*<!-- ROW 3 -->*/}
+                <div className="rowB4">
+                    {GallerySmallItems(galleryImageData, 'row3')}
+                </div>
+                {/*<!-- /ROW 3 -->*/}
                 <div className="clearfix"></div>
             </div>
 

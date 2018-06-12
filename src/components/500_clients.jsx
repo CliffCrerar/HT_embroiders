@@ -8,17 +8,16 @@
 
 import React from 'react';
 
-// CLIENT HEADING
-const clientsHeading = 'CLIENTS';
-
 // CLIENTS HEADER
 const ClientsHeading = () => {
     return (
         <div className="container">
             <div className="row">
                 <div>
-                    <div className="col-sm-8">
-                        <h2 className="mbr-section-title h1">{clientsHeading}</h2>
+                    <div className="col-sm-12">
+                        <h2 className="mbr-section-title h1 display-2">
+                            CLIENTS<span className="title-icon fas fa-handshake"></span>
+                        </h2>
                     </div>
                 </div>
             </div>

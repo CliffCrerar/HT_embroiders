@@ -108,8 +108,9 @@
 }
 
 .clients-promise-box{
+    padding: 2vw;
     border: var(--content-border);
-    background-color: rgba(255, 255, 255, 0.8§);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 20px;
 }
 

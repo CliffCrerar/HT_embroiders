@@ -16,7 +16,9 @@ const OurPromise = () => {
         <div className="container clients-promise-box">
             <div className="row text-xs-center">
                 <div className="col-sm-8 col-sm-offset-2">
-                    <h2 className="mbr-section-title display-3">Our promise</h2>
+                    <h2 className="mbr-section-title display-3">
+                        Our promise<i className="title-icon fas fa-link"></i>
+                    </h2>
                     <div className="lead">
                         <p className="client-promise-text">{promiseText}</p>
                     </div>

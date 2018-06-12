@@ -3,7 +3,7 @@
  * @summary JSX for the social links section of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:14:15 
- * Last modified  : 2018-06-11 21:49:00
+ * Last modified  : 2018-06-12 23:13:15
  */
 
 import React from 'react';

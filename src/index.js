@@ -3,15 +3,9 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-12 00:33:50
+ * Last modified  : 2018-06-12 22:31:32
  */
 
-/* IMPORT REACT INTERFACE */
-import './components/index.jsx';
-/* IMPORT LIBRARIES */
-import './lib/lib.js'; // TEMPLATE LIBRARIES
-import './lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css'; // FONT AWESOME 5
-import './font/Algeria/stylesheet.css'; // FONT ALGERIA
 /* CUSTOM CSS */
 import './css/font.css'; // CUSTOM FONTS
 import './css/var.css'; // CUSTOM CSS VARIABLES
@@ -27,14 +21,7 @@ import './css/contact.css'; // CONTACT
 import './css/footer.css'; // FOOTER 
 
 /* HOME PAGE OPTIONS */
-//import landingBg from './images/clem-onojeghuo-205193-unsplash.jpg'; // Home page fetch
-//import landingBg from './images/sewingMachineCloseUp1.png'; // Home page fetch
-//import landingBg from './images/sewingMachineCloseUp2.jpg'; // Home page fetch
-//import landingBg from './images/sewingMachineCloseUp3.png'; // Home page fetch
 import landingBg from './images/alexander-andrews-290794-unsplash.jpg'; // Home page fetch
-//import landingBg from './images/rawpixel-549498-unsplash.jpg'; // Home page fetch
-//import landingBg from './images/rawpixel-549498-unsplash.jpg'; // Home page fetch
-
 $('#header4-1').css('background-image', `url(${landingBg})`); // Home page load
 import aboutBg from './images/vishal-banik-535458-unsplash.jpg'; // About page fetch
 $('#content5-7').css('background-image', `url(${aboutBg})`); // About page load
@@ -43,7 +30,6 @@ $('#testimonials1-k').css('background-image', `url(${clientsBg})`);
 import promiseBg from './images/clem-onojeghuo-205193-unsplash.jpg';
 $('#msg-box3-i').css('background-image', `url(${promiseBg})`);
 import teamMembersBG from './images/alex-block-597465-unsplash.jpg';
-//import teamMembersBG from './images/agto-nugroho-665411-unsplash.jpg';
 $('#content4-2').css('background-image', `url(${teamMembersBG})`);
 
 // CUSTOM JS

@@ -3,10 +3,20 @@
  * @summary CSS for the navbar mobile display
  * @author Cliff Crerar
  * Created at     : 2018-06-08 21:08:55 
- * Last modified  : 2018-06-08 21:09:33
+ * Last modified  : 2018-06-12 23:48:50
  */
 
+@media only screen and (max-width: 768px){
+    .nav-left-1{
+        
+    }
 
- .nav-left-1{
-     display: block;
- }
+}
+
+@media (max-width: 1024px) {
+    .nav-right{
+        display: none;
+        flex-direction: column;
+    }
+    
+}

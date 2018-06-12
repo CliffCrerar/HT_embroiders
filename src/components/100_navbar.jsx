@@ -3,7 +3,7 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10
- * Last modified  : 2018-06-09 19:07:39
+ * Last modified  : 2018-06-12 23:16:33
  */
 
 import React from 'react'; // import react
@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <div className="nav-inner">
 
-            <div className="nav-left nav-left-2">
+            <div className="nav-left nav-left-1">
 
                 <div className="nav-left-logo">
                     <div className="nav-left-image">

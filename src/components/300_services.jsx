@@ -3,22 +3,22 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-06-12 07:37:02
+ * Last modified  : 2018-06-12 21:41:44
  */
 
 import React from 'react';
 import Thumbnail from './301_thumbnail.jsx';
 //import CarouselItem from './302_carouselItem.jsx';
 // IMPORT IMAGES FOR THUMBNAILS
-import th1 from '../images/sick_screen.png';
-import th2 from '../images/videoflex.png';
-import th3 from '../images/submlimination_mug_1.png';
-import th4 from '../images/clothing_3.png';
+import th1 from '../images/svc-tn-sick_screen.png';
+import th2 from '../images/svc-tn-videoflex.png';
+import th3 from '../images/svc-tn-submlimination_mug_1.png';
+import th4 from '../images/svc-tn-clothing_3.png';
 // IMPORT IMAGES FOR CAROUSEL
-import carImg1 from '../images/silkscreen-printing-1.png';
-import carImg2 from '../images/videoflex-printing-3.jpg';
-import carImg3 from '../images/sublimination-printing-4.jpg';
-import carImg4 from '../images/artificial-photography-119298-unsplash.jpg';
+import carImg1 from '../images/svc-car-silkscreen-printing-1.jpg';
+import carImg2 from '../images/svc-car-videoflex-printing-3.jpg';
+import carImg3 from '../images/svc-car-sublimination-printing-4.jpg';
+import carImg4 from '../images/svc-car-artificial-photography-119298-unsplash.jpg';
 // IMPORT CAROUSEL JSX
 import { carouselImages, carouselButtons } from './302_carouselItem.jsx';
 
@@ -60,8 +60,10 @@ const ServiceHeading = () => {
         <div className="container">
             <div className="row">
                 <div>
-                    <div className="col-sm-8">
-                        <h2 className="mbr-section-title h1">{heading}</h2>
+                    <div className="col-sm-12">
+                        <h2 className="mbr-section-title h1 display-2">
+                            {heading}<span className="title-icon fas fa-cut"></span>
+                        </h2>
                     </div>
                 </div>
             </div>

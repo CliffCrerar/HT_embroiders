@@ -78,10 +78,16 @@ body{
     font-family: Marmelad;
     */
     font-family: Raleway;
+    font-weight: bold;
     /*
 
     */
 }
 
-/* HTML FRAMEWORK CSS*/
+.mbr-section-title.display-2{
+    margin: 0;
+}
 
+.title-icon{
+    margin: 0 5px 0 5px;
+}

@@ -7,15 +7,16 @@
  */
 
 import React from 'react';
-import placeHolder from '../images/teamplaceholder.png';
 
 const TeamHeading = () => {
     return (
         <div className="container">
             <div className="row">
                 <div>
-                    <div className="col-sm-8">
-                        <h2 className="team-heading mbr-section-title h1">THE TEAM</h2>
+                    <div className="col-sm-12">
+                        <h2 className="team-heading mbr-section-title h1 display-2">
+                            <span className="title-icon fas fa-cogs"></span>THE TEAM
+                        </h2>
                     </div>
                 </div>
             </div>

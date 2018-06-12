@@ -3,7 +3,7 @@
  * @summary CSS for navigation bar
  * @author Cliff Crerar
  * Created at     : 2018-06-08 17:10:24
- * Last modified  : 2018-06-11 07:14:07
+ * Last modified  : 2018-06-12 23:30:25
  */
 
  /* AVAILABLE FONTS
@@ -59,9 +59,9 @@ Raleway
     align-items: center;
     position: absolute;
     transform: translateY(30vh);
-    left: -10%;
+    left: -15%;
     font-size: 5em;
-    width: 110%;
+    width: 115%;
     background: var(--ht-grad-1);
     padding: 2vh 0 2vh 20%;
 }

@@ -3,8 +3,8 @@
  * @summary Changes the front page objects into a navbar
  * @author Cliff Crerar
  * Created at     : 2018-06-05 22:07:04 
- * Last modified  : 2018-06-11 22:43:33
- */
+ * Last modified  : 2018-06-12 18:50:44
+
 
 let pageToNav = 0;
 $(window).scroll(function (event) {
@@ -30,4 +30,6 @@ $(window).scroll(function (event) {
         $('.nav-needle-img').removeClass('nav-needle-img-2').addClass('nav-needle-img-1');
         $('.navbar').css('background', 'rgba(0,0,0,0.0)');
     }
-});
+}); 
+
+*/

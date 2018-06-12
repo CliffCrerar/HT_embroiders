@@ -6,7 +6,15 @@
  * Last modified  : 2018-06-12 02:41:06
  */
 
-.abt-heading{
+.abt-header{
+    background-color: var(--ht-light);
+    border-top: var(--section-border);    
+}
+.abt-title{
+    color: var(--ht-dark);
+}
+
+ .abt-heading{
     border-top: var(--section-border);
     padding-top: 6rem;
     padding-bottom: 6rem;

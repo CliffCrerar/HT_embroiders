@@ -1,6 +1,7 @@
 const path = require('path');
 const HTMLwebpackPlugin = require('html-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const ManifestPlugin = require('webpack-manifest-plugin');
 const webpack = require('webpack');
 const $ = require('jquery');
 
@@ -8,6 +9,9 @@ module.exports = {
     context: __dirname,
     mode: 'development',
     entry: {
+        jsx: './src/components/index.jsx',
+        libjs: './src/lib/libjs.js',
+        libcss: './src/lib/libcss.js',
         app: './src/index.js',
     },
     devtool: 'inline-source-map',
@@ -65,7 +69,8 @@ module.exports = {
             title: 'HT Embroiders',
             meta: require('./meta.json'),
             favicon: '',
-        })
+        }),
+        new ManifestPlugin()
     ],
     output: {
         filename: '[name].bundle.js',
