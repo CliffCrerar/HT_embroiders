@@ -5,10 +5,8 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-29 21:49:50
- * Last modified  : 2018-06-05 03:13:14
+ * Last modified  : 2018-06-11 23:01:19
  */
-
-
 // JQUERY
 import $ from 'script-loader!jquery';
 import jQuery from 'script-loader!jquery';

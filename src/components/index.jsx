@@ -3,15 +3,16 @@
  * @summary this is the file entry point, loads libraries and renders elements
  * @author Cliff Crerar
  * Created at     : 2018-05-29 21:48:50
- * Last modified  : 2018-06-09 21:29:01
+ * Last modified  : 2018-06-12 00:46:39
  */
 
 // REACT
 import React from 'react'; // React tools
 import ReactDOM from 'react-dom'; // React DOM
+import appFrame from '../html/react-frame.html';
+$('body').append(appFrame);
 
 // Components
-//import AppFramce from './000_appFrame.jsx';
 import Navbar from './100_navbar.jsx';
 import Homepage from './200_home.jsx';
 import { ServiceHeading, ServiceThumbnails, ServiceCarousel } from './300_services.jsx';
@@ -20,7 +21,7 @@ import { ClientsHeading, OurClients } from './500_clients.jsx';
 import SocialLinks from './600_social.jsx';
 import OurPromise from './700_promise.jsx';
 import { TeamHeading, TeamMembers } from './800_team.jsx';
-import { ContactHeading, LocationGoogleMaps, ContactDetails } from './900_location.jsx';
+import { ContactHeading, LocationGoogleMaps, ContactDetails } from './900_contact.jsx';
 import PageFooter from './1000_footer.jsx';
 
 // Render components
@@ -28,7 +29,7 @@ import PageFooter from './1000_footer.jsx';
 ReactDOM.render(<Navbar />, document.querySelector('#menu-0')); // Navbar
 ReactDOM.render(<Homepage />, document.querySelector('#header4-1')); // Homepage
 ReactDOM.render(<ServiceHeading />, document.querySelector('#svcHeading')); // Services Heading
-ReactDOM.render(<ServiceThumbnails />, document.querySelector('#svcThumbnails')); // Services Heading
+ReactDOM.render(<ServiceThumbnails />, document.querySelector('#features1-8')); // Services Heading
 ReactDOM.render(<ServiceCarousel />, document.querySelector('#slider-j')); // Services carousel
 ReactDOM.render(<AboutHeading />, document.querySelector('#content5-7')); // About heading
 ReactDOM.render(<GalleryHeading />, document.querySelector('#msg-box1-m-1')); // Gallery Heading

@@ -1,0 +1,53 @@
+/**
+ * TEAM CSS
+ * @summary CSS file for the team section of the page
+ * @author Cliff Crerar
+ * Created at     : 2018-06-11 22:13:34 
+ * Last modified  : 2018-06-12 00:55:07
+ */
+
+.mbr-overlay-additional-3{
+    opacity: 0.3; 
+    background-color: var(--ht-light);
+}
+
+.team-header{
+    background-color: var(--ht-dark); 
+    padding-top: 4.5rem; 
+    padding-bottom: 4.5rem;
+    border-top: var(--section-border);
+}
+
+.team-heading{
+    font-family: Raleway !important;
+    color: white;
+}
+
+.team-content{
+    padding-top: 4.5rem; padding-bottom: 4.5rem;
+    border-top: var(--section-border);
+}
+
+.team-member-card{
+    border: var(--content-border);
+    border-radius: 20px;
+}
+
+.team-member-card>img{
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.team-member-card>div{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-family: Krona One;
+}
+
+.team-member-card>div>h4{
+    font-family: inherit !important;
+}
+
+.team-member-card>div>p{
+    text-align: center;
+}

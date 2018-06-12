@@ -27,7 +27,7 @@ const Homepage = () => {
         <div className="logoBandDemo4">
             {/*<img id="logohp" className="logohp" src={logo} />*/}
             <div className="home-bg-logo-cntr">
-                <img id="logohp" className="logohp2" src={logo} />
+                <img id="logohp" className="logohp" src={logo} />
             </div>
         </div>
 

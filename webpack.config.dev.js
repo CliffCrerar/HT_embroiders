@@ -1,9 +1,8 @@
 const path = require('path');
 const HTMLwebpackPlugin = require('html-webpack-plugin');
-const webpack = require('webpack');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
+const webpack = require('webpack');
 const $ = require('jquery');
-const Tether = require('tether');
 
 module.exports = {
     context: __dirname,
@@ -59,14 +58,13 @@ module.exports = {
         new webpack.ProvidePlugin({
             $: 'jquery',
             jQuery: 'jquery',
-            Popper: ['popper.js', 'default'],
-            Tether: Tether
         }),
         new CleanWebpackPlugin(['dist']),
         new HTMLwebpackPlugin({
-            template: './src/html/index.html',
+            //template: './src/html/index.html',
             title: 'HT Embroiders',
-            meta: require('./meta.json')
+            meta: require('./meta.json'),
+            favicon: '',
         })
     ],
     output: {

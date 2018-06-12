@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-09 18:44:20
+ * Last modified  : 2018-06-11 22:17:55
  */
 
 
@@ -75,78 +75,8 @@ Shrikhand
     font-family: Raleway;
     /*
     
-    
-    
     */
 }
 
-/*
-     HOME PAGE
-*/
-.home-page-title-box{
-    margin: 0 !important;
-    height: 100%;
-    width: 100%;
-}
+/* HTML FRAMEWORK CSS*/
 
-/* EXPERIMENTAL CSS FOR EXISTING LOGO 1*/
-.logohp1{
-    float: right !important;
-    height: 11vw;
-    padding: 10px 0 10px 0;
-}
-/* EXPERIMENTAL CSS FOR EXISTING LOGO 1*/
-.pageTitle{
-    font-family: Rosario;
-    color: #ead5a3;
-    font-size: 5vw;
-    margin: 0;
-    text-shadow: 0 2px 1px #618366,
-                 0 -2px 1px #618366,
-                -2px 0 1px #618366, 2px 0 1px #618366
-}
-
-/* EXPERIMENTAL CSS FOR EXISTING LOGO 2*/
-.logoBandDemo4{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    width: 100%;
-    position: absolute;
-    top:50%;
-    transform: translateY(-50%);
-}
-
-.home-bg-logo-cntr{
-    padding-right: 1vw;
-}
-
-.logohp2{
-    height: 80vh;
-    -webkit-transform-style: preserve-3d; /* Safari 3-8  */
-    transform-style: preserve-3d;
-    opacity: 0.3;
-    transform: rotate(5deg)
-}
-
-/* ABOUT SECTION */
-.mbr-overlay-additional-1{
-    opacity: 0.7;
-    background-color: rgb(255, 255, 255);
-}
-
-/* OUR CLIENTS */
-.mbr-overlay-additional-2{
-    background-color: rgb(34, 34, 34);
-    opacity: 0.5;
-}
-
-/* OUR TEAM */
-.mbr-overlay-additional-3{
-    opacity: 0.5; background-color: rgb(255, 255, 255);
-}
-
-/* LOCATION */
-.mapsIframe {
-    border:0
-}

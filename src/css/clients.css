@@ -3,22 +3,25 @@
  * @summary CSS for the clients sections of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-09 21:36:16
- * Last modified  : 2018-06-11 07:27:59
+ * Last modified  : 2018-06-12 02:06:20
  */
+
+.mbr-overlay-additional-2{
+    background-color: rgb(34, 34, 34);
+    opacity: 0.5;
+}
 
 .clients-header {
     border-top: var(--section-border);
     background: var(--ht-blue);
     color: var(--ht-light);
+    padding-top: 3rem; 
+    padding-bottom: 3rem;
 }
 
 .clients-content{
-    border-top: var(--section-border)
-}
-
-.clients-promise{
-    border: 5px solid black;
-    background-color: rgba(255, 255, 255, 0.514)
+    border-top: var(--section-border);
+    padding-top: 3rem; padding-bottom: 3rem;
 }
 
 .client-card-anchor{
@@ -36,7 +39,7 @@
 .client-card{
     background: rgb(192,0,121);
     background: linear-gradient(10deg, rgba(192,0,121,1) 10%, rgba(0,133,215,1) 90%);
-    border: 7px solid black;
+    border: var(--content-border);
     border-radius: 20px;
 }
 
@@ -78,4 +81,44 @@
 
 .client-2{
     padding: 55px !important;
+}
+
+/* SOCIAL BAND */
+.clients-social{ 
+    padding-top: 4.5rem; 
+    padding-bottom: 4.5rem;
+    border-top: var(--section-border);
+    background: linear-gradient(
+            180deg, 
+            var(--ht-blue) 0%,
+            var(--ht-light) 30%, 
+            var(--ht-light) 70%, 
+            var(--ht-green) 100%
+        );
+}
+
+.client-social-title{
+    /*font-family: Changa One;*/
+    font-family: Michroma;
+}
+
+/* PROMISE SECTION */
+
+.clients-promise{
+    padding-top: 9rem; padding-bottom: 9rem;
+    border-top: var(--section-border);
+}
+
+.clients-promise-box{
+    border: var(--content-border);
+    background-color: rgba(255, 255, 255, 0.8§);
+    border-radius: 20px;
+}
+
+.client-promise-text{
+    text-align: justify;
+    text-align-last: center;
+    -moz-text-align-last: center;
+    -ms-text-align-last: center;
+    -o-text-align-last: center;
 }

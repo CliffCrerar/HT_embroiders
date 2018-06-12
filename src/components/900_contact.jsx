@@ -3,10 +3,24 @@
  * @summary Shows where HT embroiders is located
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:46:55
- * Last modified  : 2018-06-04 23:01:43
+ * Last modified  : 2018-06-12 01:11:13
  */
 
 import React from 'react';
+
+const contactInfo = {
+    streetName: '',
+    city: '',
+    email: '',
+    phone: '',
+    fax: ''
+}
+
+const links = {
+    brochure: '',
+    priceList: '',
+    aboutTheDeveloper: ''
+}
 
 const ContactHeading = () => {
     return (
@@ -14,7 +28,7 @@ const ContactHeading = () => {
             <div className="row">
                 <div>
                     <div className="col-sm-8">
-                        <h2 className="mbr-section-title h1">Where you can find us</h2>
+                        <h2 className="mbr-section-title h1">CONTACT US</h2>
                     </div>
                 </div>
             </div>
@@ -66,7 +80,7 @@ const ContactDetails = () => {
                         <div hidden="" data-form-alert-success="true">Thanks for filling out form!</div>
                     </div>
                     <form action="#/" method="post" data-form-title="MESSAGE">
-                        <input type="hidden" value="uoaF8RsUIkevKNCtBXVKKOKBLpBqh6Z4oaynbZTuNnyJeCpSuTyd6FpsZdzjdzyZ3Y2TKsl7qT9Scu5kOGAVqTXEh/ddl+2v662FbPt55JgqdeXD5P4r3mkGInCE8t4H"
+                        <input type="hidden" value=""
                             data-form-email="true" />
 
                         <div className="form-group">

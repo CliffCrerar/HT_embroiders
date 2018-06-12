@@ -3,7 +3,7 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-11 21:14:44
+ * Last modified  : 2018-06-12 02:36:07
  */
 
 import React from 'react';
@@ -79,18 +79,23 @@ const AboutHeading = () => {
     return (
         <div>
             <div className="mbr-overlay-additional-abt"></div>
-            <div className="container abt-text-content">
-                <h3 className="mbr-section-title abt-section-title display-1">ABOUT US</h3>
-                <h3 className="mbr-section-title abt-section-title display-3">Vision</h3>
-                <div className="lead">
-                    <p className="abt-par abt-par1">{vm.vision}</p>
+            <div className="abt-container container">
+                <div className="abt-title-container">
+                    <h3 className="mbr-section-title abt-section-title display-1">ABOUT US</h3>
                 </div>
-                <h3 className="mbr-section-title abt-section-title display-3 abt-right-heading">Mission</h3>
-                <div className="lead">
-                    <p className="abt-par abt-par2">{vm.mission}</p>
+                <div className="abt-text-content">
+                    <h3 className="mbr-section-title abt-sub-section display-3">Vision</h3>
+                    <div className="lead">
+                        <p className="abt-par abt-par1">{vm.vision}</p>
+                    </div>
+                    <h3 className="mbr-section-title abt-sub-section display-3 abt-right-heading">Mission</h3>
+                    <div className="lead">
+                        <p className="abt-par abt-par2">{vm.mission}</p>
+                    </div>
                 </div>
             </div>
         </div>
+
     );
 };
 

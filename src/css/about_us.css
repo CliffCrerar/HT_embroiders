@@ -3,11 +3,13 @@
  * @summary Css for the about us section
  * @author Cliff Crerar
  * Created at     : 2018-06-09 17:34:02 
- * Last modified  : 2018-06-11 21:13:48
+ * Last modified  : 2018-06-12 02:41:06
  */
 
 .abt-heading{
     border-top: var(--section-border);
+    padding-top: 6rem; 
+    padding-bottom: 6rem;
 }
 
 .abt-gallery{
@@ -24,13 +26,34 @@
     top: 0; 
 }
 
-.abt-text-content{
-    background: var(--ht-dark-o);
-    border: 7px solid black;
+.abt-container{
+    border: var(--content-border);
     border-radius: 25px;
+    padding: 0 !important;
+    overflow: hidden;
 }
 
-.abt-section-title{
+.abt-title-container{
+    border-bottom: 5px solid black;
+    background: var(--ht-dark-o);
+    text-align: center;
+
+}
+
+.abt-title-container>h3{
+    padding: 3vh 0 3vh 0;
+    margin: 0;
+    color: white;
+}
+
+.abt-text-content{
+    padding-left: .9375rem;
+    padding-right: .9375rem;
+    background-color: var(--ht-blue-o);
+    overflow: hidden;
+}
+
+.abt-sub-section{
     color: var(--ht-light)
 }
 
@@ -44,20 +67,29 @@
 
 /* VISION */
 .abt-par1{
- text-align: justify
+    text-align: justify
 }
 
 /* MISSION */
 .abt-par2{
     text-align: justify;
     text-align-last: right;
+    -moz-text-align-last: right;
+    -ms-text-align-last: right;
+    -o-text-align-last: right;
 }
 
 .abt-galley-header {
     border-top: var(--section-border);
     background: rgb(255,253,231);
     background: radial-gradient(circle, var(--ht-light) 0%, var(--ht-green) 60%, var(--ht-blue) 95%);
-    
+    padding-top: 3rem; 
+    padding-bottom: 3rem;
+}
+
+.abt-gallery{
+    padding-top: 0; 
+    padding-bottom: 0;
 }
 
 .abt-gallery-heading-group{

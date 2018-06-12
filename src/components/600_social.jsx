@@ -89,7 +89,7 @@ const SocialLinks = () => {
         <div className="container">
             <div className="row">
                 <div className="col-sm-4">
-                    <h2 className="mbr-section-title h1">Follow Us</h2>
+                    <h2 className="client-social-title mbr-section-title h1">Follow Us</h2>
                 </div>
                 <SocialMedia />
             </div>

@@ -3,36 +3,28 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-11 20:54:04
+ * Last modified  : 2018-06-12 00:33:50
  */
 
 /* IMPORT REACT INTERFACE */
 import './components/index.jsx';
-
 /* IMPORT LIBRARIES */
-import './lib/lib.js';
-// FONT AWESOME 5
-import './lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css';
-// FONT ALGERIA
-import './font/Algeria/stylesheet.css';
-
-/* CUSTOM FILES */
-
-// CUSTOM FONTS
-import './css/font.css';
-// CUSTOM CSS VARIABLES
-import './css/var.css';
-// GENERAL CSS
-import './css/general.css';
-// NAVBAR CSS
-import './css/navbar.css';
-import './css/navbar_m.css';
-// SERVICES CSS
-import './css/service.css';
-// ABOUT US CSS
-import './css/about_us.css';
-// CLIENTS CSS
-import './css/clients.css';
+import './lib/lib.js'; // TEMPLATE LIBRARIES
+import './lib/fontawesome/web-fonts-with-css/css/fontawesome-all.css'; // FONT AWESOME 5
+import './font/Algeria/stylesheet.css'; // FONT ALGERIA
+/* CUSTOM CSS */
+import './css/font.css'; // CUSTOM FONTS
+import './css/var.css'; // CUSTOM CSS VARIABLES
+import './css/general.css'; // GENERAL CSS
+import './css/landing.css'; // LANDING PAGE CSS
+import './css/navbar.css'; // NAVBAR DESKTOP CSS 
+import './css/navbar_m.css'; // NAVBAR MOBILE
+import './css/service.css'; // SERVICES CSS
+import './css/about_us.css'; // ABOUT US CSS
+import './css/clients.css'; // CLIENTS CSS
+import './css/team.css'; // TEAM
+import './css/contact.css'; // CONTACT
+import './css/footer.css'; // FOOTER 
 
 /* HOME PAGE OPTIONS */
 //import landingBg from './images/clem-onojeghuo-205193-unsplash.jpg'; // Home page fetch
@@ -50,7 +42,8 @@ import clientsBg from './images/prince-abid-640396-unsplash.jpg';
 $('#testimonials1-k').css('background-image', `url(${clientsBg})`);
 import promiseBg from './images/clem-onojeghuo-205193-unsplash.jpg';
 $('#msg-box3-i').css('background-image', `url(${promiseBg})`);
-import teamMembersBG from './images/temp/photo-3.jpg';
+import teamMembersBG from './images/alex-block-597465-unsplash.jpg';
+//import teamMembersBG from './images/agto-nugroho-665411-unsplash.jpg';
 $('#content4-2').css('background-image', `url(${teamMembersBG})`);
 
 // CUSTOM JS
