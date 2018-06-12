@@ -2,8 +2,8 @@
  * SERVICES SECTION CSS
  * @summary Ser
  * @author Cliff Crerar
- * Created at     : 2018-06-08 18:36:23 
- * Last modified  : 2018-06-11 23:14:53
+ * Created at     : 2018-06-08 18:36:23
+ * Last modified  : 2018-06-12 07:46:04
  */
 
   /* AVAILABLE FONTS
@@ -22,19 +22,17 @@ Raleway
     background-color: var(--ht-dark) !important;
     color: var(--ht-light);
     border-top: var(--section-border);
-    padding-top: 3rem; 
-    padding-bottom: 3rem;
 }
 
 .mbr-service-thumbnails{
     background: var(--ht-light);
-    background: 
+    background:
         linear-gradient(
-            180deg, 
-            var(--ht-light) 30%, 
+            180deg,
+            var(--ht-light) 30%,
             var(--ht-green) 70%);
     border-top: var(--section-border);
-    padding-top: 4.5rem; 
+    padding-top: 4.5rem;
     padding-bottom: 4.5rem;
 }
 
@@ -45,15 +43,15 @@ Raleway
     border-radius: 20px;
     background:
     linear-gradient(
-        360deg, 
-        var(--ht-light) 30%, 
+        360deg,
+        var(--ht-light) 30%,
         var(--ht-green) 70%);
 }
 
 .svc-card-block{
     background: transparent;
     border-bottom-left-radius: 20px;
-    border-bottom-right-radius:20px; 
+    border-bottom-right-radius:20px;
 }
 
 .svc-card-title{

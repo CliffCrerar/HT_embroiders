@@ -3,7 +3,7 @@
  * @summary this is the file entry point, loads libraries and renders elements
  * @author Cliff Crerar
  * Created at     : 2018-05-29 21:48:50
- * Last modified  : 2018-06-12 00:46:39
+ * Last modified  : 2018-06-12 07:37:40
  */
 
 // REACT
@@ -16,7 +16,7 @@ $('body').append(appFrame);
 import Navbar from './100_navbar.jsx';
 import Homepage from './200_home.jsx';
 import { ServiceHeading, ServiceThumbnails, ServiceCarousel } from './300_services.jsx';
-import { AboutHeading, AboutGallery, GalleryHeading } from './400_about.jsx';
+import { AboutHeading, AboutGallery, GalleryHeading, AboutHeader } from './400_about.jsx';
 import { ClientsHeading, OurClients } from './500_clients.jsx';
 import SocialLinks from './600_social.jsx';
 import OurPromise from './700_promise.jsx';
@@ -28,9 +28,10 @@ import PageFooter from './1000_footer.jsx';
 //ReactDOM.render(<AppFramce />, document.querySelector('body')); // Application frame
 ReactDOM.render(<Navbar />, document.querySelector('#menu-0')); // Navbar
 ReactDOM.render(<Homepage />, document.querySelector('#header4-1')); // Homepage
-ReactDOM.render(<ServiceHeading />, document.querySelector('#svcHeading')); // Services Heading
+ReactDOM.render(<ServiceHeading />, document.querySelector('#msg-box1-m')); // Services Heading
 ReactDOM.render(<ServiceThumbnails />, document.querySelector('#features1-8')); // Services Heading
 ReactDOM.render(<ServiceCarousel />, document.querySelector('#slider-j')); // Services carousel
+ReactDOM.render(<AboutHeader />, document.querySelector('#msg-box1-m-3'))// About header
 ReactDOM.render(<AboutHeading />, document.querySelector('#content5-7')); // About heading
 ReactDOM.render(<GalleryHeading />, document.querySelector('#msg-box1-m-1')); // Gallery Heading
 ReactDOM.render(<AboutGallery />, document.querySelector('#gallery1-6')); // ABOUT US GALLERY document

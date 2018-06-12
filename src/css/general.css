@@ -35,6 +35,11 @@ Shrikhand
 
  /**/
 
+body{
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
 /* BOOSTRAP MODIFIED CSS */
 .container-fluid-1 {
     padding: 0 !important;
@@ -66,7 +71,7 @@ Shrikhand
     font-family: Damion;
     font-family: Holtwood One SC;
     font-family: Rammetto One;
-    
+
     font-family: Montserrat Alternates;
     font-family: Racing Sans One;
     font-family: Michroma;
@@ -74,7 +79,7 @@ Shrikhand
     */
     font-family: Raleway;
     /*
-    
+
     */
 }
 

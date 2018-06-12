@@ -2,13 +2,13 @@
  * ABOUT US CSS
  * @summary Css for the about us section
  * @author Cliff Crerar
- * Created at     : 2018-06-09 17:34:02 
+ * Created at     : 2018-06-09 17:34:02
  * Last modified  : 2018-06-12 02:41:06
  */
 
 .abt-heading{
     border-top: var(--section-border);
-    padding-top: 6rem; 
+    padding-top: 6rem;
     padding-bottom: 6rem;
 }
 
@@ -17,57 +17,56 @@
 }
 
 .mbr-overlay-additional-abt{
-    background-color: var(--ht-dark);
-    opacity: 0.1;
+    background-color: var(---ht-light);
+    opacity: 0.5;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0; 
+    top: 0;
 }
 
 .abt-container{
+
+}
+
+.abt-section-title{
+    background-color: #87efba;
     border: var(--content-border);
-    border-radius: 25px;
-    padding: 0 !important;
-    overflow: hidden;
-}
-
-.abt-title-container{
-    border-bottom: 5px solid black;
-    background: var(--ht-dark-o);
     text-align: center;
-
-}
-
-.abt-title-container>h3{
-    padding: 3vh 0 3vh 0;
-    margin: 0;
-    color: white;
-}
-
-.abt-text-content{
-    padding-left: .9375rem;
-    padding-right: .9375rem;
-    background-color: var(--ht-blue-o);
-    overflow: hidden;
+    border-radius: 25px;
+    color: #c00079;
+    font-weight: bold;
 }
 
 .abt-sub-section{
-    color: var(--ht-light)
+    margin: 0;
+    color:#accfc5;
+    font-weight: bold;
+    text-shadow: 5px 0 10px var(--ht-blue),
+                 0 5px 10px var(--ht-blue),
+                -5px 0 10px var(--ht-blue),
+                 0 -5px 10px var(--ht-blue)
 }
 
 .abt-right-heading{
     text-align: right;
+    color: #b2c660;
 }
 
 .abt-par{
-    color: white;
+    background: rgba(255,255,255,0.9);
+    padding: 1vw 1vw;
+    border-radius: 25px;
+    border: 1px solid silver;
+
 }
 
 /* VISION */
 .abt-par1{
-    text-align: justify
+    text-align: justify;
+    border-top-left-radius: 0px;
+
 }
 
 /* MISSION */
@@ -77,18 +76,19 @@
     -moz-text-align-last: right;
     -ms-text-align-last: right;
     -o-text-align-last: right;
+    border-top-right-radius: 0px;
 }
 
 .abt-galley-header {
     border-top: var(--section-border);
     background: rgb(255,253,231);
     background: radial-gradient(circle, var(--ht-light) 0%, var(--ht-green) 60%, var(--ht-blue) 95%);
-    padding-top: 3rem; 
+    padding-top: 3rem;
     padding-bottom: 3rem;
 }
 
 .abt-gallery{
-    padding-top: 0; 
+    padding-top: 0;
     padding-bottom: 0;
 }
 

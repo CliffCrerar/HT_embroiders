@@ -3,7 +3,7 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-12 02:36:07
+ * Last modified  : 2018-06-12 07:36:15
  */
 
 import React from 'react';
@@ -74,25 +74,37 @@ const galleryImageData = {
     ]
 };
 
+//HEADER
+const AboutHeader = () => {
+    return (
+        <div className="container">
+            <div className="row">
+                <div>
+                    <div className="col-sm-8">
+                        <h2 className="mbr-section-title h1">ABOUT US</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
+};
+
 // HEADING
 const AboutHeading = () => {
     return (
         <div>
             <div className="mbr-overlay-additional-abt"></div>
             <div className="abt-container container">
-                <div className="abt-title-container">
-                    <h3 className="mbr-section-title abt-section-title display-1">ABOUT US</h3>
+                <h3 className="mbr-section-title abt-section-title display-1">ABOUT US</h3>
+                <h3 className="mbr-section-title abt-sub-section display-2">Vision</h3>
+                <div className="lead">
+                    <p className="abt-par abt-par1">{vm.vision}</p>
                 </div>
-                <div className="abt-text-content">
-                    <h3 className="mbr-section-title abt-sub-section display-3">Vision</h3>
-                    <div className="lead">
-                        <p className="abt-par abt-par1">{vm.vision}</p>
-                    </div>
-                    <h3 className="mbr-section-title abt-sub-section display-3 abt-right-heading">Mission</h3>
-                    <div className="lead">
-                        <p className="abt-par abt-par2">{vm.mission}</p>
-                    </div>
+                <h3 className="mbr-section-title abt-sub-section display-2 abt-right-heading">Mission</h3>
+                <div className="lead">
+                    <p className="abt-par abt-par2">{vm.mission}</p>
                 </div>
+
             </div>
         </div>
 
@@ -170,4 +182,4 @@ const AboutGallery = () => {
     );
 };
 
-module.exports = { AboutHeading, AboutGallery, GalleryHeading };
+module.exports = { AboutHeading, AboutGallery, GalleryHeading, AboutHeader };

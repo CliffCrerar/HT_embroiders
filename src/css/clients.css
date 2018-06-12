@@ -3,7 +3,7 @@
  * @summary CSS for the clients sections of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-09 21:36:16
- * Last modified  : 2018-06-12 02:06:20
+ * Last modified  : 2018-06-12 07:45:31
  */
 
 .mbr-overlay-additional-2{
@@ -15,8 +15,6 @@
     border-top: var(--section-border);
     background: var(--ht-blue);
     color: var(--ht-light);
-    padding-top: 3rem; 
-    padding-bottom: 3rem;
 }
 
 .clients-content{
@@ -84,15 +82,15 @@
 }
 
 /* SOCIAL BAND */
-.clients-social{ 
-    padding-top: 4.5rem; 
+.clients-social{
+    padding-top: 4.5rem;
     padding-bottom: 4.5rem;
     border-top: var(--section-border);
     background: linear-gradient(
-            180deg, 
+            180deg,
             var(--ht-blue) 0%,
-            var(--ht-light) 30%, 
-            var(--ht-light) 70%, 
+            var(--ht-light) 30%,
+            var(--ht-light) 70%,
             var(--ht-green) 100%
         );
 }
