@@ -3,7 +3,7 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10
- * Last modified  : 2018-06-12 23:16:33
+ * Last modified  : 2018-06-13 07:21:57
  */
 
 import React from 'react'; // import react
@@ -16,7 +16,7 @@ const brandName2 = 'Embroiders'; // Navbar brand name
 // Navbar links data object
 const navLinksData = [
     { heading: 'Home', link: '#header4-1' },
-    { heading: 'Service', link: '#svcHeading' },
+    { heading: 'Service', link: '#msg-box1-m' },
     { heading: 'About', link: '#content5-7' },
     { heading: 'Clients', link: '#testimonials1-k' },
     { heading: 'Team', link: '#msg-box1-h' },
@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <div className="nav-inner">
 
-            <div className="nav-left nav-left-1">
+            <div className="nav-left nav-left-2">
 
                 <div className="nav-left-logo">
                     <div className="nav-left-image">

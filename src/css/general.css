@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-11 22:17:55
+ * Last modified  : 2018-06-13 07:21:30
  */
 
 
@@ -36,6 +36,7 @@ Shrikhand
  /**/
 
 body{
+    width: 100%;
     overflow: hidden;
     overflow-y: scroll;
 }

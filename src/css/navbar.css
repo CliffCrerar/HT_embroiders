@@ -3,7 +3,7 @@
  * @summary CSS for navigation bar
  * @author Cliff Crerar
  * Created at     : 2018-06-08 17:10:24
- * Last modified  : 2018-06-12 23:30:25
+ * Last modified  : 2018-06-13 07:17:36
  */
 
  /* AVAILABLE FONTS
@@ -29,9 +29,10 @@ Raleway
     font-family: Righteous;
     color: #fffde7;
     border-radius: 0;
+    overflow: hidden;
 }
 
-.nav-inner{
+.nav-inner {
     display: flex;
     flex-direction: row;
     font-size: 6vh;
@@ -66,7 +67,7 @@ Raleway
     padding: 2vh 0 2vh 20%;
 }
 
-.nav-left-logo{
+.nav-left-logo {
     display: flex;
 }
 
@@ -76,7 +77,7 @@ Raleway
     padding-right: 10px;
 }
 
-.nav-left-text>p{
+.nav-left-text>p {
     font-size: 0.5em;
     margin:0;
     line-height: 1;
@@ -87,16 +88,16 @@ Raleway
         0 var(--hp-shd-n) var(--hp-shd-b) var(--ht-dark)
 }
 
-.nav-needle-img-1{
+.nav-needle-img-1 {
     position: absolute;
     width: 80vw;
     height: inherit;
-    top:100%;
-    right:10%;
+    top: 100%;
+    right: 10%;
     z-index: -1;
 }
 
-.nav-needle-img-2{
+.nav-needle-img-2 {
     position: absolute;
     width: 80vw;
     height: inherit;
@@ -107,7 +108,7 @@ Raleway
     opacity: 0.5;
 }
 
-.nav-right{
+.nav-right {
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -117,7 +118,7 @@ Raleway
     margin: 0;
 }
 
-.nav-right>a{
+.nav-right>a {
     margin: 0 2% 0 2%;
     border-radius: 5px;
     width: 100%;
@@ -133,6 +134,7 @@ Raleway
     0 var(--hp-shd-n) var(--hp-shd-b) var(--ht-dark)
 }
 
-.nav-right>a:hover{
-    background-color: var(--ht-dark)
+.nav-right>a:hover {
+    background: linear-gradient(180deg, var(--ht-dark) 50%, #db008b 50%);
+    border-radius: 26px;
 }

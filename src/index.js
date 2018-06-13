@@ -3,22 +3,24 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-12 22:31:32
+ * Last modified  : 2018-06-13 07:25:02
  */
+
+window.scrollbars.visible = false;
 
 /* CUSTOM CSS */
 import './css/font.css'; // CUSTOM FONTS
 import './css/var.css'; // CUSTOM CSS VARIABLES
 import './css/general.css'; // GENERAL CSS
 import './css/landing.css'; // LANDING PAGE CSS
-import './css/navbar.css'; // NAVBAR DESKTOP CSS 
+import './css/navbar.css'; // NAVBAR DESKTOP CSS
 import './css/navbar_m.css'; // NAVBAR MOBILE
 import './css/service.css'; // SERVICES CSS
 import './css/about_us.css'; // ABOUT US CSS
 import './css/clients.css'; // CLIENTS CSS
 import './css/team.css'; // TEAM
 import './css/contact.css'; // CONTACT
-import './css/footer.css'; // FOOTER 
+import './css/footer.css'; // FOOTER
 
 /* HOME PAGE OPTIONS */
 import landingBg from './images/alexander-andrews-290794-unsplash.jpg'; // Home page fetch

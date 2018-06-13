@@ -1,15 +1,15 @@
 /**
  * long description for the file
- *
  * @summary This file contains all the style libraries
  * @author Cliff Crerar
- *
  * Created at     : 2018-05-29 21:49:50
- * Last modified  : 2018-06-12 23:15:20
+ * Last modified  : 2018-06-13 07:12:51
  */
+
 // JQUERY
-import $ from 'script-loader!jquery';
-const jQuery = $;
+// import $ from 'script-loader!jquery';
+// const jQuery = $;
+import 'script-loader!./web/assets/jquery/jquery.min';
 // THETHER
 import 'script-loader!./tether/tether.min';
 // BOOTSTRAP
