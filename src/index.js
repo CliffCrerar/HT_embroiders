@@ -3,10 +3,10 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-13 07:25:02
+ * Last modified  : 2018-06-13 10:16:33
  */
 
-window.scrollbars.visible = false;
+//window.scrollbars.visible = false;
 
 /* CUSTOM CSS */
 import './css/font.css'; // CUSTOM FONTS
