@@ -6,6 +6,11 @@
  * Last modified  : 2018-06-13 23:33:23
  */
 
+.mobile-menu{
+    display: none;
+
+}
+
 @media only screen and (max-width: 1024px){
     .nav-left-1{
         font-size: 2em;
@@ -21,6 +26,26 @@
     .nav-right{
         display: none;
         flex-direction: column;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0.30em;
+    }
+    .ham-burger{
+        font-size: 1em;
+        padding: 0.25em 0.35em 0.25em 0.35em;
+        border: 0.07em solid white;
+        background: transparent;
+        border-radius: 0.2em;
+    }
+}
+
+@media (max-width: 1024px) and (orientation:landscape){
+    .ham-burger{
+        font-size: 1.5em;
     }
 }
 

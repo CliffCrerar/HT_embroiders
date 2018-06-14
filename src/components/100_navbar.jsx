@@ -36,7 +36,7 @@ const Navbar = () => {
         <div className="nav-inner">
 
             <div className="mobile-menu">
-                <i class="fas fa-bars"></i>
+                <button className="ham-burger fas fa-bars"></button>
             </div>
 
             <div className="nav-left nav-left-1">

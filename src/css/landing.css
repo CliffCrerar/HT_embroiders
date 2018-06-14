@@ -13,6 +13,16 @@
 .mbr-section{
     background-position: right top;
 }
+
+.logoBandDemo4{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
 .home-page-title-box{
     margin: 0 !important;
     height: 100%;
@@ -24,7 +34,7 @@
     -webkit-transform-style: preserve-3d; /* Safari 3-8  */
     transform-style: preserve-3d;
     opacity: 0.1;
-    transform: rotate(10deg)
+    transform: rotate(10deg);
 }
 
 .home-bg-logo-cntr{
