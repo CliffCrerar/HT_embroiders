@@ -133,6 +133,10 @@ Raleway
 }
 
 .nav-right>a:hover {
-    background: linear-gradient(180deg, var(--ht-dark) 50%, #db008b 50%);
-    border-radius: 26px;
+    background: linear-gradient(180deg, var(--ht-dark) 45%, #91005c 55%);
+    border-radius: 30px;
+}
+
+.mobile-menu{
+    display: hide
 }

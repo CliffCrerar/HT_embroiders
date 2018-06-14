@@ -2,27 +2,26 @@
  * CSS MOBILE
  * @summary CSS for the navbar mobile display
  * @author Cliff Crerar
- * Created at     : 2018-06-08 21:08:55 
+ * Created at     : 2018-06-08 21:08:55
  * Last modified  : 2018-06-13 23:33:23
  */
 
 @media only screen and (max-width: 1024px){
     .nav-left-1{
         font-size: 2em;
-        background: linear-gradient(40deg, rgba(255,253,231,0.3) 50%, rgba(241, 32, 165, 0.3) 90%);;
+        background: linear-gradient(40deg, rgba(255,253,231,0.4) 50%, rgba(241, 32, 165, 0.3) 90%);;
     }
     .nav-left-logo{
         display: flex;
         flex-direction: column;
     }
-
 }
 
 @media (max-width: 1024px) {
     .nav-right{
         display: none;
         flex-direction: column;
-    } 
+    }
 }
 
 @media only screen and (max-width: 414px){
@@ -31,8 +30,14 @@
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px), (orientation: portrait){
+@media only screen and (min-width: 768px) and (orientation: portrait){
     .mbr-section{
         background-position: right -30vw top;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape){
+    .mbr-section{
+        background-position: right top;
     }
 }

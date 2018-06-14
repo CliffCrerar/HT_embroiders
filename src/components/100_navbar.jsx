@@ -35,6 +35,10 @@ const Navbar = () => {
     return (
         <div className="nav-inner">
 
+            <div className="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+
             <div className="nav-left nav-left-1">
 
                 <div className="nav-left-logo">
