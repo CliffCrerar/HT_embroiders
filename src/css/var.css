@@ -11,7 +11,7 @@
     --ht-blue-o: rgb(0,133,215,0.5);
     --ht-green: #87efba;
     --ht-green-o: rgb(135,239,186,0.5);
-    --ht-grad-1: linear-gradient(15deg, rgba(255,253,231,0.8) 20%, rgba(192,0,121,0.8) 80%);
+    --ht-grad-1: linear-gradient(25deg, rgba(255,253,231,0.3) 30%, rgba(192,0,121,0.3) 80%);
     --section-border: 1.5vh solid black;
     --content-border: 7px solid black;
 }

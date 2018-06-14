@@ -8,7 +8,8 @@
 
 import React from 'react'; // import react
 const imgName = ''
-import logoImg from '../images/ht_nav_logo.png'; // Navbar brand image
+//import logoImg from '../images/ht_nav_logo.png'; // Navbar brand image
+import logoImg from '../images/ht_nav_logo_2.png'; // Navbar brand image
 import needle from '../images/needle-image-1.png'; // logo image
 const brandName1 = 'Borduurders'; // Navbar brand name
 const brandName2 = 'Embroiders'; // Navbar brand name
@@ -34,7 +35,7 @@ const Navbar = () => {
     return (
         <div className="nav-inner">
 
-            <div className="nav-left nav-left-2">
+            <div className="nav-left nav-left-1">
 
                 <div className="nav-left-logo">
                     <div className="nav-left-image">
@@ -46,6 +47,7 @@ const Navbar = () => {
                         <p>{brandName2}</p>
                     </div>
                 </div>
+
                 <img className="nav-needle-img nav-needle-img-2" src={needle} />
             </div>
 

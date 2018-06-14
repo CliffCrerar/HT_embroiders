@@ -3,12 +3,16 @@
  * @summary CSS for the site's landing page
  * @author Cliff Crerar
  * Created at     : 2018-06-11 22:03:01 
- * Last modified  : 2018-06-11 22:11:04
+ * Last modified  : 2018-06-13 23:20:13
  */
 
 /*
      HOME PAGE
 */
+
+.mbr-section{
+    background-position: right top;
+}
 .home-page-title-box{
     margin: 0 !important;
     height: 100%;
@@ -16,15 +20,26 @@
 }
 
 .logohp{
-    float: right !important;
-    padding: 10px 0 10px 0;
-    height: 80vh;
+    height: 115vh;
     -webkit-transform-style: preserve-3d; /* Safari 3-8  */
     transform-style: preserve-3d;
-    opacity: 0.3;
-    transform: rotate(5deg)
+    opacity: 0.1;
+    transform: rotate(10deg)
 }
 
 .home-bg-logo-cntr{
-    padding-right: 1vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
+
+/*
+.home-bg-logo-cntr{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   
+}
+*/

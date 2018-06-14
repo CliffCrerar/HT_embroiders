@@ -3,7 +3,7 @@
  * @summary CSS for navigation bar
  * @author Cliff Crerar
  * Created at     : 2018-06-08 17:10:24
- * Last modified  : 2018-06-13 07:17:36
+ * Last modified  : 2018-06-13 22:56:49
  */
 
  /* AVAILABLE FONTS
@@ -29,7 +29,6 @@ Raleway
     font-family: Righteous;
     color: #fffde7;
     border-radius: 0;
-    overflow: hidden;
 }
 
 .nav-inner {
@@ -55,13 +54,11 @@ Raleway
 }
 
 .nav-left-1{
-    display: flex;
-    flex-direction: column;
     align-items: center;
     position: absolute;
     transform: translateY(30vh);
     left: -15%;
-    font-size: 5em;
+    font-size: 4em;
     width: 115%;
     background: var(--ht-grad-1);
     padding: 2vh 0 2vh 20%;
@@ -95,6 +92,7 @@ Raleway
     top: 100%;
     right: 10%;
     z-index: -1;
+    opacity: 0.8;
 }
 
 .nav-needle-img-2 {
@@ -120,7 +118,7 @@ Raleway
 
 .nav-right>a {
     margin: 0 2% 0 2%;
-    border-radius: 5px;
+    border-radius: 25px;
     width: 100%;
     font-size: 0.7em;
     color: inherit;
