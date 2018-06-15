@@ -7,7 +7,6 @@
  */
 
 import React from 'react'; // import react
-const imgName = ''
 //import logoImg from '../images/ht_nav_logo.png'; // Navbar brand image
 import logoImg from '../images/ht_nav_logo_2.png'; // Navbar brand image
 import needle from '../images/needle-image-1.png'; // logo image
@@ -25,6 +24,19 @@ const navLinksData = [
     //{ heading: 'Contact', link: '#contacts3-e' },
 ];
 
+// Mobile nav on click event
+const navLinksShow = () => {
+    console.log('NavLinks Click');
+    console.log($('#nav-right').hasClass('show'));
+    if ($('#nav-right').hasClass('show')) {
+        $('#nav-right').css('display', 'none').removeClass('show');
+    } else {
+        $('#nav-right').css('display', 'flex').addClass('show');
+    }
+    //$('#nav-right').css('display', 'flex');
+};
+
+
 const Navbar = () => {
     // navbar link
     const NavLinkElement = navLinksData.map(linkData => {
@@ -32,16 +44,18 @@ const Navbar = () => {
             <a key={linkData.link} href={linkData.link}>{linkData.heading}</a>
         );
     });
+
     return (
         <div className="nav-inner">
 
-            <div className="mobile-menu">
-                <button className="ham-burger fas fa-bars"></button>
+            <div className="mobile-menu" >
+                <button className="ham-burger fas fa-bars" onClick={navLinksShow}></button>
             </div>
 
-            <div className="nav-left nav-left-1">
+            <div className="nav-left nav-left-2">
 
                 <div className="nav-left-logo">
+
                     <div className="nav-left-image">
                         <img src={logoImg} title="navbar-brand-image" alt="navbar-brand" />
                     </div>
@@ -55,7 +69,7 @@ const Navbar = () => {
                 <img className="nav-needle-img nav-needle-img-2" src={needle} />
             </div>
 
-            <div className="nav-right">
+            <div id="nav-right" className="nav-right">
                 {NavLinkElement}
             </div>
 

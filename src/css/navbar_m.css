@@ -8,7 +8,6 @@
 
 .mobile-menu{
     display: none;
-
 }
 
 @media only screen and (max-width: 1024px){
@@ -23,17 +22,30 @@
 }
 
 @media (max-width: 1024px) {
+    .nav-left-2{
+        display: none;
+    }
+
     .nav-right{
         display: none;
         flex-direction: column;
+        flex:2;
     }
+
+    .nav-right>a{
+        margin: 3vh 0 3vh 0;
+    }
+
     .mobile-menu{
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         width: 100%;
         padding: 0.30em;
+        /* flex item css*/
+        flex:1;
     }
+
     .ham-burger{
         font-size: 1em;
         padding: 0.25em 0.35em 0.25em 0.35em;
