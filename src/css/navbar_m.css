@@ -3,7 +3,7 @@
  * @summary CSS for the navbar mobile display
  * @author Cliff Crerar
  * Created at     : 2018-06-08 21:08:55
- * Last modified  : 2018-06-13 23:33:23
+ * Last modified  : 2018-06-18 18:07:25
  */
 
 .mobile-menu{
@@ -13,23 +13,31 @@
 @media only screen and (max-width: 1024px){
     .nav-left-1{
         font-size: 2em;
-        background: linear-gradient(40deg, rgba(255,253,231,0.4) 50%, rgba(241, 32, 165, 0.3) 90%);;
+        background: linear-gradient(40deg, rgba(255,253,231,0.4) 50%, rgba(241, 32, 165, 0.3) 90%);
+
     }
     .nav-left-logo{
         display: flex;
         flex-direction: column;
     }
+    .svc-car-title{
+        font-size: 2.4em;
+    }
 }
 
 @media (max-width: 1024px) {
     .nav-left-2{
-        display: none;
+        display: flex;
     }
 
     .nav-right{
         display: none;
         flex-direction: column;
         flex:2;
+    }
+
+    .nav-right-show{
+        display: flex;
     }
 
     .nav-right>a{
@@ -76,5 +84,31 @@
 @media only screen and (max-width: 768px) and (orientation: landscape){
     .mbr-section{
         background-position: right top;
+    }
+}
+
+/* FOR CAROUSEL ITEMS */
+@media only screen and (max-width:320px){
+    .svc-car-title{
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width:360px){
+    .svc-car-title{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .svc-car-title{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .display-2{
+        font-size: 2em;
     }
 }

@@ -38,9 +38,11 @@
     "bundle-loader": "^0.5.6",
     "clean-webpack-plugin": "^0.1.19",
     "jquery": "^3.3.1",
+    "jquery-ui": "^1.12.1",
     "popper.js": "^1.14.3",
     "run": "^1.4.0",
-    "tether": "^1.4.4"
+    "tether": "^1.4.4",
+    "webpack-jquery-ui": "^1.0.0"
   },
   "repository": {
     "type": "git",

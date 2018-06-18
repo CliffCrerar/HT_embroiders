@@ -3,7 +3,7 @@
  * @summary CSS for navigation bar
  * @author Cliff Crerar
  * Created at     : 2018-06-08 17:10:24
- * Last modified  : 2018-06-13 22:56:49
+ * Last modified  : 2018-06-18 18:10:15
  */
 
  /* AVAILABLE FONTS
@@ -48,12 +48,12 @@ Raleway
     transition: all 1s ease;
 }
 
-.nav-left-2{
+.nav-left-2 {
     align-items: center;
     display: flex;
 }
 
-.nav-left-1{
+.nav-left-1 {
     align-items: center;
     position: absolute;
     transform: translateY(30vh);
@@ -130,7 +130,11 @@ Raleway
     var(--hp-shd-p) 0 var(--hp-shd-b) var(--ht-dark),
     0 var(--hp-shd-p) var(--hp-shd-b) var(--ht-dark),
     var(--hp-shd-n) 0 var(--hp-shd-b) var(--ht-dark),
-    0 var(--hp-shd-n) var(--hp-shd-b) var(--ht-dark)
+    0 var(--hp-shd-n) var(--hp-shd-b) var(--ht-dark);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .nav-right>a:hover {

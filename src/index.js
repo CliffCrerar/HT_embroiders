@@ -3,10 +3,15 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-13 23:14:14
+ * Last modified  : 2018-06-18 17:26:32
  */
 
 //window.scrollbars.visible = false;
+
+// JQUERY UI
+
+import 'webpack-jquery-ui';
+import 'webpack-jquery-ui/css';
 
 /* CUSTOM CSS */
 import './css/font.css'; // CUSTOM FONTS
