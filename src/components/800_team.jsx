@@ -3,7 +3,7 @@
  * @summary Describes the HT team and portraits of members
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:26:55 
- * Last modified  : 2018-06-12 00:47:34
+ * Last modified  : 2018-06-18 23:48:11
  */
 
 import React from 'react';
@@ -28,24 +28,36 @@ const TeamMembers = () => {
     const team = [
         {
             key: 'person-1',
-            name: 'Person Name',
+            name: 'Anette',
             personImage: require('../images/teamplaceholder.png'),
-            designation: 'designation'
+            designation: 'Owner'
         },
         {
             key: 'person-2',
-            name: 'Person Name',
+            name: 'Ciska',
             personImage: require('../images/teamplaceholder.png'),
-            designation: 'designation'
+            designation: '??'
         },
         {
             key: 'person-3',
-            name: 'Person Name',
-            personImage: require('../images/teamplaceholder.png'),
-            designation: 'designation'
+            name: 'Andile',
+            personImage: require('../images/team_member_1_andile.jpeg'),
+            designation: 'Cutter'
         },
         {
             key: 'person-4',
+            name: 'Norah',
+            personImage: require('../images/team_member_2_norah.jpeg'),
+            designation: 'Seamstress'
+        },
+        {
+            key: 'person-5',
+            name: 'Mavis',
+            personImage: require('../images/team_member_3_mavis.jpeg'),
+            designation: 'Seamstress'
+        },
+        {
+            key: 'person-6',
             name: 'Person Name',
             personImage: require('../images/teamplaceholder.png'),
             designation: 'designation'
@@ -54,7 +66,7 @@ const TeamMembers = () => {
 
     const Member = (props) => {
         return (
-            <div className="col-sm-6 col-md-3">
+            <div className="col-sm-6 col-md-4">
                 <div className="card cart-block team-member-card">
                     <img className="card-img-top team-member-image" src={props.personImage} alt={props.name} title={props.name} />
                     <div className="card-block">
@@ -90,6 +102,7 @@ const TeamMembers = () => {
             <div className="container">
                 {DisplayMembers(team)}
             </div>
+            <div className="anchor-offset header-section" id="contact"></div>
         </div>
     );
 };

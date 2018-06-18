@@ -3,7 +3,7 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-12 22:52:33
+ * Last modified  : 2018-06-18 23:34:05
  */
 
 import React from 'react';
@@ -21,6 +21,10 @@ import img8 from '../images/gallery-10.jpg';
 import img9 from '../images/gallery-11.jpg';
 import img10 from '../images/gallery-12.jpg';
 import img11 from '../images/gallery-13.jpg';
+import img12 from '../images/gallery-14.jpeg';
+import img13 from '../images/gallery-15.jpeg';
+import img14 from '../images/gallery-16.jpeg';
+import img15 from '../images/gallery-17.jpeg';
 // About us configuration
 const vm = {
     vision: 'Lorem ipsum dolor sit amet, alienum omittantur cu qui, nisl mediocrem sed an. Ne pri admodum dolores. Usu ad option fierent, dicam dicunt malorum his ne, eum in molestie facilisis maiestatis. Doming aliquando sed eu, aeque aliquip est an. Tota dicunt qui in. Sea affert partem platonem at. Modo pericula ad vis. Tamquam civibus eu vix. Te eos inani argumentum, cum eleifend perpetua ut. Decore euismod no ius. Ne vel vide assum contentiones, augue laudem periculis id eum, ad se',
@@ -36,65 +40,87 @@ const galleryImageData = {
         {
             img: 0,
             title: 'ImageTitle0',
-            image: img1
+            image: img12
         },
         {
             img: 1,
             title: 'ImageTitle1',
-            image: img0
+            image: img13
         },
         {
             img: 2,
             title: 'ImageTitle2',
-            image: img2
+            image: img14
         },
         {
             img: 3,
             title: 'ImageTitle3',
-            image: img10
+            image: img15
         }
     ],
     row2: [
         {
             img: 4,
             title: 'ImageTitle4',
-            image: img8
+            image: img1
         },
         {
             img: 5,
             title: 'ImageTitle5',
-            image: img9
+            image: img0
         },
         {
             img: 6,
             title: 'ImageTitle6',
-            image: img11
+            image: img2
         },
         {
             img: 7,
             title: 'ImageTitle7',
-            image: img5
+            image: img10
         }
     ],
     row3: [
         {
             img: 8,
             title: 'ImageTitle8',
-            image: img4
+            image: img8
         },
         {
             img: 9,
             title: 'ImageTitle9',
-            image: img6
+            image: img9
         },
         {
             img: 10,
             title: 'ImageTitle10',
-            image: img3
+            image: img11
         },
         {
             img: 11,
             title: 'ImageTitle11',
+            image: img5
+        }
+    ],
+    row4: [
+        {
+            img: 12,
+            title: 'ImageTitle12',
+            image: img4
+        },
+        {
+            img: 13,
+            title: 'ImageTitle13',
+            image: img6
+        },
+        {
+            img: 14,
+            title: 'ImageTitle14',
+            image: img3
+        },
+        {
+            img: 15,
+            title: 'ImageTitle15',
             image: img7
         }
     ]
@@ -176,7 +202,13 @@ const AboutGallery = () => {
                     {GallerySmallItems(galleryImageData, 'row3')}
                 </div>
                 {/*<!-- /ROW 3 -->*/}
-                <div className="clearfix"></div>
+
+                {/*<!-- ROW 4 -->*/}
+                <div className="rowB4">
+                    {GallerySmallItems(galleryImageData, 'row4')}
+                </div>
+                {/*<!-- /ROW 4 -->*/}
+
             </div>
 
             {/* LIGHTBOX */}
@@ -211,6 +243,7 @@ const AboutGallery = () => {
                     </div>
                 </div>
             </div>
+            <div id="client" className="anchor-offset header-section"></div>
         </div>
     );
 };

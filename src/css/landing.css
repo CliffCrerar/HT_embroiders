@@ -3,7 +3,7 @@
  * @summary CSS for the site's landing page
  * @author Cliff Crerar
  * Created at     : 2018-06-11 22:03:01 
- * Last modified  : 2018-06-13 23:20:13
+ * Last modified  : 2018-06-18 20:19:58
  */
 
 /*
@@ -21,6 +21,7 @@
     top: 0;
     left: 0;
     overflow: hidden;
+    z-index: 2;
 }
 
 .home-page-title-box{

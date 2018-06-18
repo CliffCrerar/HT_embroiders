@@ -3,14 +3,14 @@
  * @summary CSS for the navbar mobile display
  * @author Cliff Crerar
  * Created at     : 2018-06-08 21:08:55
- * Last modified  : 2018-06-18 18:07:25
+ * Last modified  : 2018-06-18 22:29:33
  */
 
 .mobile-menu{
     display: none;
 }
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1024px) and (orientation: portrait){
     .nav-left-1{
         font-size: 2em;
         background: linear-gradient(40deg, rgba(255,253,231,0.4) 50%, rgba(241, 32, 165, 0.3) 90%);
@@ -45,7 +45,6 @@
     }
 
     .mobile-menu{
-        display: flex;
         flex-direction: row;
         justify-content: flex-end;
         width: 100%;
@@ -110,5 +109,94 @@
 @media only screen and (max-width: 414px){
     .display-2{
         font-size: 2em;
+    }
+}
+
+/* NAV HEIGHT FOR LINKS */
+
+/*
+    iphone 5/se
+*/
+@media only screen and (max-width:320px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 76px;
+    }
+}
+@media only screen and (max-width:320px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 57px;
+    }
+}
+
+/*
+    Galaxy S5
+*/
+@media only screen and (max-width:360px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 85px;
+    }
+}
+@media only screen and (max-width:360px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 65px;
+    }
+}
+
+/*
+    iphone 6/7/8
+*/
+@media only screen and (max-width:375px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 89px;
+    }
+}
+@media only screen and (max-width:375px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 68px;
+    }
+}
+
+/*
+    iphone X
+*/
+@media only screen and (max-width:375px) and (max-height:812px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 109px;
+    }
+    .hide-nav-logo{
+        display: none;
+    }
+}
+@media only screen and (max-width:375px) and (max-height:812px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 70px;
+    }
+}
+
+/*
+    iphone 6/7/8 plus
+*/
+@media only screen and (max-width:414px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 98px;
+    }
+}
+@media only screen and (max-width:414px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 60px;
+    }
+}
+
+/*
+    ipad
+*/
+@media only screen and (max-width:768px) and (max-height:1024px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 137px;
+    }
+}
+@media only screen and (max-width:768px) and (max-height:1024px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 140px;
     }
 }

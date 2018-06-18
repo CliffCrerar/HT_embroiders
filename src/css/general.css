@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-06-13 07:21:30
+ * Last modified  : 2018-06-18 21:17:08
  */
 
 
@@ -90,4 +90,11 @@ body{
 
 .title-icon{
     margin: 0 5px 0 5px;
+}
+
+.anchor-offset{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
 }

@@ -3,7 +3,7 @@
  * @summary Ser
  * @author Cliff Crerar
  * Created at     : 2018-06-08 18:36:23
- * Last modified  : 2018-06-18 17:42:14
+ * Last modified  : 2018-06-19 00:39:00
  */
 
   /* AVAILABLE FONTS
@@ -38,7 +38,21 @@ Raleway
 
 /*rgba(230,255,196,1);*/
 
+.th-flex-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+.svc-thumbnail{
+    margin: 0 1vw 0 1vw;
+}
+
 .svc-thumbnail>div{
+    width: 250px;
+    height: 250px;
     border: var(--content-border);
     border-radius: 20px;
     background:
