@@ -3,7 +3,7 @@
  * @summary Css for the about us section
  * @author Cliff Crerar
  * Created at     : 2018-06-09 17:34:02
- * Last modified  : 2018-06-12 02:41:06
+ * Last modified  : 2018-06-19 06:51:38
  */
 
 .abt-header{
@@ -33,10 +33,6 @@
     left: 0;
     right: 0;
     top: 0;
-}
-
-.abt-container{
-
 }
 
 .abt-section-title{

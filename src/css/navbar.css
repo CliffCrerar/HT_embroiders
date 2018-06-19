@@ -3,7 +3,7 @@
  * @summary CSS for navigation bar
  * @author Cliff Crerar
  * Created at     : 2018-06-08 17:10:24
- * Last modified  : 2018-06-18 21:43:41
+ * Last modified  : 2018-06-19 06:45:23
  */
 
  /* AVAILABLE FONTS
@@ -35,7 +35,6 @@ Raleway
     display: flex;
     flex-direction: row;
     font-size: 6vh;
-    overflow: hidden;
 }
 
 .nav-left {
@@ -137,7 +136,7 @@ Raleway
 }
 
 .nav-right>a.active{
-    background: linear-gradient(180deg, var(--ht-dark) 45%, #91005c 55%);   
+    background: linear-gradient(180deg, var(--ht-dark) 45%, #91005c 55%);
 }
 
 .nav-right>a:hover {

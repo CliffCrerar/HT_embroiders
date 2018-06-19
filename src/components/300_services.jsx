@@ -3,7 +3,7 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-06-19 00:37:41
+ * Last modified  : 2018-06-19 06:50:31
  */
 
 import React from 'react';
@@ -93,7 +93,7 @@ const thumbnails = svcThumbnailList.map(listItem => {
 // CREATES THE SERVICE THUMBNAILS
 const ServiceThumbnails = () => {
     return (
-        <div className="container">
+        <div className="container-fluid">
             <div className="th-flex-display">
                 {thumbnails}
             </div>

@@ -2,8 +2,8 @@
  * ABOUT THE TEAM
  * @summary Describes the HT team and portraits of members
  * @author Cliff Crerar
- * Created at     : 2018-06-04 22:26:55 
- * Last modified  : 2018-06-18 23:48:11
+ * Created at     : 2018-06-04 22:26:55
+ * Last modified  : 2018-06-19 06:57:06
  */
 
 import React from 'react';
@@ -34,7 +34,7 @@ const TeamMembers = () => {
         },
         {
             key: 'person-2',
-            name: 'Ciska',
+            name: 'Cisca',
             personImage: require('../images/teamplaceholder.png'),
             designation: '??'
         },
@@ -62,7 +62,7 @@ const TeamMembers = () => {
             personImage: require('../images/teamplaceholder.png'),
             designation: 'designation'
         }
-    ]
+    ];
 
     const Member = (props) => {
         return (
@@ -76,7 +76,7 @@ const TeamMembers = () => {
                 </div>
             </div>
         );
-    }
+    };
 
     const DisplayMembers = (detail) => {
         const teamDetails = detail.map(member => {
@@ -88,13 +88,14 @@ const TeamMembers = () => {
                     designation={member.designation}
                 />
             );
-        })
+        });
+
         return (
             <div className="row">
                 {teamDetails}
             </div>
         );
-    }
+    };
 
     return (
         <div>

@@ -3,7 +3,7 @@
  * @summary Shows where HT embroiders is located
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:46:55
- * Last modified  : 2018-06-12 01:11:13
+ * Last modified  : 2018-06-19 07:02:34
  */
 
 import React from 'react';
@@ -53,27 +53,27 @@ const ContactDetails = () => {
             <div className="row">
                 <div className="col-xs-12 col-md-3">
                     <p>
-                        <strong>Address</strong>
-                        <br /> 1234 Street Name
-                    <br /> City, AA 99999
-                    <br />
+                        <strong>Address:</strong>
+                        <br /> Shop 16
+                        <br /> Naud&eacute; Street
+                        <br /> Ermelo
+                        <br /> 2350
                         <br />
-                        <strong>Contacts</strong>
-                        <br /> Email: support@mobirise.com
-                    <br /> Phone: +1 (0) 000 0000 001
-                    <br /> Fax: +1 (0) 000 0000 002</p>
+                        <br />
+                        <strong>Contacts:</strong>
+                        <br /> Email: htbodruur@mweb.co.za
+                        <br /> Phone: +27 17 819 1863
+                        <br /> Cell: +27 82 342 7211
+                        <br /> FAX: 086 644 8262</p>
                 </div>
                 <div className="col-xs-12 col-md-3">
-                    <strong>Links</strong>
+                    <strong>Downloads</strong>
                     <ul>
                         <li>
-                            <a href="#/">Website builder</a>
+                            <a href="#/">Brochure</a>
                         </li>
                         <li>
-                            <a href="#/mobirise-free-win.zip">Download for Windows</a>
-                        </li>
-                        <li>
-                            <a href="#/mobirise-free-mac.zip">Download for Mac</a>
+                            <a href="#">Price list</a>
                         </li>
                     </ul>
                 </div>

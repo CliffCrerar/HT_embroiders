@@ -3,7 +3,7 @@
  * @summary Ser
  * @author Cliff Crerar
  * Created at     : 2018-06-08 18:36:23
- * Last modified  : 2018-06-19 00:39:00
+ * Last modified  : 2018-06-19 07:31:21
  */
 
   /* AVAILABLE FONTS
@@ -43,7 +43,7 @@ Raleway
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    
+
 }
 
 .svc-thumbnail{
@@ -86,9 +86,10 @@ Raleway
 
 .svc-car-title{
     font-family: Syncopate;
-   text-shadow: 1px 0 1px white, 0 1px 1px white, -1px 0 1px white, 0 -1px 1px white;
+    text-shadow: 1px 0 1px white, 0 1px 1px white, -1px 0 1px white, 0 -1px 1px white;
 }
 
+.svc-car-desc{}
 /*
 background: rgb(126,87,194);
 background: linear-gradient(142deg, rgba(126,87,194,1) 15%, rgba(255,253,231,1) 85%);

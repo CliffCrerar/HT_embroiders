@@ -3,7 +3,7 @@
  * @summary This file returns a single carousel item
  * @author Cliff Crerar
  * Created at     : 2018-06-04 16:29:00
- * Last modified  : 2018-06-18 17:50:39
+ * Last modified  : 2018-06-19 07:05:16
  */
 
 import React from 'react';
@@ -23,7 +23,7 @@ const CarouselItem = ({ svcName, svcImage, svcDesc, idx }) => {
                     <div className="row">
                         <div className="svc-car-title-desc col-md-10 col-md-offset-1">
                             <h2 className="svc-car-title mbr-section-title display-1">{svcName}</h2>
-                            <p className="lead text-justify">{svcDesc}</p>
+                            <p className="lead text-justify svc-car-desc">{svcDesc}</p>
                         </div>
                     </div>
                 </div>
