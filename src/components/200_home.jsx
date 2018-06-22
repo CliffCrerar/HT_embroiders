@@ -3,7 +3,7 @@
  * @summary
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:38:18
- * Last modified  : 2018-06-19 00:43:19
+ * Last modified  : 2018-06-19 18:49:49
  */
 
 import React from 'react';
@@ -18,7 +18,14 @@ const Homepage = () => {
                     <img id="logohp" className="logohp" src={logo} />
                 </div>
             </div>
-            <i class="scroll-down fas fa-chevron-circle-down"></i>
+            <div className="scroll-down-div">
+                <a href="#service">
+                    <i className="scroll-down-glyph-1 fas fa-chevron-circle-down"></i>
+                    <i className="scroll-down-glyph-2 fas fa-chevron-circle-down"></i>
+
+                </a>
+            </div>
+
             <div id="service" className="anchor-offset header-section"></div>
         </div>
     );

@@ -3,7 +3,7 @@
  * @summary CSS for the site's landing page
  * @author Cliff Crerar
  * Created at     : 2018-06-11 22:03:01 
- * Last modified  : 2018-06-18 20:19:58
+ * Last modified  : 2018-06-19 18:51:20
  */
 
 /*
@@ -43,6 +43,87 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+
+.scroll-down-div{
+    position: absolute;
+    text-align: center;
+    bottom: 10px;
+    width:100%;
+    z-index: 100;
+}
+
+.scroll-down-glyph-1{
+    opacity: 0;
+    color: white;
+    font-size: 2em;
+    margin-right: 1vw;
+    
+    animation: strobe 2s ease-in-out;
+    -webkit-animation: strobe 2s ease-in-out;
+    -o-animation: strobe 2s ease-in-out;
+    -moz-animation:  strobe 2s ease-in-out;
+    
+    -webkit-animation-delay: 2s;
+    -o-animation-delay: 2s;
+    -moz-animation-delay: 2s;
+    animation-delay: 2s;
+
+    animation-iteration-count: 3;
+    -o-animation-iteration-count: 3;
+    -moz-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+}
+
+.scroll-down-glyph-2{
+    opacity: 0;
+    color: white;
+    font-size: 2em;
+    margin-left: 1vw;
+    
+    animation: strobe 2s ease-in-out;
+    -webkit-animation: strobe 2s ease-in-out;
+    -o-animation: strobe 2s ease-in-out;
+    -moz-animation:  strobe 2s ease-in-out;
+    
+    -webkit-animation-delay: 3s;
+    -o-animation-delay: 3s;
+    -moz-animation-delay: 3s;
+    animation-delay: 3s;
+
+    animation-iteration-count: 3;
+    -o-animation-iteration-count: 3;
+    -moz-animation-iteration-count: 3;
+    -webkit-animation-iteration-count: 3;
+}
+
+@keyframes strobe {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 0.1;}
+}
+@-moz-keyframes strobe {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 0.1;}
+}
+@-o-keyframes strobe {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 0.1;}
+}
+@-webkit-keyframes strobe {
+    0%   {opacity: 0;}
+    25%  {opacity: 0.25;}
+    50%  {opacity: 0.5;}
+    75%  {opacity: 0.75;}
+    100% {opacity: 0.1;}
 }
 
 /*
