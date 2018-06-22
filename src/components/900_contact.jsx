@@ -3,7 +3,7 @@
  * @summary Shows where HT embroiders is located
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:46:55
- * Last modified  : 2018-06-22 17:37:08
+ * Last modified  : 2018-06-22 18:07:31
  */
 
 import React from 'react';
@@ -14,13 +14,13 @@ const contactInfo = {
     email: '',
     phone: '',
     fax: ''
-}
+};
 
 const links = {
     brochure: '',
     priceList: '',
     aboutTheDeveloper: ''
-}
+};
 
 const ContactHeading = () => {
     return (
