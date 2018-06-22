@@ -3,7 +3,7 @@
  * @summary Shows where HT embroiders is located
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:46:55
- * Last modified  : 2018-06-19 07:02:34
+ * Last modified  : 2018-06-22 17:37:08
  */
 
 import React from 'react';
@@ -64,16 +64,25 @@ const ContactDetails = () => {
                         <br /> Email: htbodruur@mweb.co.za
                         <br /> Phone: +27 17 819 1863
                         <br /> Cell: +27 82 342 7211
-                        <br /> FAX: 086 644 8262</p>
+                        <br /> FAX: +27 86 644 8262</p>
                 </div>
                 <div className="col-xs-12 col-md-3">
-                    <strong>Downloads</strong>
+                    <strong>Suppliers</strong>
                     <ul>
                         <li>
-                            <a href="#/">Brochure</a>
+                            <a href="http://www.barron.co.za/" target="_blank">BARRON</a>
                         </li>
                         <li>
-                            <a href="#">Price list</a>
+                            <a href="http://www.altitudec.co.za" target="_blank">altitude</a>
+                        </li>
+                        <li>
+                            <a href="https://www.kmq.co.za" target="_blank">KMQ Trade only suppliers</a>
+                        </li>
+                        <li>
+                            <a href="http://www.bagsandmore.co.za" target="_blank">bags & more</a>
+                        </li>
+                        <li>
+                            <a href="http://www.king-caps.net" target="_blank">Sino Hitec Trading</a>
                         </li>
                     </ul>
                 </div>

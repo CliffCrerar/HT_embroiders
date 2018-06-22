@@ -3,7 +3,7 @@
  * @summary Describes the HT team and portraits of members
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:26:55
- * Last modified  : 2018-06-19 06:57:06
+ * Last modified  : 2018-06-22 17:31:29
  */
 
 import React from 'react';
@@ -34,34 +34,34 @@ const TeamMembers = () => {
         },
         {
             key: 'person-2',
-            name: 'Cisca',
+            name: 'Charmaine',
             personImage: require('../images/teamplaceholder.png'),
-            designation: '??'
+            designation: 'General manager'
         },
         {
             key: 'person-3',
-            name: 'Andile',
-            personImage: require('../images/team_member_1_andile.jpeg'),
-            designation: 'Cutter'
+            name: 'Cisca',
+            personImage: require('../images/teamplaceholder.png'),
+            designation: 'Assistant manager'
         },
         {
             key: 'person-4',
             name: 'Norah',
             personImage: require('../images/team_member_2_norah.jpeg'),
-            designation: 'Seamstress'
+            designation: 'Embroideress'
         },
         {
             key: 'person-5',
             name: 'Mavis',
             personImage: require('../images/team_member_3_mavis.jpeg'),
-            designation: 'Seamstress'
+            designation: 'Embroideress'
         },
         {
             key: 'person-6',
-            name: 'Person Name',
-            personImage: require('../images/teamplaceholder.png'),
-            designation: 'designation'
-        }
+            name: 'Andile',
+            personImage: require('../images/team_member_1_andile.jpeg'),
+            designation: 'Cutter'
+        },
     ];
 
     const Member = (props) => {

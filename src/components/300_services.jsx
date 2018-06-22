@@ -3,7 +3,7 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-06-19 06:50:31
+ * Last modified  : 2018-06-22 18:05:20
  */
 
 import React from 'react';
@@ -13,8 +13,8 @@ import Thumbnail from './301_thumbnail.jsx';
 import th0 from '../images/svc-tn-embroidery.png';
 import th1 from '../images/svc-tn-silk_screen.png';
 import th2 from '../images/svc-tn-videoflex.png';
-import th3 from '../images/svc-tn-submlimination_mug_1.png';
-import th4 from '../images/svc-tn-clothing_3.png';
+import th3 from '../images/svc-tn-submlimination.png';
+import th4 from '../images/svc-tn-clothing.png';
 // IMPORT IMAGES FOR CAROUSEL
 import carImg0 from '../images/agto-nugroho-665411-unsplash_resize.jpg';
 import carImg1 from '../images/svc-car-silkscreen-printing-1.jpg';
