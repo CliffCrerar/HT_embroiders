@@ -2,5 +2,19 @@
     "charset": "UTF-8",
     "X-UA-Compatible": "IE=edge",
     "viewport": "width=device-width, initial-scale=1, minimum-scale=1",
-    "description": ""
+    "description": "HT Embroiders online presence, company profile",
+    "keywords": "embroidery, videoflex, sublimination, silk screen, printing, clothing, t-shirts, ermelo, textiles, bespoke, tayloring, yarn, whool, t-shirt, overall, overalls, jackets, badges, patches, logos, branding",
+    "industry": "textiles, clothing, printing, branding, taylor making",
+    "city": "ermelo",
+    "province": "mpumalanga",
+    "developer": "Infinity Arc",
+    "web designer": "Infinity Arc",
+    "graphic designer": "Infinity Arc",
+    "company": "HT Embroiders / Borduurders",
+    "business": "HT Embroiders / Borduurders",
+    "author": "Cliff Crerar",
+    "mobile responsive": "yes",
+    "frameworks": "bootstrap, react, babel, webpack, jquery",
+    "libraries": "bootstrap, react, babel, webpack, jquery",
+    "type": "Business profile"
 }
