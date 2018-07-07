@@ -3,7 +3,7 @@
  * @summary JSX for the social links section of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:14:15 
- * Last modified  : 2018-06-12 23:13:15
+ * Last modified  : 2018-07-06 21:31:45
  */
 
 import React from 'react';
@@ -18,13 +18,15 @@ const SocialMedia = () => {
             linkClass: 'socicon-bg-twitter',
             link: 'https://twitter.com/mobirise',
             icon: 'socicon-twitter',
+            active: false
         },
         {
             key: 'social-2',
             title: 'facebook',
             linkClass: 'socicon-bg-facebook',
-            link: 'https://www.facebook.com/pages/Mobirise/1616226671953247',
+            link: 'https://www.facebook.com/profile.php?id=100009882881236',
             icon: 'socicon-facebook',
+            active: true
         },
         {
             key: 'social-3',
@@ -32,6 +34,7 @@ const SocialMedia = () => {
             linkClass: 'socicon-bg-google',
             link: 'https://plus.google.com/u/0/+Mobirise/posts',
             icon: 'socicon-google',
+            active: false
         },
         {
             key: 'social-4',
@@ -39,6 +42,7 @@ const SocialMedia = () => {
             linkClass: 'socicon-bg-youtube',
             link: 'https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw',
             icon: 'socicon-youtube',
+            active: false
         },
         {
             key: 'social-5',
@@ -46,6 +50,7 @@ const SocialMedia = () => {
             linkClass: 'socicon-bg-instagram',
             link: 'https://instagram.com/mobirise/',
             icon: 'socicon-instagram',
+            active: false
         },
         {
             key: 'social-6',
@@ -53,6 +58,7 @@ const SocialMedia = () => {
             linkClass: 'socicon-bg-pinterest',
             link: 'https://www.pinterest.com/mobirise/',
             icon: 'socicon-pinterest',
+            active: false
         },
         {
             key: 'social-7',
@@ -60,6 +66,7 @@ const SocialMedia = () => {
             linkClass: 'socicon-bg-tumblr',
             link: 'http://mobirise.tumblr.com/',
             icon: 'socicon-tumblr',
+            active: false
         },
         {
             key: 'social-8',
@@ -67,22 +74,26 @@ const SocialMedia = () => {
             linkClass: 'socicon-bg-linkedin',
             link: 'https://www.linkedin.com/in/mobirise',
             icon: 'socicon-linkedin',
+            active: false
         }
-    ]
+    ];
 
     const mapSocialLinks = socialProfiles.map(profile => {
-        return (
-            <a key={profile.key} className={`btn btn-social ${profile.linkClass}`} title={profile.title} target="_blank" href={profile.link}>
-                <i className={`socicon ${profile.icon}`}></i>
-            </a>
-        );
+        if (profile.active) {
+            return (
+                <a key={profile.key} className={`btn btn-social ${profile.linkClass}`} title={profile.title} target="_blank" href={profile.link}>
+                    <i className={`socicon ${profile.icon}`}></i>
+                </a>
+            );
+        }
+
     });
     return (
         <div className="col-sm-8 text-xs-right">
             {mapSocialLinks}
         </div>
     );
-}
+};
 
 const SocialLinks = () => {
     return (

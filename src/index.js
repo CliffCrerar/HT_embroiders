@@ -3,15 +3,16 @@
  * @summary Adds custom files to project not part of original template
  * @author Cliff Crerar
  * Created at     : 2018-06-05 03:14:14
- * Last modified  : 2018-06-22 19:06:07
+ * Last modified  : 2018-07-06 23:19:28
  */
 
 //window.scrollbars.visible = false;
 
-// JQUERY UI
+// LOADING WINDOW
+// import loadingGif from './images/loading.gif';
+// document.getElementById(elementId).setAttribute('src', loadingGif);
 
 /* CUSTOM CSS */
-import './css/font.css'; // CUSTOM FONTS
 import './css/var.css'; // CUSTOM CSS VARIABLES
 import './css/general.css'; // GENERAL CSS
 import './css/landing.css'; // LANDING PAGE CSS
@@ -23,6 +24,7 @@ import './css/clients.css'; // CLIENTS CSS
 import './css/team.css'; // TEAM
 import './css/contact.css'; // CONTACT
 import './css/footer.css'; // FOOTER
+import './css/alerts.css'; // ALERTS FOR CONTACT FORM
 
 /* HOME PAGE OPTIONS */
 //import landingBg from './images/alexander-andrews-290794-unsplash.jpg'; // Home page fetch
@@ -40,3 +42,5 @@ $('#content4-2').css('background-image', `url(${teamMembersBG})`);
 // CUSTOM JS
 import './js/NavChangeScroll';
 import './js/navActive';
+import './js/svcannounce';
+import './js/webform';

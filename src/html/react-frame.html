@@ -1,6 +1,17 @@
 <!doctype html>
 <html>
 
+<!--LOADING SCREEN-->
+<div class="loadScreenOverLay" id="loadScreenOverLay">
+
+    <div class="loadScreenInner">
+        <img id="loadingGif" class="loadingGif" alt="loadingGif">
+        <div class="loadScreenInner"></div>
+        <p class="loadingTitle">Loading...</p>
+    </div>
+
+</div>
+
 <!--NAVBAR-->
 <nav class="navbar navbar-light mbr-navbar navbar-transparent nav-stick-top" id="menu-0" data-rv-view="1653">
 </nav>
@@ -62,5 +73,16 @@
 <!--PAGE FOOTER-->
 <footer class="page-footer mbr-section mbr-section-nopadding mbr-footer" id="footer1-f" data-rv-view="1756">
 </footer>
+
+<!--CONTACT FORM ALLERTS-->
+<div id="AlertEmail" class="alert error text-center emailName fixed-top" role="alert">
+    <b>NOT SENT!</b> Please enter a valid
+    <b>EMAIL ADDRESS</b> as well as a message
+    <b>MESSAGE</b>.
+</div>
+<div id="AlertSent" class="alert success text-center emailName fixed-top" role="alert">
+    <b>MESSAGE WAS SENT!</b>
+</div>
+
 
 </html>

@@ -25,19 +25,12 @@ module.exports = {
                 ]
             },
             {
-
-                test: /\.(png|jpg|gif|svg|jpeg)$/,
+                test: /\.(png|jpg|gif|svg|jpeg|woff|woff2|eot|ttf|otf)$/,
                 use: [
                     {
                         loader: 'file-loader',
                         options: {}
                     }
-                ]
-            },
-            {
-                test: /\.(woff|woff2|eot|ttf|otf)$/,
-                use: [
-                    'file-loader'
                 ]
             },
             {
@@ -66,9 +59,12 @@ module.exports = {
         new CleanWebpackPlugin(['dist']),
         new HTMLwebpackPlugin({
             //template: './src/html/index.html',
-            title: 'HT Embroiders',
+            title: 'Embroiders / Borduurders',
             meta: require('./meta.json'),
-            favicon: '',
+            favicon: './favicon.png',
+        }),
+        new webpack.DefinePlugin({
+            IP: JSON.stringify('172.16.0.104')
         }),
         new ManifestPlugin()
     ],

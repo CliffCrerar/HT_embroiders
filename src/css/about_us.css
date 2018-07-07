@@ -3,7 +3,7 @@
  * @summary Css for the about us section
  * @author Cliff Crerar
  * Created at     : 2018-06-09 17:34:02
- * Last modified  : 2018-06-19 06:51:38
+ * Last modified  : 2018-07-06 20:08:16
  */
 
 .abt-header{
@@ -61,7 +61,7 @@
 
 .abt-par{
     background: rgba(255,255,255,0.9);
-    padding: 1vw 1vw;
+    padding: 3vw 3vw;
     border-radius: 25px;
     border: 1px solid silver;
 

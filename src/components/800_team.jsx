@@ -3,7 +3,7 @@
  * @summary Describes the HT team and portraits of members
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:26:55
- * Last modified  : 2018-06-22 17:31:29
+ * Last modified  : 2018-07-05 21:22:52
  */
 
 import React from 'react';
@@ -14,7 +14,7 @@ const TeamHeading = () => {
             <div className="row">
                 <div>
                     <div className="col-sm-12">
-                        <h2 className="team-heading mbr-section-title h1 display-2">
+                        <h2 className="team-heading mbr-section-title tm-section-title h1 display-2">
                             <span className="title-icon fas fa-cogs"></span>THE TEAM
                         </h2>
                     </div>
@@ -29,19 +29,19 @@ const TeamMembers = () => {
         {
             key: 'person-1',
             name: 'Anette',
-            personImage: require('../images/teamplaceholder.png'),
+            personImage: require('../images/team_member_6_annette.jpeg'),
             designation: 'Owner'
         },
         {
             key: 'person-2',
             name: 'Charmaine',
-            personImage: require('../images/teamplaceholder.png'),
+            personImage: require('../images/team_member_4_charmaine.jpeg'),
             designation: 'General manager'
         },
         {
             key: 'person-3',
             name: 'Cisca',
-            personImage: require('../images/teamplaceholder.png'),
+            personImage: require('../images/team_member_5_cisca.jpeg'),
             designation: 'Assistant manager'
         },
         {

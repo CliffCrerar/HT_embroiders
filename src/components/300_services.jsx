@@ -3,7 +3,7 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-06-22 18:05:20
+ * Last modified  : 2018-07-06 21:00:05
  */
 
 import React from 'react';
@@ -34,31 +34,31 @@ const svcThumbnailList = [
         svcName: 'Embroidery',
         svcThumbnail: th0,
         svcImage: carImg0,
-        svcDesc: 'Lorem ipsum dolor sit amet, lucilius definitionem has no, est ex nibh graecis placerat. Per nibh graeco salutatus ad. An efficiendi repudiandae pro. Ad nominavi aliquando mea, his an alienum consequuntur. Ne habeo dolor aeterno.'
+        svcDesc: 'The craft of decorating fabric or other materials using a needle to apply thread or yarn. Embroidery may also incorporate other materials such as pearls, beads, quills, and sequins. In modern days, embroidery is usually seen on caps, hats, coats, blankets, dress shirts, denim, dresses, stockings, and golf shirts.'
     },
     {
         svcName: 'Silk Screening',
         svcThumbnail: th1,
         svcImage: carImg1,
-        svcDesc: 'Lorem ipsum dolor sit amet, lucilius definitionem has no, est ex nibh graecis placerat. Per nibh graeco salutatus ad. An efficiendi repudiandae pro. Ad nominavi aliquando mea, his an alienum consequuntur. Ne habeo dolor aeterno.'
+        svcDesc: 'A printing technique whereby a mesh is used to transfer ink onto a substrate, except in areas made impermeable to the ink by a blocking stencil. A blade or squeegee is moved across the screen to fill the open mesh apertures with ink, and a reverse stroke then causes the screen to touch the substrate momentarily along a line of contact.'
     },
     {
         svcName: 'Videoflex',
         svcThumbnail: th2,
         svcImage: carImg2,
-        svcDesc: 'Lorem ipsum dolor sit amet, lucilius definitionem has no, est ex nibh graecis placerat. Per nibh graeco salutatus ad. An efficiendi repudiandae pro. Ad nominavi aliquando mea, his an alienum consequuntur. Ne habeo dolor aeterno.'
+        svcDesc: 'Heat Transfer printing is arguably the most popular choice for T-shirt printing	. The process involves heat transfer to press an existing photo or design on to a fabric.'
     },
     {
         svcName: 'Sublimination',
         svcThumbnail: th3,
         svcImage: carImg3,
-        svcDesc: 'Lorem ipsum dolor sit amet, lucilius definitionem has no, est ex nibh graecis placerat. Per nibh graeco salutatus ad. An efficiendi repudiandae pro. Ad nominavi aliquando mea, his an alienum consequuntur. Ne habeo dolor aeterno.'
+        svcDesc: 'Heat is used to transfer dye onto materials such as a plastic, card, paper, or fabric. The sublimation name was first applied because the dye was considered to make the transition between the solid and gas states without going through a liquid stage.'
     },
     {
         svcName: 'Clothing',
         svcThumbnail: th4,
         svcImage: carImg4,
-        svcDesc: 'Lorem ipsum dolor sit amet, lucilius definitionem has no, est ex nibh graecis placerat. Per nibh graeco salutatus ad. An efficiendi repudiandae pro. Ad nominavi aliquando mea, his an alienum consequuntur. Ne habeo dolor aeterno.'
+        svcDesc: 'We also sell and make bespoke garments for all occasions as well as provide the materials required for for printing.'
     }
 ];
 
@@ -69,7 +69,7 @@ const ServiceHeading = () => {
             <div className="row">
                 <div>
                     <div className="col-sm-12">
-                        <h2 className="mbr-section-title h1 display-2">
+                        <h2 className="mbr-section-title svc-section-title h1 display-2">
                             {heading}<span className="title-icon fas fa-cut"></span>
                         </h2>
                     </div>
@@ -96,6 +96,13 @@ const ServiceThumbnails = () => {
         <div className="container-fluid">
             <div className="th-flex-display">
                 {thumbnails}
+            </div>
+            <div id="svc-mi" className="svc-more-info svc-more-info-hide">
+                <h3 className="svc-mi-annoucement">
+                    <span className="svc-mi-arrow fas fa-angle-double-down"></span>
+                    MORE INFO
+                    <span className="svc-mi-arrow fas fa-angle-double-down"></span>
+                </h3>
             </div>
         </div>
     );

@@ -15,7 +15,7 @@ const ClientsHeading = () => {
             <div className="row">
                 <div>
                     <div className="col-sm-12">
-                        <h2 className="mbr-section-title h1 display-2">
+                        <h2 className="mbr-section-title clnts-section-title h1 display-2">
                             CLIENTS<span className="title-icon fas fa-handshake"></span>
                         </h2>
                     </div>

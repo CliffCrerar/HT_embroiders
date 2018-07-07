@@ -3,7 +3,7 @@
  * @summary This file returns a single carousel item
  * @author Cliff Crerar
  * Created at     : 2018-06-04 16:29:00
- * Last modified  : 2018-06-19 07:05:16
+ * Last modified  : 2018-07-06 20:13:27
  */
 
 import React from 'react';

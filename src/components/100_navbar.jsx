@@ -3,7 +3,7 @@
  * @summary short description for the file
  * @author Cliff Crerar
  * Created at     : 2018-06-01 19:55:10
- * Last modified  : 2018-06-18 21:16:22
+ * Last modified  : 2018-07-06 21:10:02
  */
 
 import React from 'react'; // import react
@@ -16,12 +16,12 @@ const brandName2 = 'Embroiders'; // Navbar brand name
 
 // Navbar links data object
 const navLinksData = [
-    { heading: 'Home', link: '#header4-1' },
-    { heading: 'Service', link: '#service' },
-    { heading: 'About', link: '#about' },
-    { heading: 'Clients', link: '#client' },
-    { heading: 'Team', link: '#team' },
-    { heading: 'Contact', link: '#contact' },
+    { heading: 'Home', link: '#header4-1', id: 'navhome' },
+    { heading: 'Service', link: '#service', id: 'navService' },
+    { heading: 'About', link: '#about', id: 'navAbout' },
+    { heading: 'Clients', link: '#client', id: 'navClient' },
+    { heading: 'Team', link: '#team', id: 'navTeam' },
+    { heading: 'Contact', link: '#contact', id: 'navContact' },
     //{ heading: 'Contact', link: '#contacts3-e' },
 ];
 
@@ -30,11 +30,11 @@ const Navbar = () => {
     const NavLinkElement = navLinksData.map((linkData, idx) => {
         if (idx === 0) {
             return (
-                <a key={linkData.link} className="active nav-a" onClick={navLinksShow} href={linkData.link}>{linkData.heading}</a>
-            )
+                <a key={linkData.link} id={linkData.id} className="active nav-a" onClick={navLinksShow} href={linkData.link}>{linkData.heading}</a>
+            );
         } else {
             return (
-                <a key={linkData.link} className="nav-a" onClick={navLinksShow} href={linkData.link}>{linkData.heading}</a>
+                <a key={linkData.link} id={linkData.id} className="nav-a" onClick={navLinksShow} href={linkData.link}>{linkData.heading}</a>
             );
         }
 

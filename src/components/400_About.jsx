@@ -3,7 +3,7 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-06-18 23:34:05
+ * Last modified  : 2018-07-06 20:14:04
  */
 
 import React from 'react';
@@ -27,8 +27,8 @@ import img14 from '../images/gallery-16.jpeg';
 import img15 from '../images/gallery-17.jpeg';
 // About us configuration
 const vm = {
-    vision: 'Lorem ipsum dolor sit amet, alienum omittantur cu qui, nisl mediocrem sed an. Ne pri admodum dolores. Usu ad option fierent, dicam dicunt malorum his ne, eum in molestie facilisis maiestatis. Doming aliquando sed eu, aeque aliquip est an. Tota dicunt qui in. Sea affert partem platonem at. Modo pericula ad vis. Tamquam civibus eu vix. Te eos inani argumentum, cum eleifend perpetua ut. Decore euismod no ius. Ne vel vide assum contentiones, augue laudem periculis id eum, ad se',
-    mission: 'Lorem ipsum dolor sit amet, alienum omittantur cu qui, nisl mediocrem sed an. Ne pri admodum dolores. Usu ad option fierent, dicam dicunt malorum his ne, eum in molestie facilisis maiestatis. Doming aliquando sed eu, aeque aliquip est an. Tota dicunt qui in. Sea affert partem platonem at. Modo pericula ad vis. Tamquam civibus eu vix. Te eos inani argumentum, cum eleifend perpetua ut. Decore euismod no ius. Ne vel vide assum contentiones, augue laudem periculis id eum, ad se'
+    vision: 'The production of goods comparable to the best standards, to be customer-focused and competitive in the market, through better quality, latest technology and continuous innovation.',
+    mission: 'To manufacture products of outstanding quality that give our customers a competitive advantage through superior products and value, so we can make every customer smile. We also strive to attain the highest level of efficiency, integrity and honesty.'
 };
 
 const galleryHeader = 'Gallery';
@@ -133,7 +133,7 @@ const AboutHeader = () => {
             <div className="row">
                 <div>
                     <div className="col-sm-12">
-                        <h2 className="abt-title mbr-section-title h1 display-2">
+                        <h2 className="abt-title mbr-section-title abt-sction-title h1 display-2">
                             <span className="title-icon fas fa-info-circle"></span>ABOUT US
                         </h2>
                     </div>

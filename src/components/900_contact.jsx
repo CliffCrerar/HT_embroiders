@@ -3,7 +3,7 @@
  * @summary Shows where HT embroiders is located
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:46:55
- * Last modified  : 2018-06-22 18:07:31
+ * Last modified  : 2018-07-06 23:27:51
  */
 
 import React from 'react';
@@ -28,7 +28,7 @@ const ContactHeading = () => {
             <div className="row">
                 <div>
                     <div className="col-sm-12">
-                        <h2 className="mbr-section-title h1 display-2">
+                        <h2 className="mbr-section-title cntct-section-title h1 display-2">
                             CONTACT US<span className="title-icon fas fa-envelope"></span>
                         </h2>
                     </div>
@@ -88,21 +88,27 @@ const ContactDetails = () => {
                 </div>
                 <div className="col-xs-12 col-md-6" data-form-type="formoid">
                     <div data-form-alert="true">
-                        <div hidden="" data-form-alert-success="true">Thanks for filling out form!</div>
+                        <div data-form-alert-success="true">
+                            <p className="contact-form-msg">
+                                Let us contact you<span className="contact-smiley far fa-smile-wink"></span>
+                            </p>
+                        </div>
                     </div>
                     <form action="#/" method="post" data-form-title="MESSAGE">
                         <input type="hidden" value=""
                             data-form-email="true" />
 
                         <div className="form-group">
-                            <input type="email" className="form-control input-sm input-inverse" name="email" required="" placeholder="Email*" data-form-field="Email" />
+                            <input id="email" type="email" className="form-control input-sm input-inverse" name="email" required="" placeholder="Your email address" data-form-field="Email" />
                         </div>
 
                         <div className="form-group">
-                            <textarea className="form-control input-sm input-inverse" name="message" rows="4" placeholder="Message" data-form-field="Message"></textarea>
+                            <textarea id="msg" className="form-control input-sm input-inverse" name="message" rows="4" placeholder="Message" data-form-field="Message"></textarea>
                         </div>
                         <div className="text-xs-right">
-                            <button type="submit" className="btn btn-black">Contact Us</button>
+                            <button id="sendMail" type="button" className="btn btn-black">
+                                Send<span className="contact-smiley fab fa-telegram-plane"></span>
+                            </button>
                         </div>
                     </form>
                 </div>

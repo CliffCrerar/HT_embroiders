@@ -25,7 +25,7 @@ module.exports = {
         ]
       },
       {
-        test: /\.(png|jpg|gif|svg|jpeg)$/,
+        test: /\.(png|jpg|gif|svg|jpeg|woff|woff2|eot|ttf|otf)$/,
         use: [
           {
             loader: 'file-loader',
@@ -35,12 +35,6 @@ module.exports = {
               collapseWhitespace: false
             }
           }
-        ]
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
-        use: [
-          'file-loader'
         ]
       },
       {
@@ -69,15 +63,18 @@ module.exports = {
     new CleanWebpackPlugin(['dist']),
     new HTMLwebpackPlugin({
       //template: './src/html/index.html',
-      title: 'HT Embroiders',
+      title: 'Embroiders / Borduurders',
       meta: require('./meta.json'),
-      favicon: '',
+      favicon: './favicon.png',
     }),
     new UglifyJsPlugin({
       cache: true,
       sourceMap: true
     }),
-    new ManifestPlugin()
+    new ManifestPlugin(),
+    new webpack.DefinePlugin({
+      IP: JSON.stringify('34.242.179.249')
+    })
   ],
   output: {
     filename: '[name].bundle.js',

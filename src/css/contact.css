@@ -3,7 +3,7 @@
  * @summary CSS for the contact us section of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-11 22:14:28 
- * Last modified  : 2018-06-12 01:53:39
+ * Last modified  : 2018-07-06 23:11:39
  */
 
  /* LOCATION */
@@ -26,4 +26,12 @@
     padding-top: 4.5rem; 
     padding-bottom: 4.5rem;
     border-top: var(--section-border);
+}
+
+.contact-form-msg{
+    font-size: 1.5em;
+}
+
+.contact-smiley {
+    margin-left: 10px;
 }

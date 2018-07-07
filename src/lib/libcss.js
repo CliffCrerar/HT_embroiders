@@ -5,10 +5,10 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-06-12 22:39:22 
- * Last modified  : 2018-06-12 22:40:08
+ * Last modified  : 2018-07-06 21:54:55
  */
 
-import './fontawesome/web-fonts-with-css/css/fontawesome-all.css'; // FONT AWESOME 5
+import './fontawesome/css/all.css'; // FONT AWESOME 5
 // THETHER
 import './tether/tether.min.css';
 // BOOTSTRAP
