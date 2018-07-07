@@ -1,6 +1,6 @@
 {
   "name": "htembroiders",
-  "version": "0.9.1",
+  "version": "1.0.1",
   "description": "Site is a web presence and company profile for this client",
   "main": "index.js",
   "scripts": {
