@@ -3,7 +3,7 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-07-06 21:00:05
+ * Last modified  : 2018-07-07 03:42:36
  */
 
 import React from 'react';
@@ -97,7 +97,7 @@ const ServiceThumbnails = () => {
             <div className="th-flex-display">
                 {thumbnails}
             </div>
-            <div id="svc-mi" className="svc-more-info svc-more-info-hide">
+            <div id="svc-mi" className="svc-more-info">
                 <h3 className="svc-mi-annoucement">
                     <span className="svc-mi-arrow fas fa-angle-double-down"></span>
                     MORE INFO

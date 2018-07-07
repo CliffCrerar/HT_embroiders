@@ -3,7 +3,7 @@
  * @summary Shows where HT embroiders is located
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:46:55
- * Last modified  : 2018-07-06 23:27:51
+ * Last modified  : 2018-07-07 03:31:46
  */
 
 import React from 'react';
@@ -61,7 +61,7 @@ const ContactDetails = () => {
                         <br />
                         <br />
                         <strong>Contacts:</strong>
-                        <br /> Email: htbodruur@mweb.co.za
+                        <br /> Email: info@htembroiders.com
                         <br /> Phone: +27 17 819 1863
                         <br /> Cell: +27 82 342 7211
                         <br /> FAX: +27 86 644 8262</p>

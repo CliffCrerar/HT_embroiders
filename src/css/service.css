@@ -3,7 +3,7 @@
  * @summary Ser
  * @author Cliff Crerar
  * Created at     : 2018-06-08 18:36:23
- * Last modified  : 2018-07-06 23:17:06
+ * Last modified  : 2018-07-07 03:43:22
  */
 
   /* AVAILABLE FONTS
@@ -79,7 +79,12 @@ Raleway
     width: 100%;
     text-align: center;
     margin-top: 7vh;
+}
 
+@media only screen and (max-width: 375px){
+    .svc-more-info{
+        display: none;
+    }
 }
 
 .svc-mi-annoucement{

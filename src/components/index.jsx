@@ -3,7 +3,7 @@
  * @summary this is the file entry point, loads libraries and renders elements
  * @author Cliff Crerar
  * Created at     : 2018-05-29 21:48:50
- * Last modified  : 2018-07-06 23:35:14
+ * Last modified  : 2018-07-07 03:37:01
  */
 
 // REACT
@@ -24,7 +24,7 @@ $(window).on('load', function () {
             console.log('fire fade complete function');
             $('body').removeClass('body-loading').addClass('body-loading-complete');
         });
-    }, 1);
+    }, 3000);
 });
 
 // Components
