@@ -3,7 +3,7 @@
  * @summary Defines services heading, thumbnail and carousel componetns of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-02 13:51:40
- * Last modified  : 2018-07-07 03:42:36
+ * Last modified  : 2018-07-07 07:14:23
  */
 
 import React from 'react';

@@ -3,7 +3,7 @@
  * @summary JSX for the about section
  * @author Cliff Crerar
  * Created at     : 2018-06-04 17:40:15
- * Last modified  : 2018-07-06 20:14:04
+ * Last modified  : 2018-07-07 07:31:40
  */
 
 import React from 'react';

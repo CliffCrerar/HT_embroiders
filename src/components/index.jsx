@@ -3,15 +3,21 @@
  * @summary this is the file entry point, loads libraries and renders elements
  * @author Cliff Crerar
  * Created at     : 2018-05-29 21:48:50
- * Last modified  : 2018-07-07 03:37:01
+ * Last modified  : 2018-07-07 07:17:53
  */
 
 // REACT
 import React from 'react'; // React tools
 import ReactDOM from 'react-dom'; // React DOM
-import '../css/font.css'; // CUSTOM FONTS
 import appFrame from '../html/react-frame.html'; // load application frame html into variable
 import loadingGif from '../images/loading.gif'; // load loading gif into variable
+
+/* LOAD GOOGLE ANALYTICS TAG */
+import gat from '../html/_gat.html'; $('head').append(gat);
+
+import '../css/font.css'; // CUSTOM FONTS
+
+/* REACT APPLICATION FRAME */
 $('body').append(appFrame); // insert app frame html into page
 
 /* LOADING SCREEN OPERATION */

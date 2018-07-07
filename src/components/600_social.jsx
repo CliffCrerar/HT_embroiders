@@ -3,7 +3,7 @@
  * @summary JSX for the social links section of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:14:15 
- * Last modified  : 2018-07-06 21:31:45
+ * Last modified  : 2018-07-07 08:20:55
  */
 
 import React from 'react';
@@ -89,7 +89,7 @@ const SocialMedia = () => {
 
     });
     return (
-        <div className="col-sm-8 text-xs-right">
+        <div className="col-sm-6 text-xs-right">
             {mapSocialLinks}
         </div>
     );
@@ -99,7 +99,7 @@ const SocialLinks = () => {
     return (
         <div className="container">
             <div className="row">
-                <div className="col-sm-4">
+                <div className="col-sm-6">
                     <h2 className="client-social-title mbr-section-title h1">Follow Us</h2>
                 </div>
                 <SocialMedia />

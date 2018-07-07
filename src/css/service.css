@@ -3,7 +3,7 @@
  * @summary Ser
  * @author Cliff Crerar
  * Created at     : 2018-06-08 18:36:23
- * Last modified  : 2018-07-07 03:43:22
+ * Last modified  : 2018-07-07 07:23:19
  */
 
   /* AVAILABLE FONTS
@@ -168,6 +168,12 @@ Raleway
 .svc-car-title{
     font-family: Syncopate;
     text-shadow: 1px 0 1px white, 0 1px 1px white, -1px 0 1px white, 0 -1px 1px white;
+}
+
+@media only screen and (max-width:320px){
+    .svc-car-title{
+        font-size: 1.75em;
+    }
 }
 
 /*

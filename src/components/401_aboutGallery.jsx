@@ -3,7 +3,7 @@
  * @summary Contains the methods on populating the gallery
  * @author Cliff Crerar
  * Created at     : 2018-06-04 18:37:48
- * Last modified  : 2018-06-05 03:40:59
+ * Last modified  : 2018-07-07 07:25:17
  */
 
 import React from 'react';
