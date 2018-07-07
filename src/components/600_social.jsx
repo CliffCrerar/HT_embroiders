@@ -3,46 +3,106 @@
  * @summary JSX for the social links section of the page
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:14:15 
- * Last modified  : 2018-06-04 22:21:50
+ * Last modified  : 2018-07-06 21:31:45
  */
 
 import React from 'react';
 
 // Social configuration
 
+const SocialMedia = () => {
+    const socialProfiles = [
+        {
+            key: 'social-1',
+            title: 'twitter',
+            linkClass: 'socicon-bg-twitter',
+            link: 'https://twitter.com/mobirise',
+            icon: 'socicon-twitter',
+            active: false
+        },
+        {
+            key: 'social-2',
+            title: 'facebook',
+            linkClass: 'socicon-bg-facebook',
+            link: 'https://www.facebook.com/profile.php?id=100009882881236',
+            icon: 'socicon-facebook',
+            active: true
+        },
+        {
+            key: 'social-3',
+            title: 'Google+',
+            linkClass: 'socicon-bg-google',
+            link: 'https://plus.google.com/u/0/+Mobirise/posts',
+            icon: 'socicon-google',
+            active: false
+        },
+        {
+            key: 'social-4',
+            title: 'YouTube',
+            linkClass: 'socicon-bg-youtube',
+            link: 'https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw',
+            icon: 'socicon-youtube',
+            active: false
+        },
+        {
+            key: 'social-5',
+            title: 'Instagram',
+            linkClass: 'socicon-bg-instagram',
+            link: 'https://instagram.com/mobirise/',
+            icon: 'socicon-instagram',
+            active: false
+        },
+        {
+            key: 'social-6',
+            title: 'Pinterest',
+            linkClass: 'socicon-bg-pinterest',
+            link: 'https://www.pinterest.com/mobirise/',
+            icon: 'socicon-pinterest',
+            active: false
+        },
+        {
+            key: 'social-7',
+            title: 'Tumblr',
+            linkClass: 'socicon-bg-tumblr',
+            link: 'http://mobirise.tumblr.com/',
+            icon: 'socicon-tumblr',
+            active: false
+        },
+        {
+            key: 'social-8',
+            title: 'LinkedIn',
+            linkClass: 'socicon-bg-linkedin',
+            link: 'https://www.linkedin.com/in/mobirise',
+            icon: 'socicon-linkedin',
+            active: false
+        }
+    ];
+
+    const mapSocialLinks = socialProfiles.map(profile => {
+        if (profile.active) {
+            return (
+                <a key={profile.key} className={`btn btn-social ${profile.linkClass}`} title={profile.title} target="_blank" href={profile.link}>
+                    <i className={`socicon ${profile.icon}`}></i>
+                </a>
+            );
+        }
+
+    });
+    return (
+        <div className="col-sm-8 text-xs-right">
+            {mapSocialLinks}
+        </div>
+    );
+};
+
 const SocialLinks = () => {
     return (
         <div className="container">
             <div className="row">
                 <div className="col-sm-4">
-                    <h2 className="mbr-section-title h1">Follow Us</h2>
+                    <h2 className="client-social-title mbr-section-title h1">Follow Us</h2>
                 </div>
-                <div className="col-sm-8 text-xs-right">
-                    <a className="btn btn-social socicon-bg-twitter" title="Twitter" target="_blank" href="https://twitter.com/mobirise">
-                        <i className="socicon socicon-twitter"></i>
-                    </a>
-                    <a className="btn btn-social socicon-bg-facebook" title="Facebook" target="_blank" href="https://www.facebook.com/pages/Mobirise/1616226671953247">
-                        <i className="socicon socicon-facebook"></i>
-                    </a>
-                    <a className="btn btn-social socicon-bg-google" title="Google+" target="_blank" href="https://plus.google.com/u/0/+Mobirise/posts">
-                        <i className="socicon socicon-google"></i>
-                    </a>
-                    <a className="btn btn-social socicon-bg-youtube" title="YouTube" target="_blank" href="https://www.youtube.com/channel/UCt_tncVAetpK5JeM8L-8jyw">
-                        <i className="socicon socicon-youtube"></i>
-                    </a>
-                    <a className="btn btn-social socicon-bg-instagram" title="Instagram" target="_blank" href="https://instagram.com/mobirise/">
-                        <i className="socicon socicon-instagram"></i>
-                    </a>
-                    <a className="btn btn-social socicon-bg-pinterest" title="Pinterest" target="_blank" href="https://www.pinterest.com/mobirise/">
-                        <i className="socicon socicon-pinterest"></i>
-                    </a>
-                    <a className="btn btn-social socicon-bg-tumblr" title="Tumblr" target="_blank" href="http://mobirise.tumblr.com/">
-                        <i className="socicon socicon-tumblr"></i>
-                    </a>
-                    <a className="btn btn-social socicon-bg-linkedin" title="LinkedIn" target="_blank" href="https://www.linkedin.com/in/mobirise">
-                        <i className="socicon socicon-linkedin"></i>
-                    </a>
-                </div>
+                <SocialMedia />
             </div>
         </div>
     );

@@ -1,0 +1,116 @@
+/**
+ * ABOUT US CSS
+ * @summary Css for the about us section
+ * @author Cliff Crerar
+ * Created at     : 2018-06-09 17:34:02
+ * Last modified  : 2018-07-06 20:08:16
+ */
+
+.abt-header{
+    background-color: var(--ht-light);
+    border-top: var(--section-border);
+}
+
+.abt-title{
+    color: var(--ht-dark);
+}
+
+.abt-heading{
+    border-top: var(--section-border);
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.abt-gallery{
+    border-top: var(--section-border);
+}
+
+.mbr-overlay-additional-abt{
+    background-color: var(---ht-light);
+    opacity: 0.5;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.abt-section-title{
+    background-color: #87efba;
+    border: var(--content-border);
+    text-align: center;
+    border-radius: 25px;
+    color: #c00079;
+    font-weight: bold;
+}
+
+.abt-sub-section{
+    margin: 0;
+    color:#accfc5;
+    font-weight: bold;
+    text-shadow: 5px 0 10px var(--ht-blue),
+                 0 5px 10px var(--ht-blue),
+                -5px 0 10px var(--ht-blue),
+                 0 -5px 10px var(--ht-blue)
+}
+
+.abt-right-heading{
+    text-align: right;
+    color: #b2c660;
+}
+
+.abt-par{
+    background: rgba(255,255,255,0.9);
+    padding: 3vw 3vw;
+    border-radius: 25px;
+    border: 1px solid silver;
+
+}
+
+/* VISION */
+.abt-par1{
+    text-align: justify;
+    border-top-left-radius: 0px;
+
+}
+
+/* MISSION */
+.abt-par2{
+    text-align: justify;
+    text-align-last: right;
+    -moz-text-align-last: right;
+    -ms-text-align-last: right;
+    -o-text-align-last: right;
+    border-top-right-radius: 0px;
+}
+
+.abt-galley-header {
+    border-top: var(--section-border);
+    background: rgb(255,253,231);
+    background: radial-gradient(circle, var(--ht-light) 0%, var(--ht-green) 60%, var(--ht-blue) 95%);
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.abt-gallery{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.abt-gallery-heading-group{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items:center;
+    font-size: 6vh;
+}
+
+.abt-gallery-heading-group>h2{
+    font-family: Alex Brush !important;
+    color: var(--ht-dark);
+    font-size: 2em;
+}
+
+.abt-gallery-heading-group>img{
+    height: 2.5em;
+}

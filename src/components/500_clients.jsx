@@ -2,65 +2,22 @@
  * CLIENTS
  * @summary THis section is to show who the current clients are of HT embroiders
  * @author Cliff Crerar
- * Created at     : 2018-06-04 22:01:32 
- * Last modified  : 2018-06-04 22:09:27
+ * Created at     : 2018-06-04 22:01:32
+ * Last modified  : 2018-06-11 07:12:18
  */
 
 import React from 'react';
 
-// Section configuration
-const clientDisplayData = [
-    { clientName: 'Client1', Logo: '' }
-];
-
-const OurClients = () => {
+// CLIENTS HEADER
+const ClientsHeading = () => {
     return (
-        <div>
-            <div className="mbr-overlay mbr-overlay-additional-2"></div>
-            <div className="container">
-                <h2 className="mbr-section-title display-3 text-xs-center">Who are our customers / clients?</h2>
-
-                <div className="row mbr-testimonial-cards">
-                    <div className="col-xs-12 col-sm-6 col-md-4">
-                        <div className="card">
-                            <div className="card-footer text-muted">
-                                <div>ABANOUB S.</div>
-                                <small>User</small>
-                            </div>
-                            <div className="card-block">
-                                <em>“its really very amazing app that makes me finish html page in 3 minutes ( that's usually
-                                    takes more than 1 hours at least from me if i did it from scratch). i hope to have
-                                very big library and plugins for this APP thanks again for your nice application”</em>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xs-12 col-sm-6 col-md-4">
-                        <div className="card">
-                            <div className="card-block">
-                                <em>“First of all hands off to you guys for your effort and nice, super tool. Good work mobirise
-                                    team. We are expecting the new version soon with advance functionality with full
-                                    bootstrap design. Great effort and super UI experience with easy drag &amp; drop
-                                with no time design bootstrap builder in present web design world.”</em>
-                            </div>
-                            <div className="card-footer text-muted">
-                                <div>SUFFIAN A.</div>
-                                <small>User</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="col-xs-12 col-sm-6 col-md-4">
-                        <div className="card">
-                            <div className="card-block">
-                                <em>“At first view, looks like a nice innovative tool, i like the great focus and time that
-                                    was given to the responsive design, i also like the simple and clear drag and drop
-                                    features. Give me more control over the object's properties and ill be using this
-                                tool for more serious projects. Regards.”</em>
-                            </div>
-                            <div className="card-footer text-muted">
-                                <div>JHOLLMAN C.</div>
-                                <small>User</small>
-                            </div>
-                        </div>
+        <div className="container">
+            <div className="row">
+                <div>
+                    <div className="col-sm-12">
+                        <h2 className="mbr-section-title clnts-section-title h1 display-2">
+                            CLIENTS<span className="title-icon fas fa-handshake"></span>
+                        </h2>
                     </div>
                 </div>
             </div>
@@ -68,4 +25,101 @@ const OurClients = () => {
     );
 };
 
-export default OurClients;
+// Client Card
+const ClientCard = (props) => {
+    return (
+        <div className="col-xs-12 col-sm-6 col-md-4">
+            <a className="client-card-anchor" href={props.clientURL} target="_blank">
+                <div className="card client-card">
+                    {/*<div className="card-header client-card-header">
+                        <div>{props.clientName}</div>
+                    </div>*/}
+                    <div className={`card-block client-card-bottom ${props.specialClass1}`}>
+                        <div>
+                            <img src={props.clientLogo} title={props.clientAcro} alt={props.clientAcro} />
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    );
+};
+
+const OurClients = () => {
+
+    const ClientData = [
+        {
+            ClientName: 'Anti Crime Security Unit',
+            ClientURL: 'http://acsu.co.za/',
+            ClientLogo: require('../images/ht_client1.png'),
+            ClientAcro: 'ACSU',
+            specialClass: 'client-1'
+        },
+        {
+            ClientName: 'Topline Centre',
+            ClientURL: 'http://www.goveza.com/ermelo/directory/topline-centre/',
+            ClientLogo: require('../images/ht_client2.png'),
+            ClientAcro: 'TLC',
+            specialClass1: 'client-2'
+        },
+        {
+            ClientName: 'Ntabeleng Bbm',
+            ClientURL: 'https://www.facebook.com/groups/504107729715197/about/',
+            ClientLogo: require('../images/ht_client3.png'),
+            ClientAcro: 'Ntabeleng Bbm',
+            specialClass1: 'client-3'
+        },
+        {
+            ClientName: 'Ford Ermelo',
+            ClientURL: 'http://www.24motors.co.za/WebSites/24motors/fordsite.nsf/pgIndex',
+            ClientLogo: require('../images/ht_client4.png'),
+            ClientAcro: '24-Motors',
+            specialClass1: 'client-4'
+        },
+        {
+            ClientName: 'Aeon Tool Hire',
+            ClientURL: 'http://www.aeontoolhire.co.za/index.php',
+            ClientLogo: require('../images/ht_client5.png'),
+            ClientAcro: 'Aeon',
+            specialClass1: 'client-5'
+        },
+        {
+            ClientName: 'Brakecore Supply co.',
+            ClientURL: 'http://brakecore.co.za/',
+            ClientLogo: require('../images/ht_client6.png'),
+            ClientAcro: 'BSC',
+            specialClass1: 'client-6'
+        }
+    ];
+
+    // Populate Client Card
+    const populateCards = (Data) => {
+        const populate = Data.map(data => {
+            return (
+                <ClientCard
+                    key={data.ClientAcro}
+                    clientName={data.ClientName}
+                    clientLogo={data.ClientLogo}
+                    clientURL={data.ClientURL}
+                    clientAcro={data.ClientAcro}
+                    specialClass1={data.specialClass1}
+                />
+            );
+        });
+        return populate;
+    };
+
+    return (
+        <div>
+            <div className="mbr-overlay mbr-overlay-additional-2"></div>
+            <div className="container">
+                {/*<h2 className="mbr-section-title display-3 text-xs-center">Clients</h2>*/}
+                <div className="row mbr-testimonial-cards">
+                    {populateCards(ClientData)}
+                </div>
+            </div>
+        </div>
+    );
+};
+
+module.exports = { ClientsHeading, OurClients };

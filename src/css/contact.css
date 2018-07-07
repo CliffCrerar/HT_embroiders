@@ -1,0 +1,37 @@
+/**
+ * CSS CONTACT
+ * @summary CSS for the contact us section of the page
+ * @author Cliff Crerar
+ * Created at     : 2018-06-11 22:14:28 
+ * Last modified  : 2018-07-06 23:11:39
+ */
+
+ /* LOCATION */
+.mapsIframe {
+    border:0
+}
+
+.contact-heading {
+    background-color: var(--ht-green); 
+    padding-top: 4.5rem; padding-bottom: 4.5rem;
+    border-top: var(--section-border);
+}
+
+.contact-location-map{
+    border-top: var(--section-border);
+}
+
+.contact-details{
+    background-color: rgb(55, 56, 62); 
+    padding-top: 4.5rem; 
+    padding-bottom: 4.5rem;
+    border-top: var(--section-border);
+}
+
+.contact-form-msg{
+    font-size: 1.5em;
+}
+
+.contact-smiley {
+    margin-left: 10px;
+}

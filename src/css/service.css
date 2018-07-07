@@ -1,0 +1,176 @@
+/**
+ * SERVICES SECTION CSS
+ * @summary Ser
+ * @author Cliff Crerar
+ * Created at     : 2018-06-08 18:36:23
+ * Last modified  : 2018-07-07 03:43:22
+ */
+
+  /* AVAILABLE FONTS
+Domine
+Pridi*
+Quando*
+Righteous
+Rosario
+Syncopate
+Krona One
+Open Sans Condensed
+Raleway
+*/
+
+.mbr-service-heading{
+    background-color: var(--ht-dark) !important;
+    color: var(--ht-light);
+    border-top: var(--section-border);
+}
+
+.mbr-service-thumbnails{
+    background: var(--ht-light);
+    background:
+        linear-gradient(
+            180deg,
+            var(--ht-light) 30%,
+            var(--ht-green) 70%);
+    border-top: var(--section-border);
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+}
+
+/*rgba(230,255,196,1);*/
+
+.th-flex-display{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.svc-thumbnail{
+    margin: 0 1vw 0 1vw;
+}
+
+.svc-thumbnail>div{
+    width: 250px;
+    height: 250px;
+    border: var(--content-border);
+    border-radius: 20px;
+    background:
+    linear-gradient(
+        360deg,
+        var(--ht-light) 30%,
+        var(--ht-green) 70%);
+}
+
+.svc-card-block{
+    background: transparent;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius:20px;
+}
+
+.svc-card-title{
+    font-family: Righteous;
+}
+
+.svc-more-info{
+    opacity: 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-top: 7vh;
+}
+
+@media only screen and (max-width: 375px){
+    .svc-more-info{
+        display: none;
+    }
+}
+
+.svc-mi-annoucement{
+    font-family: Righteous;
+    font-size: 3em;
+    color:white;
+    text-shadow:3px 3px 5px black;
+}
+
+.svc-more-info-animate{
+    animation: pulse1 2s ease-in-out 0s infinite;
+    -webkit-animation: pulse1 2s ease-in-out 0s infinite;
+    -o-animation: pulse1 2s ease-in-out 0s infinite;
+    -moz-animation: pulse1 2s ease-in-out 0s infinite;
+}
+
+@keyframes pulse1 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes pulse1{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes pulse1{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@-webkit-keyframes pulse1{
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.svc-mi-arrow{
+    margin: 0 3vw 0 3vw;
+}
+
+.svc-carousel{
+    border-top: var(--section-border)
+}
+
+.svc-car-title-desc{
+    color: black;
+    border: var(--content-border);
+    border-radius: 20px;
+    background: var(--ht-green-o);
+    padding: 2vw;
+}
+
+.svc-car-title{
+    font-family: Syncopate;
+    text-shadow: 1px 0 1px white, 0 1px 1px white, -1px 0 1px white, 0 -1px 1px white;
+}
+
+/*
+background: rgb(126,87,194);
+background: linear-gradient(142deg, rgba(126,87,194,1) 15%, rgba(255,253,231,1) 85%);
+*/

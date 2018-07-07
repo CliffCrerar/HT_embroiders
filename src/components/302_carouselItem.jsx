@@ -3,14 +3,14 @@
  * @summary This file returns a single carousel item
  * @author Cliff Crerar
  * Created at     : 2018-06-04 16:29:00
- * Last modified  : 2018-06-05 03:59:08
+ * Last modified  : 2018-07-06 20:13:27
  */
 
 import React from 'react';
 
 const CarouselItem = ({ svcName, svcImage, svcDesc, idx }) => {
     let activeClass;
-    const carouselId = `carousel-item${idx}`
+    const carouselId = `carousel-item${idx}`;
     if (idx === 0) {
         activeClass = 'mbr-section carousel-item dark center mbr-section-full active';
     } else {
@@ -19,18 +19,18 @@ const CarouselItem = ({ svcName, svcImage, svcDesc, idx }) => {
     return (
         <div id={carouselId} className={activeClass} style={{ "backgroundImage": `url(${svcImage})` }} >
             <div className="mbr-table-cell">
-                <div className=" container">
+                <div className="container">
                     <div className="row">
-                        <div className="col-md-8 col-md-offset-1">
-                            <h2 className="mbr-section-title display-1">{svcName}</h2>
-                            <p className="lead text-justify">{svcDesc}</p>
+                        <div className="svc-car-title-desc col-md-10 col-md-offset-1">
+                            <h2 className="svc-car-title mbr-section-title display-1">{svcName}</h2>
+                            <p className="lead text-justify svc-car-desc">{svcDesc}</p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     );
-}
+};
 
 const carouselImages = (svcThumbnailList) => {
     const images = svcThumbnailList.map((listItem, idx) => {
@@ -45,17 +45,17 @@ const carouselImages = (svcThumbnailList) => {
         );
     });
     return images;
-}
+};
 
 const CarouselButton = ({ idx }) => {
     let activeClass;
     if (idx === 0) {
         activeClass = 'active carDot';
     } else {
-        activeClass = 'carDot'
+        activeClass = 'carDot';
     }
-    return <li data-app-prevent-settings="" data-target="#slider-j" data-slide-to={idx} className={activeClass}></li>
-}
+    return <li data-app-prevent-settings="" data-target="#slider-j" data-slide-to={idx} className={activeClass}></li>;
+};
 
 const carouselButtons = (svcThumbnailList) => {
     const buttons = svcThumbnailList.map((btn, idx) => {
@@ -64,9 +64,9 @@ const carouselButtons = (svcThumbnailList) => {
                 key={idx}
                 idx={idx}
             />
-        )
+        );
     });
     return buttons;
-}
+};
 
-module.exports = { carouselImages, carouselButtons }
+module.exports = { carouselImages, carouselButtons };

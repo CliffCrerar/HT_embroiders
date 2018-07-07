@@ -1,0 +1,202 @@
+/**
+ * CSS MOBILE
+ * @summary CSS for the navbar mobile display
+ * @author Cliff Crerar
+ * Created at     : 2018-06-08 21:08:55
+ * Last modified  : 2018-06-18 22:29:33
+ */
+
+.mobile-menu{
+    display: none;
+}
+
+@media only screen and (max-width: 1024px) and (orientation: portrait){
+    .nav-left-1{
+        font-size: 2em;
+        background: linear-gradient(40deg, rgba(255,253,231,0.4) 50%, rgba(241, 32, 165, 0.3) 90%);
+
+    }
+    .nav-left-logo{
+        display: flex;
+        flex-direction: column;
+    }
+    .svc-car-title{
+        font-size: 2.4em;
+    }
+}
+
+@media (max-width: 1024px) {
+    .nav-left-2{
+        display: flex;
+    }
+
+    .nav-right{
+        display: none;
+        flex-direction: column;
+        flex:2;
+    }
+
+    .nav-right-show{
+        display: flex;
+    }
+
+    .nav-right>a{
+        margin: 3vh 0 3vh 0;
+    }
+
+    .mobile-menu{
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+        padding: 0.30em;
+        /* flex item css*/
+        flex:1;
+    }
+
+    .ham-burger{
+        font-size: 1em;
+        padding: 0.25em 0.35em 0.25em 0.35em;
+        border: 0.07em solid white;
+        background: transparent;
+        border-radius: 0.2em;
+    }
+}
+
+@media (max-width: 1024px) and (orientation:landscape){
+    .ham-burger{
+        font-size: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .mbr-section{
+        background-position: right -40vw top;
+    }
+}
+
+@media only screen and (min-width: 768px) and (orientation: portrait){
+    .mbr-section{
+        background-position: right -30vw top;
+    }
+}
+
+@media only screen and (max-width: 768px) and (orientation: landscape){
+    .mbr-section{
+        background-position: right top;
+    }
+}
+
+/* FOR CAROUSEL ITEMS */
+@media only screen and (max-width:320px){
+    .svc-car-title{
+        font-size: 1.5em;
+    }
+
+}
+
+@media only screen and (max-width:360px){
+    .svc-car-title{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width:375px){
+    .svc-car-title{
+        font-size: 2em;
+    }
+}
+
+@media only screen and (max-width: 414px){
+    .display-2{
+        font-size: 2em;
+    }
+}
+
+/* NAV HEIGHT FOR LINKS */
+
+/*
+    iphone 5/se
+*/
+@media only screen and (max-width:320px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 76px;
+    }
+}
+@media only screen and (max-width:320px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 57px;
+    }
+}
+
+/*
+    Galaxy S5
+*/
+@media only screen and (max-width:360px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 85px;
+    }
+}
+@media only screen and (max-width:360px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 65px;
+    }
+}
+
+/*
+    iphone 6/7/8
+*/
+@media only screen and (max-width:375px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 89px;
+    }
+}
+@media only screen and (max-width:375px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 68px;
+    }
+}
+
+/*
+    iphone X
+*/
+@media only screen and (max-width:375px) and (max-height:812px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 109px;
+    }
+    .hide-nav-logo{
+        display: none;
+    }
+}
+@media only screen and (max-width:375px) and (max-height:812px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 70px;
+    }
+}
+
+/*
+    iphone 6/7/8 plus
+*/
+@media only screen and (max-width:414px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 98px;
+    }
+}
+@media only screen and (max-width:414px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 60px;
+    }
+}
+
+/*
+    ipad
+*/
+@media only screen and (max-width:768px) and (max-height:1024px) and (orientation:portrait) {
+    .anchor-offset{
+        height: 137px;
+    }
+}
+@media only screen and (max-width:768px) and (max-height:1024px) and (orientation:landscape) {
+    .anchor-offset{
+        height: 140px;
+    }
+}

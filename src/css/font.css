@@ -5,19 +5,39 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-29 21:57:38 
- * Last modified  : 2018-05-30 22:40:22
+ * Last modified  : 2018-07-06 19:57:27
  */
 
-/*
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic">
+/* Used Fonts 
+*
+-Alex Brush*
+-Righteous*
+-Syncopate*
+-Krona One*
+-Changa One*
+-Michroma*
+-Raleway*
+-Playfair Display*
+*
 */
 
-@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext');
+/* FONTS IMPLEMENTATION */
 @import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,700&subset=latin,cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Syncopate');
+@import url('https://fonts.googleapis.com/css?family=Krona+One');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Changa+One');
+@import url('https://fonts.googleapis.com/css?family=Michroma');
+@import url('https://fonts.googleapis.com/css?family=Alex+Brush');
+/*
+Fonts Not Used
 @import url('https://fonts.googleapis.com/css?family=Domine');
 @import url('https://fonts.googleapis.com/css?family=Pridi');
 @import url('https://fonts.googleapis.com/css?family=Quando');
-@import url('https://fonts.googleapis.com/css?family=Righteous');
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:400,700&subset=latin,vietnamese,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Rosario');
-@import url('https://fonts.googleapis.com/css?family=Syncopate');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Bowlby+One|Changa+One|Damion|Holtwood+One+SC|Marmelad|Michroma|Montserrat+Alternates|Racing+Sans+One|Rammetto+One|Shrikhand');
+*/

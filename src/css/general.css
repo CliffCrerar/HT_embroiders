@@ -1,0 +1,146 @@
+/**
+ * long description for the file
+ *
+ * @summary CSS added after template was created
+ * @author Cliff Crerar
+ *
+ * Created at     : 2018-05-30 21:33:32
+ * Last modified  : 2018-07-06 23:37:25
+ */
+
+
+/* AVAILABLE FONTS
+Domine
+Pridi*
+Quando*
+-Righteous
+Rosario
+
+-Syncopate
+-Krona One
+Open Sans Condensed
+
+Abril Fatface
+Bowlby One
+-Changa One
+Damion
+Holtwood+One+SC
+Marmelad
+-Michroma
+Montserrat Alternates
+Racing Sans One
+Rammetto One
+Shrikhand
+-Raleway
+-P
+*/
+
+.body-loading{
+    width: 100vw;
+    overflow: hidden;
+}
+.body-loading-complete{
+    width: 100vw;
+    overflow-x: hidden !important;
+}
+
+/* LOADING SCREEN */
+.loadScreenOverLay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    z-index: 2000;
+}
+.loadScreenInner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+}
+.loadingGif{
+    position: relative;
+    width: auto;
+    height: auto;
+    max-height: 80vh;
+    max-width: 80vw;
+}
+.loadingTitle{
+    width: 100%;
+    font-size: 3em;
+    font-family: 'Syncopate';
+    text-align: center;
+}
+
+/* BOOSTRAP MODIFIED CSS */
+.container-fluid-1 {
+    padding: 0 !important;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-fluid-1::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+.rowB4 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+/* GENERAL CSS */
+.mbr-section-title{
+    /*font-family: Abril Fatface;
+    font-family: Bowlby One;
+    font-family: Changa One;
+    font-family: Damion;
+    font-family: Holtwood One SC;
+    font-family: Rammetto One;
+
+    font-family: Montserrat Alternates;
+    font-family: Racing Sans One;
+    font-family: Michroma;
+    font-family: Marmelad;
+    */
+    font-family: Raleway;
+    font-weight: bold;
+    /*
+
+    */
+}
+
+/* MAIN SECTION TITLES INDIVIDUAL STYLING */
+.svc-section-title, 
+.clnts-section-title, 
+.tm-section-title {
+    text-shadow: 3px 3px 5px black
+}
+.abt-sction-title, .cntct-section-title{
+    text-shadow: 3px 3px 5px rgb(92, 92, 92)
+}
+/* MAIN SECTION TITLES INDIVIDUAL STYLING */
+
+.mbr-section-title.display-2{
+    margin: 0;
+}
+
+
+.title-icon{
+    margin: 0 5px 0 5px;
+}
+
+.anchor-offset{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    z-index: 0;
+}

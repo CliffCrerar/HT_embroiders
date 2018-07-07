@@ -1,0 +1,146 @@
+/**
+ * NAVBAR CSS
+ * @summary CSS for navigation bar
+ * @author Cliff Crerar
+ * Created at     : 2018-06-08 17:10:24
+ * Last modified  : 2018-06-19 06:45:23
+ */
+
+ /* AVAILABLE FONTS
+Domine
+Pridi*
+Quando*
+Righteous
+Rosario
+Syncopate
+Krona One
+Open Sans Condensed
+Raleway
+*/
+
+/*
+    NAVBAR
+*/
+
+.nav-stick-top {
+    display: block;
+    padding: 1vh !important;
+    position: fixed;
+    font-family: Righteous;
+    color: #fffde7;
+    border-radius: 0;
+}
+
+.nav-inner {
+    display: flex;
+    flex-direction: row;
+    font-size: 6vh;
+}
+
+.nav-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.nav-left-2 {
+    align-items: center;
+    display: flex;
+}
+
+.nav-left-1 {
+    align-items: center;
+    position: absolute;
+    transform: translateY(30vh);
+    left: -15%;
+    font-size: 4em;
+    width: 115%;
+    background: var(--ht-grad-1);
+    padding: 2vh 0 2vh 20%;
+}
+
+.nav-left-logo {
+    display: flex;
+}
+
+.nav-left-image>img {
+    height: 1em;
+    display: inherit;
+    padding-right: 10px;
+}
+
+.nav-left-text>p {
+    font-size: 0.5em;
+    margin:0;
+    line-height: 1;
+    text-shadow:
+        var(--hp-shd-p) 0 var(--hp-shd-b) var(--ht-dark),
+        0 var(--hp-shd-p) var(--hp-shd-b) var(--ht-dark),
+        var(--hp-shd-n) 0 var(--hp-shd-b) var(--ht-dark),
+        0 var(--hp-shd-n) var(--hp-shd-b) var(--ht-dark)
+}
+
+.nav-needle-img-1 {
+    position: absolute;
+    width: 80vw;
+    height: inherit;
+    right: 10%;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+.nav-needle-img-2 {
+    position: absolute;
+    width: 80vw;
+    height: inherit;
+    top:50%;
+    transform: translateY(-50%);
+    right:0%;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+.nav-right {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-right>a {
+    margin: 0 2% 0 2%;
+    border-radius: 25px;
+    width: 100%;
+    font-size: 0.7em;
+    color: inherit;
+    text-align: center;
+    text-decoration: none;
+    text-decoration-style: none;
+    text-decoration-color: none;
+    text-shadow:
+        var(--hp-shd-p) 0 var(--hp-shd-b) var(--ht-dark),
+        0 var(--hp-shd-p) var(--hp-shd-b) var(--ht-dark),
+        var(--hp-shd-n) 0 var(--hp-shd-b) var(--ht-dark),
+        0 var(--hp-shd-n) var(--hp-shd-b) var(--ht-dark);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all 1s ease;
+}
+
+.nav-right>a.active{
+    background: linear-gradient(180deg, var(--ht-dark) 45%, #91005c 55%);
+}
+
+.nav-right>a:hover {
+    color: rgb(0, 0, 0);
+    background: linear-gradient(180deg, var(--ht-dark) 45%, #91005c 55%);
+    border-radius: 30px;
+}

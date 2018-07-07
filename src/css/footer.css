@@ -1,0 +1,31 @@
+/**
+ * FOOTER CSS
+ * @summary CSS for page footer
+ * @author Cliff Crerar
+ * Created at     : 2018-06-11 22:35:51 
+ * Last modified  : 2018-06-12 02:03:14
+ */
+
+.page-footer{
+    background-color: rgb(38, 39, 44); 
+    padding-top: 3rem; 
+    padding-bottom: 1.98rem;
+}
+
+.about-dev{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-dev-text{
+
+}
+
+.about-dev-img-link-img{
+    display: block;
+}
+
+.about-dev-img{
+    width: 30vh;
+}
