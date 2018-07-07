@@ -5,7 +5,7 @@
  * @author Cliff Crerar
  *
  * Created at     : 2018-05-30 21:33:32
- * Last modified  : 2018-07-06 23:37:25
+ * Last modified  : 2018-07-07 08:26:18
  */
 
 
@@ -143,4 +143,16 @@ Shrikhand
     width: 100%;
     bottom: 0;
     z-index: 0;
+}
+
+/* Responsively adjust paragraphs */
+
+@media screen and (max-width:360px){
+    .svc-car-desc{
+        font-size: 0.75em;
+    }
+    .lead{
+        font-size: 0.75em; 
+    }
+
 }

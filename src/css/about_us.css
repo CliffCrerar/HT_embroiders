@@ -3,7 +3,7 @@
  * @summary Css for the about us section
  * @author Cliff Crerar
  * Created at     : 2018-06-09 17:34:02
- * Last modified  : 2018-07-06 20:08:16
+ * Last modified  : 2018-07-07 07:50:34
  */
 
 .abt-header{
@@ -17,8 +17,10 @@
 
 .abt-heading{
     border-top: var(--section-border);
+    /*
     padding-top: 6rem;
     padding-bottom: 6rem;
+    */
 }
 
 .abt-gallery{
@@ -45,6 +47,7 @@
 }
 
 .abt-sub-section{
+    font-size: 5.5em;
     margin: 0;
     color:#accfc5;
     font-weight: bold;
@@ -53,6 +56,17 @@
                 -5px 0 10px var(--ht-blue),
                  0 -5px 10px var(--ht-blue)
 }
+@media screen and (max-width:414px){
+    .abt-sub-section{
+        font-size: 4em;
+    }
+}
+@media screen and (max-width:360px){
+    .abt-sub-section{
+        font-size: 3em;
+    }
+}
+
 
 .abt-right-heading{
     text-align: right;

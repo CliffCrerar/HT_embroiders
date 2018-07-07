@@ -3,7 +3,7 @@
  * @summary JSX for the section of the page on our promise
  * @author Cliff Crerar
  * Created at     : 2018-06-04 22:17:19 
- * Last modified  : 2018-07-06 17:37:58
+ * Last modified  : 2018-07-07 07:32:39
  */
 
 import React from 'react';
