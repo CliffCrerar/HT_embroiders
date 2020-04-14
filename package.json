@@ -37,7 +37,7 @@
     "build": "^0.1.4",
     "bundle-loader": "^0.5.6",
     "clean-webpack-plugin": "^0.1.19",
-    "jquery": "^3.3.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.14.3",
     "run": "^1.4.0",
     "tether": "^1.4.4",
