@@ -6,7 +6,9 @@
   "scripts": {
     "start": "webpack --watch --config webpack.config.dev.js --mode development",
     "build": "webpack --config webpack.config.dev.js --display-modules --mode development",
-    "prod": "webpack --config webpack.config.prod.js --display-modules --optimize-minimize --mode production"
+    "prod": "webpack --config webpack.config.prod.js --display-modules --optimize-minimize --mode production",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "what"
@@ -41,7 +43,8 @@
     "popper.js": "^1.14.3",
     "run": "^1.4.0",
     "tether": "^1.4.4",
-    "webpack-jquery-ui": "^1.0.0"
+    "webpack-jquery-ui": "^1.0.0",
+    "snyk": "^1.316.1"
   },
   "repository": {
     "type": "git",
@@ -50,5 +53,6 @@
   "bugs": {
     "url": "https://github.com/CliffCrerar/HT_embroiders/issues"
   },
-  "homepage": "https://github.com/CliffCrerar/HT_embroiders#readme"
+  "homepage": "https://github.com/CliffCrerar/HT_embroiders#readme",
+  "snyk": true
 }
